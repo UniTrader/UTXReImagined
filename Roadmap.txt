@@ -1,0 +1,30 @@
+Goals of this XRebirth Mod:
+
+=> Complete Re-Balancing of all Game Aspects
+ -> especially Combat will see a thourough Re-Balancing through the introduction of Research/Technology
+ 
+=> Introduction of actual Research/Technological Progress by (ab)using Dynamic Ship Loadouts
+ -> will be implemented over multiple Stages to reduce the amount of Work per Step:
+   > first Step is a Technological advance for all Factions every InGame-Day, although depending on Faction sometimes older Tech will be used (Cantera; Pirates)
+   > second Step is to add actual Research: there will be Research Stations (Factories, which consume wares and produce the non-tradeable Ware Tech Points) to regulate Technological Progress
+   > third Step is to seperate this Progress for Faction Groups: Albion (PMC); Albion (HoA); Cantera; Omicron; Teladi; Xenon
+    - Tech Level of Pirates is determined by the general Tech Level of their Region - they are 2 - 5 below that usually
+    - Similiar for the other Factions of Albion (neither PMC nor HoA) - they are about 1-3 below average or the Faction they are more aligned with (eg Berryl <> PMC)
+    - Also Similiar for Omicron: non-Tech or Government Factions are a few levels below the Tech Leaders (JSS, Argongovernment)
+    - Xenon Tech is determined completely diffrent: They gain their Tech Points by Killing Enemies or being Killed in their Territory
+       if you leave them alone they wont grow, if you constantly battle them they may outperform all other factions combined in a short time
+
+=> Changes in the Vanilla Map to make it more attractive
+  -> the Tubes will be changed slightly to fulfill the following criteria:
+    > to get from any Zone to any Zone in the same Sector you dont have to enter more than 2 or 3 Tubes for the shortest route
+    > no circling the whole Sector if you want to go some Zones back on the Tube Route
+    > i will not introduce bi-directional routes per se 
+      (i like the mono-directional character of the existing tubes, but the path of many of them can be improved)
+    > remove sharp turns in the Tubes/make them smoother
+  -> Add some new Sectors in the existing Galaxy where there is an Awesome Background
+    > currently implemented are Behind Rupture and Old Omicron Yards (latter one is not in a releasable state yet)
+    > Tube Layout will follow the criteria above from the very beginning
+    
+=> Faction Logo Mod will be Integrated here because otherwise it would conflict with the Dynamic Ship Loadout/Research Part
+  -> will be modified/changed from the original, though: Logo Change will only be possible in Shipyards, although you may still talk with the Engineer to change the Logo (change will be applied on next SY visit)
+  -> also it will be an aspect of re-balancing the boarding: all Factions allied to the previous Owner will attack a boarded Ship until you can get rid of the Original Logo on the Hull in a Friendly Shipyard not allied with the previous Owner

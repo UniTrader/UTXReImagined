@@ -28,3 +28,6 @@ Goals of this XRebirth Mod:
 => Faction Logo Mod will be Integrated here because otherwise it would conflict with the Dynamic Ship Loadout/Research Part
   -> will be modified/changed from the original, though: Logo Change will only be possible in Shipyards, although you may still talk with the Engineer to change the Logo (change will be applied on next SY visit)
   -> also it will be an aspect of re-balancing the boarding: all Factions allied to the previous Owner will attack a boarded Ship until you can get rid of the Original Logo on the Hull in a Friendly Shipyard not allied with the previous Owner
+
+=> Boardcomputer will speak all new Stuff by using TTS
+  -> maybe a re-voicing of all BC stuff for consistency?

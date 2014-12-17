@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mdscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Plot_Omicron_Superyard_ch0" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/md.xsd">
+  <cues>
+    <!--cue name="OL_Superyard_Warpcheat">
+      <delay exact="3s" />
+      <actions>
+        <find_zone name="$Zone" macro="macro.MAP_UT_ZON_OL_OSY_Zone01_macro"/>
+        <warp object="player.primaryship" zone="$Zone" >
+          <position x="0m" y="0m" z="-5km"/>
+        </warp>
+      </actions>
+    </cue-->
+    <cue name="Chapter0">
+      <!-- Preperation Actions for this Plot and Chapter - Create NPCs and Objects to find before the Plot itself starts -->
+      <actions>
+        <!-- Create DeVries NPC Contact and place him in the Station where the Player should meet him -->
+        <create_cue_actor name="$NPC_DeVries_Contact" group="devries.lawenforcement.male" cue="this">
+          <page exact="10150"/>
+          <owner exact="faction.canteran"/>
+        </create_cue_actor>
+        <set_mission_actor actor="$NPC_DeVries_Contact" missionactor="true"/>
+        <find_station name="$Scanstation" space="md.$DeVries" macro="macro.struct_bt_dv_home_station_macro"/>
+        <find_dock_location name="$Scanstation_dock" container="$Scanstation"/>
+        <add_actor_to_platform actor="$NPC_DeVries_Contact" dockingbay="$Scanstation_dock.component"/>
+        <!-- Create Containers which the Player should Scan and collect -->
+        <!-- ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo -->
+        
+        
+        
+      </actions>
+      <cues>
+        <cue name="Part1">
+          <conditions>
+            <event_object_changed_cluster object="player.primaryship" cluster="md.$DeVries"/>
+          </conditions>
+          <delay exact="30s"/>
+          <actions>
+            <start_conversation priority="100" actor="$NPC_DeVries_Contact" conversation="Invitation"/>
+          </actions>
+        </cue>
+        <cue name="Invitation_conversation">
+          <conditions>
+            <event_conversation_started actor="$NPC_DeVries_Contact" conversation="Invitation"/>
+          </conditions>
+          <actions>
+            <add_npc_line speaker="$NPC_DeVries_Contact" line="200001" comment="The Canteran Government needs your Support once more. Please see me at the Crystal Castle for more Info."/>
+          </actions>
+        </cue>
+        <cue name="Mission_Start">
+          <conditions>
+            <event_conversation_finished actor="$NPC_DeVries_Contact" outcome="Invitation"/>
+          </conditions>
+          <delay exact="1s" />
+          <actions>
+            <create_mission cue="Init" name="'Mapping DeVries'" description="'A Canteran Representantive contacted me.\nLets see what he wants'" difficulty="level.easy" faction="faction.canteran" type="missiontype.plot" abortable="false">
+              <briefing>
+                <objective step="1" action="objective.talkto" object="$NPC_DeVries_Contact"/>
+              </briefing>
+              <objective step="1" action="objective.talkto" object="$NPC_DeVries_Contact"/>
+            </create_mission>
+          </actions>
+        </cue>
+      </cues>
+    </cue>
+  </cues>
+</mdscript>
+<!-- Chatlog 
+
+============================== Part 1 ================================================
+
+19:47 GTAVC:
+jetzt Zeit/Bock auf die Story?
+19:49 UniTrader:
+:++
+19:49 GTAVC:
+yay!
+19:50 UniTrader:
+bin eh grad dabei mir den kopf einzuschlagen weil ich dauernd in ne schwarzes loch fall :-S
+19:51 GTAVC:
+Starten tut es in DV, man wird (unter Bestimmten Vorraussetzungen) angefunkt und soll einem Canteraner dabei helfen, den DV genauer zu kartographieren.
+19:53 UniTrader:
+ok
+19:53 GTAVC:
+man soll in unterschiedlichen Zonen unterschiedliche Sachen machen (LR-Scanner), findet dabei ein paar Artefakte, welche man dem Canteraner dannach auch bringt
+19:53 UniTrader:
+gut, ist eh nen bisschen leer die gegend ^^
+19:53 GTAVC:
+naja... das Stimmt
+19:54 GTAVC:
+ändert sich vielleicht aber :-P
+19:54 UniTrader:
+:-D
+19:54 UniTrader:
+nen DV-Sektor hab ich in planung, aber dieser bug macht die sache massiv lahmer..
+19:54 GTAVC:
+welcher Bug?
+19:55 UniTrader:
+mit dem schwarzen loch.. flieg ne weile mit hyperboost rum und du bist sonstwo und hast nur noch scharz in sicht..
+19:55 UniTrader:
+da hilft nur neu laden :-S
+19:55 GTAVC:
+yay
+19:56 GTAVC:
+vielleicht ausserhalb des Sektors?
+19:57 UniTrader:
+jep..
+
+========================= Part 2 ==============================================
+
+19:58 GTAVC:
+egal, weiter mit der Story: man bringt die Artefakte zu ihm und er beschliesst, sie zusammen mit den Forschern von AL und OL zu erforschen
+19:58 UniTrader:
+wo soll man sonst gute plätze für sektoren finden? ^^
+19:58 UniTrader:
+ok
+19:58 GTAVC:
+vielleicht haben die kein HindergrundPicture
+19:58 GTAVC:
+oder wie das hier genannt wird :-)
+20:00 UniTrader:
+nope. Systeme sind komplett in 3d. ist nen bug in der koordiatenberechnung..
+20:00 GTAVC:
+nun soll man a: die richtigen Forscher zusammentrommern und b: einen sinnvollen Platz zum Forschen finden
+20:00 GTAVC:
+hmm... gegen den Bug kannst du warscheinlich nichts machen
+20:01 GTAVC:
+ausser Bernd damit um die Ohren hauen :-D
+20:02 UniTrader:
+bereits erledigt.
+20:02 UniTrader:
+ist gemeldet, aber wohl zu selten..
+20:02 GTAVC:
+will man nach Albion gehen, meckert der OL- und der DV-Forscher, in DV meckern die anderen Beiden und das gleiche auch in OL
+20:03 GTAVC:
+so, und nun, wo soll der Spieler hingehen? ^^ auf nach Maelstrom!
+20:04 UniTrader:
+ich seh zwar nicht, was das mit dem OL-Werftbau zu tun hat, aber ok ^^
+20:04 GTAVC:
+es führt dahin
+20:04 UniTrader:
+ahso, ne vorgeschichte, weshalb der Werftbau vorangetrieben wird? :-)
+20:04 GTAVC:
+exakt
+20:04 UniTrader:
+:++
+20:05 GTAVC:
+es braucht eine neue Gefahr im Universum! muahaha
+20:05 GTAVC:
+der SPieler soll nun in MA eine Spezielle Forschungsstation aufstellen und auch betreiben
+20:07 UniTrader:
+so lange es ne bestehende umgenutzt sein kann ok...
+20:08 UniTrader:
+ist nämlich MASSIG arbeit, ne Station zusammen zu stückeln.. vor allem wenns nach was aussehen soll :-S
+20:08 GTAVC:
+ich würde eher eine komplett bestehende nehmen
+20:08 GTAVC:
+am besten das high tech lab
+20:08 UniTrader:
+ahso.. dann ok :-)
+
+=========================================== Part 3 ======================================================================
+
+20:11 GTAVC:
+Spieler wird in eine Konferenz mit den wichtigsten Personen von OL über die Zukunft des Argonischen Govs einberufen (in OL)
+20:11 UniTrader:
+gut :-)
+20:12 UniTrader:
+hoffe du hast auch dialoge parat, denn sowas zu verfassen hasse ich wie die hölle :-S
+20:12 GTAVC:
+während dieser Konferenz wird ein Teil des Labors durch ein fehlgeschlagenes Experiment in die Luft gejagt
+20:13 GTAVC:
+Dialoge kann ich besorgen :-D
+20:14 GTAVC:
+Spieler rusht von der konferenz nach MA und findet ein halb zerstörtes Labor vor, will nun herrausfinden was genau passiert ist
+20:14 UniTrader:
+yay! ne Station platt machen :-D
+20:19 GTAVC:
+Augenzeugen berichten davon, dass das Labor von nicht itentifizierbaren Schiffen angegriffen worden ist, Videokameras haben sich eine Halbe Stunde vor der Explosion deaktiviert und der Spieler darf nun mutmassen, was nun passiert ist.
+20:20 UniTrader:
+ich hoffe mal, du hast vor den Spieler an dieser stelle erstmal ahnungslos zu lassen :-D
+20:20 GTAVC:
+jetzt ja
+20:21 GTAVC:
+an dieser Stelle bekommt der SPieler widersprüchliche Informationen
+20:21 GTAVC:
+ohne klares Ziel vor den augen
+20:22 UniTrader:
+und einige davon erhalten hinweise aufs nächste ziel aber keine die volle wahrheit? ^^
+20:22 GTAVC:
+genau
+20:23 GTAVC:
+ich würde vielleicht noch einen Schritt weiter gehen
+20:23 GTAVC:
+NPCs, die den Spieler in dieser Stage ausnutzen wollen :-D
+20:24 GTAVC:
+z.B. Geld für Informationen verlangen und einfach abhauen
+20:24 UniTrader:
+also Spuren, die ins nichts führen..
+20:24 UniTrader:
+wie Piraten-Hinterhalte ^^
+20:24 GTAVC:
+exakt
+20:25 UniTrader:
+gefällt mir :-D am besten für die einfachen hinweise bei erhalt gleich nen fetten marker setzen :-D
+20:25 GTAVC:
+wie die UFO-Basis in Schwarze Sonne hehe
+20:32 GTAVC:
+würde das als Akt 1 passen?
+20:32 UniTrader:
+kommt gut hin :-)
+20:38 UniTrader:
+ich setz mich das WE mal an ne grobe umsetzung.. aber erstmal will ich zumindest den Sektor für die Werft InGame haben ^^
+20:38 UniTrader:
+*zuerst
+20:39 GTAVC:
+oki 
+-->

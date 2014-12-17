@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?><?xml-stylesheet href="../../content.xsl" type="text/xsl" ?>
+
+<content id="UTXReImagined" name="UTXReImagined" description="Adds/changes lots of Stuff, see Readme" author="UniTrader" date="future" version="1" save="true" enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/content.xsd">
+	<text language="44" name="UTXReImagined" description="Adds/changes lots of Stuff, see Readme" author="UniTrader" />
+	<text language="49" name="UTXReImagined" description="Ändert viel und fügt viel hinzu, siehe Readme" author="UniTrader" /> 
+</content>

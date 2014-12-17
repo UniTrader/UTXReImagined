@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <replace sel='//@gravity'>4.00</replace><!-- was 9.81 (Earth Gravity) but i feel that  not apporiate for Space Stations - reduced to save Energy -->
+  <replace sel='//jump' ><jump minheight="1.2" maxheight="1.4" /></replace><!-- consequently also changed Jump Height (was 1.00) and added a bit of a random factor -->
+</diff>

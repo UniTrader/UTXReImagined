@@ -1,0 +1,30 @@
+==> Omicron Superyards:
+   -> Basic layout for DV Shipyard Module
+   -> more Modules
+      -> L/XL Yards - DONE (needs refinement)
+      -> S/M Yards - DONE (needs refinement)
+      -> Drone Facs - DONE
+      -> Fuel Cell Fabs
+      -> Production for base building functionalits - WiP
+      
+   -> Masstraffic
+      > Add special Jobs for there which include Welder Drones
+   -> Gate from Omicron Superyards to Commerce Core throws out in the wrong direction
+      -> same for the local Gates
+   -> Plot for this Sector is also planned
+
+
+
+==> Behind Rupture
+   -> last refinements
+      > Increase Albion Jobs to account for an Additional Sector
+      > Improve Pirate Station (remove Rocks; change Type to something more Piratey)
+      > change directions for Pit-Tube a bit to avoit this weird twist
+      > check if everything works as intended
+
+
+Idea List for Omicron Superyards Plot:
+
+=> For the 3-Split Part when 2 of them are finished start a Xenon Invasion on the Shipyard
+=> Blow up the Engines while Boosting at some point ( Hilo Ho - give him some Credit :D )
+=> to hire Teladi get more than 3 times your current Money (1, 3, 10, 30, 100 + Million, Billion, Trillion, Quadrillion...)

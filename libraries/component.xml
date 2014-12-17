@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<diff>
+  <add sel="//component[@name='standardzone']/connections">
+    <!-- Build Connections on Zone "ecliptic" -->
+    <connection name="buildconN0E" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="22000" y="0" z="22000" />
+      </offset>
+    </connection>
+    <connection name="buildconS0E" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="-22000" y="0" z="22000" />
+      </offset>
+    </connection>
+    <connection name="buildconN0W" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="22000" y="0" z="-22000" />
+      </offset>
+    </connection>
+    <connection name="buildconS0W" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="-22000" y="0" z="-22000" />
+      </offset>
+    </connection>
+    <!-- Build Connections above Zone "ecliptic" -->
+    <connection name="buildconNT0" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="22000" y="22000" z="0" />
+      </offset>
+    </connection>
+    <connection name="buildconST0" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="-22000" y="22000" z="0" />
+      </offset>
+    </connection>
+    <connection name="buildcon0TW" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="0" y="22000" z="-22000" />
+      </offset>
+    </connection>
+    <connection name="buildcon0TE" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="0" y="22000" z="22000" />
+      </offset>
+    </connection>
+    <!-- build connections below Zone "ecliptic" -->
+    <connection name="buildconNB0" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="22000" y="-22000" z="0" />
+      </offset>
+    </connection>
+    <connection name="buildconSB0" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="-22000" y="-22000" z="0" />
+      </offset>
+    </connection>
+    <connection name="buildcon0BW" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="0" y="-22000" z="-22000" />
+      </offset>
+    </connection>
+    <connection name="buildcon0BE" tags="build_dummy build_dummy_npc" value="0" optional="1">
+      <offset>
+        <position x="0" y="-22000" z="22000" />
+      </offset>
+    </connection>
+  </add>
+</diff>

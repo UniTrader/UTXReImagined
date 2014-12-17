@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="macros">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="macro"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="macro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="component"/>
+                <xs:element minOccurs="0" ref="connections"/>
+                <xs:element minOccurs="0" ref="properties"/>
+            </xs:sequence>
+            <xs:attribute name="class" type="xs:NCName"/>
+            <xs:attribute name="connection" type="xs:NCName"/>
+            <xs:attribute name="name" type="xs:NCName"/>
+            <xs:attribute name="path"/>
+            <xs:attribute name="ref" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="component">
+        <xs:complexType>
+            <xs:attribute name="connection" type="xs:NCName"/>
+            <xs:attribute name="ref" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="connections">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="connection"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="connection">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="offset"/>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="macro"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:NCName"/>
+            <xs:attribute name="path"/>
+            <xs:attribute name="ref" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="offset">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="position"/>
+                <xs:element minOccurs="0" ref="quaternion"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="position">
+        <xs:complexType>
+            <xs:attribute name="x" use="required" type="xs:double"/>
+            <xs:attribute name="y" use="required" type="xs:decimal"/>
+            <xs:attribute name="z" use="required" type="xs:double"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="quaternion">
+        <xs:complexType>
+            <xs:attribute name="qw" use="required" type="xs:double"/>
+            <xs:attribute name="qx" use="required" type="xs:double"/>
+            <xs:attribute name="qy" use="required" type="xs:double"/>
+            <xs:attribute name="qz" use="required" type="xs:double"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="properties">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="boundaries"/>
+                <xs:element minOccurs="0" ref="controls"/>
+                <xs:element minOccurs="0" ref="identification"/>
+                <xs:choice minOccurs="0">
+                    <xs:element ref="build"/>
+                    <xs:element ref="configuration"/>
+                </xs:choice>
+                <xs:element minOccurs="0" ref="sounds"/>
+                <xs:element minOccurs="0" ref="area"/>
+                <xs:element minOccurs="0" ref="icon"/>
+                <xs:choice minOccurs="0">
+                    <xs:element ref="map"/>
+                    <xs:element ref="region"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="boundaries">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="boundary"/>
+            </xs:sequence>
+            <xs:attribute name="priority" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="boundary">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="splineposition"/>
+                <xs:element ref="size"/>
+            </xs:sequence>
+            <xs:attribute name="class" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="splineposition">
+        <xs:complexType>
+            <xs:attribute name="inlength" use="required" type="xs:decimal"/>
+            <xs:attribute name="outlength" use="required" type="xs:decimal"/>
+            <xs:attribute name="tx" use="required" type="xs:double"/>
+            <xs:attribute name="ty" use="required" type="xs:double"/>
+            <xs:attribute name="tz" use="required" type="xs:decimal"/>
+            <xs:attribute name="weight" use="required" type="xs:integer"/>
+            <xs:attribute name="x" use="required" type="xs:decimal"/>
+            <xs:attribute name="y" use="required" type="xs:decimal"/>
+            <xs:attribute name="z" use="required" type="xs:decimal"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="size">
+        <xs:complexType>
+            <xs:attribute name="r" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="controls">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="linear"/>
+                <xs:element ref="angular"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="linear">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="time"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="time">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="angular">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="roll"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="roll">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="identification">
+        <xs:complexType>
+            <xs:attribute name="description"/>
+            <xs:attribute name="name"/>
+            <xs:attribute name="owner" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="build">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="upgrade"/>
+                <xs:element maxOccurs="unbounded" ref="plan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="plan">
+        <xs:complexType>
+            <xs:attribute name="sequence" use="required" type="xs:NCName"/>
+            <xs:attribute name="stage" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="configuration">
+        <xs:complexType>
+            <xs:attribute name="ref" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="sounds">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="music"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="music">
+        <xs:complexType>
+            <xs:attribute name="ref" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="area">
+        <xs:complexType>
+            <xs:attribute name="sunlight" type="xs:decimal"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="icon">
+        <xs:complexType>
+            <xs:attribute name="map" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="map">
+        <xs:complexType>
+            <xs:attribute name="background" type="xs:NCName"/>
+            <xs:attribute name="index" use="required" type="xs:integer"/>
+            <xs:attribute name="shortvariation"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="region">
+        <xs:complexType>
+            <xs:attribute name="ref" use="required" type="xs:NMTOKEN"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="upgrade">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="upgrade"/>
+            </xs:sequence>
+            <xs:attribute name="level" type="xs:decimal"/>
+            <xs:attribute name="upgrade" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

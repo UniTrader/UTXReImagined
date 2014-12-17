@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- i want all my new Stuff to be in seperate Files from the EGO stuff, except the necesary glue stuff, which is done via diff files -->
+<index xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/index.xsd">
+	<entry name="MAP_UT_CLU_*" value="extensions\UTGalaxyExtension\maps\XU_ep1_universe\map_ut_clusters"/>
+	<entry name="MAP_UT_SEC_*" value="extensions\UTGalaxyExtension\maps\XU_ep1_universe\map_ut_sectors"/>
+	<entry name="MAP_UT_SHW_*" value="extensions\UTGalaxyExtension\maps\XU_ep1_universe\map_ut_sechighways"/>
+	<entry name="MAP_UT_ZON_*" value="extensions\UTGalaxyExtension\maps\XU_ep1_universe\map_ut_zones"/>
+	<entry name="MAP_UT_ZHW_*" value="extensions\UTGalaxyExtension\maps\XU_ep1_universe\map_ut_zonehighways"/>
+	<entry name="struct_bt_UT_Omicron_Superyard_macro" value="extensions\UTGalaxyExtension\assets\structures\build_trees\struct_bt_UT_Omicron_Superyard_macro"/>
+	<entry name="buildmodule_omicron_superyard_macro" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\buildmodule_omicron_superyard_macro"/>
+	<entry name="buildmodule_omicron_superyard_b_macro" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\buildmodule_omicron_superyard_b_macro"/>
+	<entry name="props_surf_ar_docks_size_l_xl_inv_macro" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\props_surf_ar_docks_size_l_xl_inv_macro"/>
+	<entry name="units_size_xl_ut_homebase_1_macro" value="extensions\UTGalaxyExtension\assets\units\size_xl\units_size_xl_ut_homebase_1_macro"/>
+</index>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <!--add sel='//cue[@name="DefaultComm"]/actions/do_else' >
+                <do_if value="$actor.isplayerowned and @$actor.ship.hasmultimacroupgrades" >
+                  <add_player_choice_sub text="{5554101,100}" comment="Change Ship Logo" section="cEngineer_changelogo_ship" position="right" baseparam="event.param2" />
+                </do_if>
+  </add-->
+  <add sel='//cue[@name="OnBoardComm"]/actions/do_if[@value="$actor == player.primaryship.engineer"]'>
+                  <add_player_choice_sub text="'Mapping Help'"  section="cEngineer_mappinghelp" position="right" baseparam="event.param2" />
+  </add>
+  <add sel='//cue[@name="SectionHandler"]/actions/do_else' pos="before" >
+            <do_elseif value="event.param == 'cEngineer_mappinghelp'">
+              <add_npc_line line="1008" comment="what can i do for you?" />
+              <add_player_choice text="'Print Coordinates'" section="cEngineer_mappinghelp_print_coordinates" position="top_left" />
+              <!--add_player_choice text="{5554101,312}" section="cEngineer_changedefaultlogo_Group2" position="left" comment="Logo Group 2"/>
+              <add_player_choice text="{5554101,313}" section="cEngineer_changedefaultlogo_Group3" position="bottom_left" comment="Logo Group 3"/>
+              <add_player_choice text="{5554101,314}" section="cEngineer_changelogo_Group1" position="top_right" comment="Logo Group 1" />
+              <add_player_choice text="{5554101,315}" section="cEngineer_changelogo_Group2" position="right" comment="Logo Group 2"/>
+              <add_player_choice text="{5554101,316}" section="cEngineer_changelogo_Group3" position="bottom_right" comment="Logo Group 3"/>
+              <add_player_choice_return text="{1002,2}" position="bottom_right" comment="Goodbye"/-->
+            </do_elseif>
+            <do_elseif value="event.param == 'cEngineer_mappinghelp_print_coordinates'">
+              <show_notification caption="player.primaryship.sector.knownname" details="[ 
+              'Object Offset:',' %1 / %2 / %3'.[player.primaryship.position.x,player.primaryship.position.y,player.primaryship.position.z] ,
+              'Zone Offset:',' %1 / %2 / %3'.[player.primaryship.zone.position.x,player.primaryship.zone.position.y,player.primaryship.zone.position.z] ,
+              'Sector Offset:',' %1 / %2 / %3'.[player.primaryship.sector.position.x,player.primaryship.sector.position.y,player.primaryship.sector.position.z] ,
+              'Cluster Offset:',' %1 / %2 / %3'.[player.primaryship.cluster.position.x,player.primaryship.cluster.position.y,player.primaryship.cluster.position.z] 
+              ]" />
+              <debug_text text="
+              'Object Offset: %1 / %2 / %3 Zone Offset: %4 / %5 / %6 Sector Offset: %7 / %8 / %9 Cluster Offset: %10 / %11 / %12'.              [player.primaryship.position.x,player.primaryship.position.y,player.primaryship.position.z, player.primaryship.zone.position.x,player.primaryship.zone.position.y,player.primaryship.zone.position.z, player.primaryship.sector.position.x,player.primaryship.sector.position.y,player.primaryship.sector.position.z, player.primaryship.cluster.position.x,player.primaryship.cluster.position.y,player.primaryship.cluster.position.z]" filter="debug"/>
+            </do_elseif>
+  </add>
+</diff>

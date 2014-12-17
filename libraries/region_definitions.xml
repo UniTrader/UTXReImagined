@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<regions>
+  <region name="region_ut_al_br_pa-bas-sh-pit_asteroid_tunnel" density="1" moving="0" rotation="0">
+    <boundary class="splinetube">
+          
+          <splineposition x="150000" y="-10000" z="-10000" tx="0" ty="0" tz="1" weight="1" inlength="0" outlength="1500" />
+          <splineposition x="150000" y="-10000" z="-7000" tx="0" ty="0" tz="1" weight="1" inlength="1500" outlength="35000" /> <!-- Entry - Flowstones -->
+          
+          <splineposition x="10000" y="20000" z="175000" tx="-1" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-10000" y="20000" z="175000" tx="-1" ty="0" tz="0" weight="1" inlength="0" outlength="0" /><!-- Pass - Passage -->
+          
+          <splineposition x="-78660" y="35000" z="96000" tx="-0.5000" ty="0" tz="-0.8660" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-78660" y="35000" z="60000" tx="0.5000" ty="0" tz="-0.8660" weight="1" inlength="0" outlength="0" /> <!-- BeAlSio -->
+          
+          <splineposition x="-100000" y="-32000" z="-40000" tx="0" ty="-1" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-100000" y="-48000" z="-40000" tx="0" ty="-1" tz="0" weight="1" inlength="0" outlength="0" /><!-- Pass - Shaft -->
+          
+          <splineposition x="-51000" y="-137000" z="-100000"  tx="0" ty="-1" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-51000" y="-140000" z="-100000"  tx="0" ty="-1" tz="0" weight="1" inlength="0" outlength="0" /><!-- Destination - Pit -->
+          
+          <size r="75000" />
+    </boundary>
+    <falloff>
+      <lateral>
+        <step position="0.0" value="0.0" />
+        <step position="0.15" value="0.0" />
+        <step position="0.25" value="1.0" /><!-- start relatively late with adding Rocks around the Tube -->
+        
+        <step position="0.47" value="1.0" />
+        <step position="0.52" value="0.0" />
+        <step position="0.6" value="0.0" /> <!-- clear part of the Tube in BeAlSiO -->
+        <step position="0.65" value="1.0" />
+        
+        <step position="0.90" value="1.0" />
+        <step position="1.0" value="0.0" />
+      </lateral>
+      <radial>
+        <step position="0.0" value="0.0" />
+        <step position="0.1" value="0.0" />
+        <step position="0.12" value="1.0" />
+        <step position="0.99" value="1.0" />
+        <step position="1.0" value="0.0" />
+      </radial>
+    </falloff>
+    <fields>
+      <asteroid ref="env_ast_ore_l_01_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="18432" yieldvariation="13824" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_02_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="18432" yieldvariation="13824" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_03_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="18432" yieldvariation="13824" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_04_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="18432" yieldvariation="13824" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_05_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="18432" yieldvariation="13824" replenishtime="150000" noisescale="15000" seed="03051973" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_01_macro" densityfactor="1" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="2304" yieldvariation="1728" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.6" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_02_macro" densityfactor="1" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="2304" yieldvariation="1728" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.6" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_03_macro" densityfactor="1" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="2304" yieldvariation="1728" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.6" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_04_macro" densityfactor="1" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="2304" yieldvariation="1728" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.6" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_05_macro" densityfactor="1" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="2304" yieldvariation="1728" replenishtime="150000" noisescale="15000" seed="03051973" minnoisevalue="0.6" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_06_macro" densityfactor="1" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="2304" yieldvariation="1728" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.6" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_01_macro" densityfactor="1" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="288" yieldvariation="216" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_02_macro" densityfactor="1" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="288" yieldvariation="216" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_03_macro" densityfactor="1" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="288" yieldvariation="216" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_04_macro" densityfactor="1" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="288" yieldvariation="216" replenishtime="150000" noisescale="15000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_05_macro" densityfactor="1" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="288" yieldvariation="216" replenishtime="150000" noisescale="15000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_01_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="36" yieldvariation="27" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_02_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="36" yieldvariation="27" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_03_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="36" yieldvariation="27" replenishtime="150000" noisescale="10000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_04_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="36" yieldvariation="27" replenishtime="150000" noisescale="15000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_05_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="36" yieldvariation="27" replenishtime="150000" noisescale="15000" seed="03051973" minnoisevalue="0.5" maxnoisevalue="1"/>
+    </fields>
+  </region>
+
+  <region name="region_ut_al_br_fs_ice_river" density="10" moving="0" rotation="0">
+    <boundary class="splinetube">
+          
+          <splineposition x="-50000" y="25000" z="50000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-20000" y="5000" z="20000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-16000" y="4000" z="6000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-4000" y="3000" z="12000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="10000" y="2000" z="10000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="4000" y="1000" z="0000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-4000" y="0000" z="-1000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-12000" y="-1000" z="-6000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-2000" y="-2000" z="-12000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="10000" y="-3000" z="-10000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="15000" y="-4000" z="-15000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-20000" y="-5000" z="-17000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="-50000" y="-25000" z="-22000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <size r="1000" />
+    </boundary>
+    <falloff>
+      <lateral>
+        <step position="0.0" value="0.0" />>
+        <step position="0.01" value="1.0" />
+        <step position="0.99" value="1.0" />
+        <step position="1.0" value="0.0" />
+      </lateral>
+      <radial>
+        <step position="0.0" value="1.0" />
+        <step position="0.90" value="1.0" />
+        <step position="1.0" value="0.0" />
+      </radial>
+    </falloff>-->
+    <fields>
+      <asteroid ref="env_ast_ice_m_01_macro" densityfactor="3" moving="0" movingvariation="0" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_02_macro" densityfactor="3" moving="0" movingvariation="0" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_03_macro" densityfactor="3" moving="0" movingvariation="0" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_04_macro" densityfactor="3" moving="0" movingvariation="0" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_05_macro" densityfactor="3" moving="0" movingvariation="0" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_06_macro" densityfactor="3" moving="0" movingvariation="0" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_01_macro" densityfactor="4" moving="0" movingvariation="0" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_02_macro" densityfactor="4" moving="0" movingvariation="0" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_03_macro" densityfactor="4" moving="0" movingvariation="0" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_04_macro" densityfactor="4" moving="0" movingvariation="0" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_05_macro" densityfactor="4" moving="0" movingvariation="0" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_06_macro" densityfactor="4" moving="0" movingvariation="0" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_01_macro" densityfactor="5" moving="0" movingvariation="0" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_02_macro" densityfactor="5" moving="0" movingvariation="0" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_03_macro" densityfactor="5" moving="0" movingvariation="0" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_04_macro" densityfactor="5" moving="0" movingvariation="0" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_05_macro" densityfactor="5" moving="0" movingvariation="0" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_06_macro" densityfactor="5" moving="0" movingvariation="0" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <nebula ref="fogvolume_small_macro" localred="15" localgreen="15" localblue="30" localdensity="0.03" uniformred="15" uniformgreen="15" uniformblue="60" uniformdensity="0.003" resource="hydrogen" yield="10000" gatherspeedfactor="0.25" replenishtime="60" backgroundfog="false" />
+      <!--<positional ref="fog_outside_set1_macro" densityfactor="1.3" rotationvariation="0.5" noisescale="1" seed="32" minnoisevalue="0.5" maxnoisevalue="1"/> fog_outside_set1_macro fog_outside_set2_macro fog_outside_set3_macro fog_outside_set4_green_macro fog_outside_set3_big_macro fog_outside_set5_big_macro fog_outside_set4_blue_macro -->
+    </fields>
+  </region>
+
+  <region name="region_ut_al_br_st-sm_droplets" density="0.1" moving="1" rotation="0">
+    <boundary class="splinetube">
+          
+          <splineposition x="50000" y="100000" z="10000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="50000" y="50000" z="10000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="50000" y="-50000" z="-10000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <splineposition x="50000" y="-100000" z="-10000" tx="0" ty="0" tz="0" weight="1" inlength="0" outlength="0" />
+          <size r="30000" />
+    </boundary>
+      <lateral default="1.0">
+        <step position="0.0" value="0.0" />
+        <step position="0.1" value="1.6" />
+        <step position="0.2" value="0.8" />
+        <step position="0.5" value="1.0" />
+        <step position="0.6" value="0.8" />
+        <step position="0.8" value="0.7" />
+        <step position="0.9" value="1.6" />
+        <step position="1.0" value="0.0" />
+      </lateral>
+      <radial>
+        <step position="0.0" value="0.0" />
+        <step position="0.1" value="1.6" />
+        <step position="0.2" value="0.8" />
+        <step position="0.5" value="1.0" />
+        <step position="0.6" value="0.8" />
+        <step position="0.8" value="0.7" />
+        <step position="0.9" value="1.6" />
+        <step position="1.0" value="0.0" />
+      </radial>
+    <fields>
+      <asteroid ref="env_ast_ice_m_01_macro" densityfactor="3" moving="100" movingvariation="30" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_02_macro" densityfactor="3" moving="100" movingvariation="30" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_03_macro" densityfactor="3" moving="100" movingvariation="30" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_04_macro" densityfactor="3" moving="100" movingvariation="30" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_05_macro" densityfactor="3" moving="100" movingvariation="30" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_m_06_macro" densityfactor="3" moving="100" movingvariation="30" rotation="0" rotationvariation="16" resource="ice" resourcepercentage="100" yield="4480" yieldvariation="3360" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_01_macro" densityfactor="4" moving="100" movingvariation="30" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_02_macro" densityfactor="4" moving="100" movingvariation="30" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_03_macro" densityfactor="4" moving="100" movingvariation="30" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_04_macro" densityfactor="4" moving="100" movingvariation="30" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_05_macro" densityfactor="4" moving="100" movingvariation="30" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_s_06_macro" densityfactor="4" moving="100" movingvariation="30" rotation="0" rotationvariation="32" resource="ice" resourcepercentage="100" yield="560" yieldvariation="420" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_01_macro" densityfactor="5" moving="100" movingvariation="30" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_02_macro" densityfactor="5" moving="100" movingvariation="30" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_03_macro" densityfactor="5" moving="100" movingvariation="30" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_04_macro" densityfactor="5" moving="100" movingvariation="30" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_05_macro" densityfactor="5" moving="100" movingvariation="30" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ice_xs_06_macro" densityfactor="5" moving="100" movingvariation="30" rotation="0" rotationvariation="64" resource="ice" resourcepercentage="100" yield="70" yieldvariation="52" replenishtime="150000" noisescale="1" seed="26041984" minnoisevalue="0.75" maxnoisevalue="1"/>
+      <nebula ref="fogvolume_small_macro" localred="15" localgreen="15" localblue="30" localdensity="0.015" uniformred="15" uniformgreen="15" uniformblue="60" uniformdensity="0.0015" resource="hydrogen" yield="1000000" gatherspeedfactor="0.25" replenishtime="3000" backgroundfog="false" />
+      <nebula ref="fogvolume_small_macro" localred="15" localgreen="15" localblue="30" localdensity="0.015" uniformred="15" uniformgreen="15" uniformblue="60" uniformdensity="0.0015" resource="ions" yield="1000000" gatherspeedfactor="0.10" replenishtime="2500"/>
+      <positional ref="fog_outside_set4_blue_macro" densityfactor="0.3" rotationvariation="1.0" noisescale="1000" seed="32" minnoisevalue="0.5" maxnoisevalue="1"/><!-- fog_outside_set1_macro fog_outside_set2_macro fog_outside_set3_macro fog_outside_set4_green_macro fog_outside_set3_big_macro fog_outside_set5_big_macro fog_outside_set4_blue_macro -->
+    </fields>
+  </region>
+
+  <region name="region_ut_al_br_bas_space" density="2" moving="10" rotation="0" >
+    <boundary class="sphere">
+      <size r="30000" />
+    </boundary>
+    <falloff>
+      <radial>
+        <step position="0.0" value="0.0" />
+        <step position="0.15" value="0.0" />
+        <step position="0.16" value="1.0" />
+        <step position="0.9" value="1.0" />
+        <step position="1.0" value="0.0" />
+      </radial>
+    </falloff>
+    <fields>
+      <asteroid ref="env_ast_ore_l_01_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_02_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_03_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_04_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="silicon" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_05_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="silicon" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_01_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_02_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_03_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_04_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_05_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="silicon" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_06_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="silicon" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_01_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_02_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_03_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_04_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="silicon" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_05_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="silicon" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_01_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_02_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_03_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_04_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="silicon" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_05_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="silicon" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_l_01_macro" densityfactor="0.25" rotation="360" rotationvariation="4" resource="crystals" resourcepercentage="100" yield="9216" yieldvariation="6912" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_l_02_macro" densityfactor="0.25" rotation="360" rotationvariation="4" resource="crystals" resourcepercentage="100" yield="9216" yieldvariation="6912" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_l_03_macro" densityfactor="0.25" rotation="360" rotationvariation="4" resource="crystals" resourcepercentage="100" yield="9216" yieldvariation="6912" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_m_01_macro" densityfactor="0.50" rotation="360" rotationvariation="8" resource="crystals" resourcepercentage="100" yield="1152" yieldvariation="864" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_m_02_macro" densityfactor="0.50" rotation="360" rotationvariation="8" resource="crystals" resourcepercentage="100" yield="1152" yieldvariation="864" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_m_03_macro" densityfactor="0.50" rotation="360" rotationvariation="8" resource="crystals" resourcepercentage="100" yield="1152" yieldvariation="864" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_m_04_macro" densityfactor="0.50" rotation="360" rotationvariation="8" resource="crystals" resourcepercentage="100" yield="1152" yieldvariation="864" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_m_05_macro" densityfactor="0.50" rotation="360" rotationvariation="8" resource="crystals" resourcepercentage="100" yield="1152" yieldvariation="864" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_m_06_macro" densityfactor="0.50" rotation="360" rotationvariation="8" resource="crystals" resourcepercentage="100" yield="1152" yieldvariation="864" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_s_01_macro" densityfactor="0.50" rotation="360" rotationvariation="16" resource="crystals" resourcepercentage="100" yield="144" yieldvariation="108" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_s_02_macro" densityfactor="0.50" rotation="360" rotationvariation="16" resource="crystals" resourcepercentage="100" yield="144" yieldvariation="108" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_s_03_macro" densityfactor="0.50" rotation="360" rotationvariation="16" resource="crystals" resourcepercentage="100" yield="144" yieldvariation="108" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_s_04_macro" densityfactor="0.50" rotation="360" rotationvariation="16" resource="crystals" resourcepercentage="100" yield="144" yieldvariation="108" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_s_05_macro" densityfactor="0.50" rotation="360" rotationvariation="16" resource="crystals" resourcepercentage="100" yield="144" yieldvariation="108" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_s_06_macro" densityfactor="0.50" rotation="360" rotationvariation="16" resource="crystals" resourcepercentage="100" yield="144" yieldvariation="108" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_xs_01_macro" densityfactor="0.10" rotation="360" rotationvariation="32" resource="crystals" resourcepercentage="100" yield="18" yieldvariation="14" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1" />
+      <asteroid ref="env_ast_crystal_xs_02_macro" densityfactor="0.10" rotation="360" rotationvariation="32" resource="crystals" resourcepercentage="100" yield="18" yieldvariation="14" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_xs_03_macro" densityfactor="0.10" rotation="360" rotationvariation="32" resource="crystals" resourcepercentage="100" yield="18" yieldvariation="14" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_xs_04_macro" densityfactor="0.10" rotation="360" rotationvariation="32" resource="crystals" resourcepercentage="100" yield="18" yieldvariation="14" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_xs_05_macro" densityfactor="0.10" rotation="360" rotationvariation="32" resource="crystals" resourcepercentage="100" yield="18" yieldvariation="14" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_crystal_xs_06_macro" densityfactor="0.10" rotation="360" rotationvariation="32" resource="crystals" resourcepercentage="100" yield="18" yieldvariation="14" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_niv_l_04_macro" densityfactor="0.125" rotation="360" rotationvariation="4" resource="nividium" resourcepercentage="100" yield="3584" yieldvariation="2688" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_niv_l_05_macro" densityfactor="0.125" rotation="360" rotationvariation="4" resource="nividium" resourcepercentage="100" yield="3584" yieldvariation="2688" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+    </fields>
+  </region>
+
+  <region name="region_ut_al_br_sector_field" density="2" moving="0" rotation="0" >
+    <boundary class="sphere">
+      <size r="100000" />
+    </boundary>
+    <falloff>
+      <radial>
+        <step position="0.0" value="1.0" />
+        <step position="0.9" value="1.0" />
+        <step position="1.0" value="0.0" />
+      </radial>
+    </falloff>
+    <fields>
+      <asteroid ref="env_ast_ore_l_01_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_02_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_03_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="ore" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_04_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="silicon" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_l_05_macro" densityfactor="1" rotation="360" rotationvariation="4" resource="silicon" resourcepercentage="100" yield="11264" yieldvariation="8448" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.95" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_01_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_02_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_03_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_04_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="ore" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_05_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="silicon" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_m_06_macro" densityfactor="2" rotation="360" rotationvariation="8" resource="silicon" resourcepercentage="100" yield="1408" yieldvariation="1056" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.9" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_01_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_02_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_03_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="ore" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_04_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="silicon" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_s_05_macro" densityfactor="3" rotation="360" rotationvariation="16" resource="silicon" resourcepercentage="100" yield="176" yieldvariation="132" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.85" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_01_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_02_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_03_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="ore" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_04_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="silicon" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+      <asteroid ref="env_ast_ore_xs_05_macro" densityfactor="1" rotation="360" rotationvariation="32" resource="silicon" resourcepercentage="100" yield="22" yieldvariation="16" replenishtime="150000" noisescale="1" seed="27111980" minnoisevalue="0.8" maxnoisevalue="1"/>
+    </fields>
+  </region>
+
+</regions>

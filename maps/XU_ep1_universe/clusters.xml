@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <add sel="//macro[@name='cluster_B_macro']/connections">
+    <connection name="MAP_UT_SEC_AL_BR_connection" ref="sectors">
+      <offset>
+        <position x="-27663000" y="-9653000" z="-336000"/>
+      </offset>
+      <macro ref="MAP_UT_SEC_AL_BR_macro" connection="cluster"/>
+    </connection>
+
+    <!-- SH Definition example - note that i make a more layman-like explaination and may not use the correct terms for understandability-->
+    <connection name="MAP_UT_SHW_AL_IW-BR_connection" ref="sechighways">
+      <offset><!-- as said in sechighways.xml it is easier to work with the offset in the Cluster there, so this Value is always 0/0/0 -->
+        <position x="0" y="0" z="0" />
+      </offset>
+      <macro ref="MAP_UT_SHW_AL_IW-BR_macro" connection="cluster">
+        <connections>
+          <connection ref="exitpoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../MAP_UT_SEC_AL_BR_connection/MAP_UT_ZON_SHW_IW-BR_GateZone_Exit_connection" connection="entrypoint1" />
+          </connection>
+          <connection ref="entrypoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../Cluster_B_Sector06_connection/MAP_UT_ZON_SHW_IW-BR_GateZone_Entry_connection" connection="exitpoint1" />
+          </connection>
+        </connections>
+      </macro>
+    </connection>
+
+    <connection name="MAP_UT_SHW_AL_BR-AS_connection" ref="sechighways">
+      <offset>
+        <position x="0" y="0" z="0" />
+      </offset>
+      <macro ref="MAP_UT_SHW_AL_BR-AS_macro" connection="cluster">
+        <connections>
+          <connection ref="exitpoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../Cluster_B_Sector05_connection/MAP_UT_ZON_SHW_BR-AS_GateZone_Exit_connection" connection="entrypoint1" />
+          </connection>
+          <connection ref="entrypoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../MAP_UT_SEC_AL_BR_connection/MAP_UT_ZON_SHW_BR-AS_GateZone_Entry_connection" connection="exitpoint1" />
+          </connection>
+        </connections>
+      </macro>
+    </connection>
+    
+    <connection name="MAP_UT_SHW_AL_BR-LA_connection" ref="sechighways">
+      <offset>
+        <position x="0" y="0" z="0" />
+      </offset>
+      <macro ref="MAP_UT_SHW_AL_BR-LA_macro" connection="cluster">
+        <connections>
+          <connection ref="exitpoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../Cluster_B_Sector07_connection/MAP_UT_ZON_SHW_BR-LA_GateZone_Exit_connection" connection="entrypoint1" />
+          </connection>
+          <connection ref="entrypoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../MAP_UT_SEC_AL_BR_connection/MAP_UT_ZON_SHW_BR-LA_GateZone_Entry_connection" connection="exitpoint1" />
+          </connection>
+        </connections>
+      </macro>
+    </connection>
+
+    <!-- Zone-Wide Regions -->
+    <connection name="MAP_UT_REG_AL_BR_PA-BAS-SH-PIT_Asteroid_tunnel_connection" ref="regions">
+      <offset>
+        <position x="-27663000" y="-9653000" z="-336000"/>
+      </offset>
+      <macro name="MAP_UT_REG_AL_BR_PA-BAS-SH-PIT_Asteroid_tunnel_macro">
+        <component connection="cluster" ref="standardregion" />
+        <properties>
+          <region ref="region_ut_al_br_pa-bas-sh-pit_asteroid_tunnel" />
+        </properties>
+      </macro>
+    </connection>
+    
+    <connection name="MAP_UT_REG_AL_BR_FS_Ice_River_connection" ref="regions">
+      <offset>
+        <position x="-27513000" y="-9663000" z="-356000" />
+      </offset>
+      <macro name="MAP_UT_REG_AL_BR_FS_Ice_River_macro">
+        <component connection="cluster" ref="standardregion" />
+        <properties>
+          <region ref="region_ut_al_br_fs_ice_river" />
+        </properties>
+      </macro>
+    </connection>
+    
+    <connection name="MAP_UT_REG_AL_BR_ST-SM_droplets_connection" ref="regions">
+      <offset>
+        <position x="-27663000" y="-9653000" z="-336000"/>
+      </offset>
+      <macro name="MAP_UT_REG_AL_BR_ST-SM_droplets_macro">
+        <component connection="cluster" ref="standardregion" />
+        <properties>
+          <region ref="region_ut_al_br_st-sm_droplets" />
+        </properties>
+      </macro>
+    </connection>
+    
+    <connection name="MAP_UT_REG_AL_BR_BAS_Space_connection" ref="regions">
+      <offset>
+        <position x="-27743000" y="-9618000" z="-256000" />
+      </offset>
+      <macro name="MAP_UT_REG_AL_BR_BAS_Space_macro">
+        <component connection="cluster" ref="standardregion" />
+        <properties>
+          <region ref="region_ut_al_br_bas_space" />
+        </properties>
+      </macro>
+    </connection>
+    
+    <connection name="MAP_UT_REG_AL_BR_Sector_field_connection" ref="regions">
+      <offset>
+        <!--ition x="-27663000" y="-9653000" z="-336000"/-->
+        <!--        +   100000   +-       0    +-     0  original: x+50000+ y== z+45000- diff: 20000-->
+        <position x="-27563000" y="-9628000" z="-336000"/>
+      </offset>
+      <macro name="MAP_UT_REG_AL_BR_Sector_field_macro">
+        <component connection="cluster" ref="standardregion" />
+        <properties>
+          <region ref="region_ut_al_br_sector_field" />
+        </properties>
+      </macro>
+    </connection>
+    <connection name="MAP_UT_REG_AL_BR_Sector_field_connection2" ref="regions">
+      <offset>
+        <!--ition x="-27663000" y="-9653000" z="-336000"/-->
+        <!--        +   100000   +-       0    +-     0  original: x+50000+ y== z+45000- diff: 20000-->
+        <position x="-27583000" y="-9728000" z="-336000"/>
+      </offset>
+      <macro name="MAP_UT_REG_AL_BR_Sector_field_macro">
+        <component connection="cluster" ref="standardregion" />
+        <properties>
+          <region ref="region_ut_al_br_sector_field" />
+        </properties>
+      </macro>
+    </connection>
+
+  </add>
+  
+  <add sel="//macro[@name='Cluster_C_macro']/connections">
+    <connection name="MAP_UT_SEC_OL_OSY_connection" ref="sectors">
+      <offset>
+        <position x="-63920000" y="-21020000" z="2410000"/>
+        <!--position x="-62000000" y="-26000000" z="11000000"/-->
+        <!--quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" /-->
+      </offset>
+      <macro ref="MAP_UT_SEC_OL_OSY_macro" connection="cluster"/>
+    </connection>
+    
+    <connection name="MAP_UT_SHW_OL_CC-OSY_connection" ref="sechighways">
+      <offset>
+        <position x="0" y="0" z="0" />
+      </offset>
+      <macro ref="MAP_UT_SHW_OL_CC-OSY_macro" connection="cluster">
+        <connections>
+          <connection ref="entrypoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../Cluster_C_Sector09_connection/MAP_UT_ZON_SHW_CC-OSY_GateZone_Exit_connection" connection="exitpoint1" />
+          </connection>
+          <connection ref="exitpoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../MAP_UT_SEC_OL_OSY_connection/MAP_UT_ZON_SHW_CC-OSY_GateZone_Entry_connection" connection="entrypoint1" />
+          </connection>
+        </connections>
+      </macro>
+    </connection>
+    
+    <connection name="MAP_UT_SHW_OL_OSY-CC_connection" ref="sechighways">
+      <offset>
+        <position x="0" y="0" z="0" />
+      </offset>
+      <macro ref="MAP_UT_SHW_OL_OSY-CC_macro" connection="cluster">
+        <connections>
+          <connection ref="entrypoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../MAP_UT_SEC_OL_OSY_connection/MAP_UT_ZON_SHW_OSY-CC_GateZone_Exit_connection" connection="exitpoint1" />
+          </connection>
+          <connection ref="exitpoint">
+            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../Cluster_C_Sector09_connection/MAP_UT_ZON_SHW_OSY-CC_GateZone_Entry_connection" connection="entrypoint1" />
+          </connection>
+        </connections>
+      </macro>
+    </connection>
+  </add>
+  
+  <!-- Rotate OL by 90 degrees for better Utilisation of Cluster Map - preperation for OL Super-Shipyard Sector -->
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_Sector09_connection']/offset">
+    <offset>
+      <position x="-18231884" y="-4730172" z="5476128" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_Sector11_connection']/offset">
+    <offset>
+      <position x="75615320" y="1699.21875" z="42.96875" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_Sector10_connection']/offset">
+    <offset>
+      <position x="-50487944" y="-17120688" z="10927947" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_Sector08_connection']/offset">
+    <offset>
+      <position x="-9471725" y="-16247402" z="-12878449" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_SuperHighway01_connection']/offset">
+    <offset>
+      <position x="-9115942" y="537088.375" z="7108570.5" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_SuperHighway02_connection']/offset">
+    <offset>
+      <position x="-16852908" y="-10925430" z="8402039" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_SuperHighway03_connection']/offset">
+    <offset>
+      <position x="-13851805" y="-10438787" z="-3701160.75" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_SuperHighway04_connection']/offset">
+    <offset>
+      <position x="-9115942" y="2595590.25" z="4570699" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_SuperHighway05_connection']/offset">
+    <offset>
+      <position x="-16852908" y="-10925430" z="8252039" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_SuperHighway06_connection']/offset">
+    <offset>
+      <position x="-13851805" y="-10538787" z="-3701160.75" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_087_connection']/offset">
+    <offset>
+      <position x="-9471725" y="-16303996" z="-12686004" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_088_connection']/offset">
+    <offset>
+      <position x="9499926" y="-16122512" z="-12819379" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_089_connection']/offset">
+    <offset>
+      <position x="-9519301" y="-16102629" z="-12923848" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_090_connection']/offset">
+    <offset>
+      <position x="-9538162" y="-16163504" z="-13024941" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_091_connection']/offset">
+    <offset>
+      <position x="-9497355" y="-16396059" z="-13021988" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_093_connection']/offset">
+    <offset>
+      <position x="-9498074" y="-16395520" z="-12848207" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_092_connection']/offset">
+    <offset>
+      <position x="-9471725" y="-16251652" z="-12885832" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region01_clusterCsec09_connection']/offset">
+    <offset>
+      <position x="-18229864" y="-4706433.5" z="5510619" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_062_connection']/offset">
+    <offset>
+      <position x="-18231862" y="-4906480.5" z="5646562.5" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_061_connection']/offset">
+    <offset>
+      <position x="-18250048" y="-4647043" z="5625668" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_059_connection']/offset">
+    <offset>
+      <position x="-18231862" y="-4544421" z="5501738.5" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_063_connection']/offset">
+    <offset>
+      <position x="-18213620" y="-4616245" z="5357537" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_065_connection']/offset">
+    <offset>
+      <position x="-18231862" y="-4749723.5" z="5297359.5" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_064_connection']/offset">
+    <offset>
+      <position x="-18221982" y="-4835253" z="5373743" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_060_connection']/offset">
+    <offset>
+      <position x="-18231862" y="-4706433.5" z="5510619" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_069_connection']/offset">
+    <offset>
+      <position x="-50507320" y="-17272792" z="11059566" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_068_connection']/offset">
+    <offset>
+      <position x="-50498228" y="-17168754" z="11071215" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_067_connection']/offset">
+    <offset>
+      <position x="-50487944" y="-16937382" z="11108924" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_073_connection']/offset">
+    <offset>
+      <position x="-50481304" y="-16978668" z="10889977" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_074_connection']/offset">
+    <offset>
+      <position x="-50499756" y="-17085114" z="10744367" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_071_connection']/offset">
+    <offset>
+      <position x="-50482228" y="-17176606" z="10808596" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_072_connection']/offset">
+    <offset>
+      <position x="-50492572" y="-17299714" z="10782195" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_070_connection']/offset">
+    <offset>
+      <position x="-50487944" y="-17253606" z="10935750" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_066_connection']/offset">
+    <offset>
+      <position x="-50487944" y="-17066910" z="11005430" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_076_connection']/offset">
+    <offset>
+      <position x="75615320" y="-97386.71875" z="121496.09375" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_077_connection']/offset">
+    <offset>
+      <position x="75644176" y="-136871.09375" z="36222.65625" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_079_connection']/offset">
+    <offset>
+      <position x="75661168" y="-90925.78125" z="2433.59375" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_081_connection']/offset">
+    <offset>
+      <position x="75615320" y="-115058.59375" z="-68222.65625" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_075_connection']/offset">
+    <offset>
+      <position x="75615320" y="192910.15625" z="48902.34375" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_078_connection']/offset">
+    <offset>
+      <position x="75689880" y="144074.21875" z="32027.34375" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_080_connection']/offset">
+    <offset>
+      <position x="75657696" y="140175.78125" z="-14582.03125" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Region_Zone_082_connection']/offset">
+    <offset>
+      <position x="75615320" y="192222.65625" z="-50128.90625" />
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </replace>
+  <add sel="//macro[@name='Cluster_C_macro']/connections/connection[@ref='content']">
+    <offset>
+      <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
+    </offset>
+  </add>
+</diff>

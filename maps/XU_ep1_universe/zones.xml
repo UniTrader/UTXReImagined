@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <!--add sel="//macro[@name='tzoneCluster_A_Sector03_Zone114_macro']/connections">
+      <connection name="clustergate_Ma-Al_connection" ref="gates">
+        <offset>
+          <position x="-35000" y="0" z="-0" />
+          <quaternion qx="0" qy="0.7071068287" qz="0" qw="0.7071067095" />
+        </offset>
+        <macro ref="props_gates_anc_gate_b_macro" connection="space" />
+      </connection>
+  </add-->
+  <add sel="//macro[@name='tzoneCluster_C_Sector09_Zone60_macro']/connections">
+      <connection ref="Highway16Connection02_gate">
+        <offset>
+          <position x="-21300" y="10000" z="-15500" />
+        </offset>
+      </connection>
+      <connection ref="Highway15Connection01_gate">
+        <offset>
+          <position x="-16300" y="10000" z="-15500" />
+        </offset>
+      </connection>
+  </add>
+</diff>

@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="map.xsd">
+
+<!-- ALBION -->
+  <macro name="MAP_UT_SEC_AL_BR_macro" class="sector">
+    <component ref="standardsector"/>
+    <connections>
+      <connection name="MAP_UT_ZON_AL_BR_Zone01_connection" ref="zones">
+        <offset>
+          <position x="-80000" y="35000" z="80000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone01_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_AL_BR_Zone02_connection" ref="zones">
+        <offset>
+          <position x="0" y="20000" z="175000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone02_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_AL_BR_Zone03_connection" ref="zones">
+        <offset>
+          <position x="150000" y="-10000" z="-20000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone03_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_AL_BR_Zone04_connection" ref="zones">
+        <offset>
+          <position x="-25000" y="30000" z="-175000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone04_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_AL_BR_Zone05_connection" ref="zones">
+        <offset>
+          <position x="50000" y="50000" z="10000"/>
+          <quaternion qx="-0.3826834323650898" qy="0" qz="0" qw="0.9238795325112867" />
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone05_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_AL_BR_Zone06_connection" ref="zones">
+        <offset>
+          <position x="50000" y="-50000" z="-10000"/>
+          <quaternion qx="-0.3535533905932738" qy="0.3535533905932738" qz="0.14644660940672624" qw="0.8535533905932737" />
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone06_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_AL_BR_Zone07_connection" ref="zones">
+        <offset>
+          <position x="-100000" y="-40000" z="-40000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone07_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_AL_BR_Zone08_connection" ref="zones">
+        <offset>
+          <position x="-50000" y="-150000" z="-100000"/>
+          <!--quaternion qx="-0.70710678118" qy="0" qz="0" qw="0.70710678118" /-->
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone08_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_AL_BR_Zone09_connection" ref="zones">
+        <offset>
+          <position x="100000" y="80000" z="130000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_AL_BR_Zone09_macro" connection="sector"/>
+      </connection>
+      
+      <connection name="MAP_UT_ZON_SHW_IW-BR_GateZone_Exit_connection" ref="zones">
+        <offset>
+          <position x="152000" y="-9000" z="-10000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" connection="sector"/>
+      </connection>
+
+      <connection name="MAP_UT_ZON_SHW_BR-AS_GateZone_Entry_connection" ref="zones">
+        <offset>
+          <position x="152000" y="-9000" z="-27000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" connection="sector"/>
+      </connection>
+
+      <connection name="MAP_UT_ZON_SHW_BR-LA_GateZone_Entry_connection" ref="zones">
+        <offset>
+          <position x="-10000" y="20000" z="180000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" connection="sector"/>
+      </connection>
+
+      <connection name="MAP_UT_ZHW_AL_BR_01_connection" ref="zonehighways">
+        <offset>
+          <position x="0" y="0" z="0"/>
+        </offset>
+        <macro ref="MAP_UT_ZHW_AL_BR_01_macro" connection="sector">
+          <connections>
+            <connection ref="exitpoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone03_connection" connection="Highway01Connection02_gate"/>
+            </connection>
+            <connection ref="entrypoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone03_connection" connection="Highway01Connection01_gate"/>
+            </connection>
+          </connections>
+        </macro>
+      </connection>
+
+      <connection name="MAP_UT_ZHW_AL_BR_02_connection" ref="zonehighways">
+        <offset>
+          <position x="0" y="0" z="0"/>
+        </offset>
+        <macro ref="MAP_UT_ZHW_AL_BR_02_macro" connection="sector">
+          <connections>
+            <connection ref="exitpoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone03_connection" connection="Highway02Connection02_gate"/>
+            </connection>
+            <connection ref="entrypoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone03_connection" connection="Highway02Connection01_gate"/>
+            </connection>
+          </connections>
+        </macro>
+      </connection>
+
+      <connection name="MAP_UT_ZHW_AL_BR_03_connection" ref="zonehighways">
+        <offset>
+          <position x="0" y="0" z="0"/>
+        </offset>
+        <macro ref="MAP_UT_ZHW_AL_BR_03_macro" connection="sector">
+          <connections>
+            <connection ref="exitpoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone08_connection" connection="Highway03Connection02_gate"/>
+            </connection>
+            <connection ref="entrypoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone08_connection" connection="Highway03Connection01_gate"/>
+            </connection>
+          </connections>
+        </macro>
+      </connection>
+
+      <!-- EXPERIMENTAL: Circular Tubes - used as reference -->
+      <!--connection name="MAP_UT_ZHW_UnitCircle_cclockwise_connection" ref="zonehighways">
+        <offset>
+          <position x="150000" y="0" z="0"/>
+        </offset>
+        <macro ref="MAP_UT_ZHW_UnitCircle_cclockwise_macro" connection="sector">
+          <connections>
+            <connection ref="exitpoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone03_connection" connection="Highway01Connection02_gate"/>
+            </connection>
+            <connection ref="entrypoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone03_connection" connection="Highway01Connection01_gate"/>
+            </connection>
+          </connections>
+        </macro>
+      </connection>
+      <connection name="MAP_UT_ZHW_UnitCircle_clockwise_connection" ref="zonehighways">
+        <offset>
+          <position x="150000" y="1000" z="0"/>
+        </offset>
+        <macro ref="MAP_UT_ZHW_UnitCircle_clockwise_macro" connection="sector">
+          <connections>
+            <connection ref="exitpoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone03_connection" connection="Highway01Connection02_gate"/>
+            </connection>
+            <connection ref="entrypoint">
+              <macro path="../../MAP_UT_ZON_AL_BR_Zone03_connection" connection="Highway01Connection01_gate"/>
+            </connection>
+          </connections>
+        </macro>
+      </connection-->
+
+    </connections>
+    <properties>
+      <identification name="{5554203,1011}" description="{5554203,1012}" />
+      <!--sounds>
+        <music ref="music_sector_17" />
+      </sounds-->
+      <area sunlight="0.5"/>
+      <map background="part_bg_sec_12" index="1" shortvariation="{5554203,1014}"/>
+    </properties>
+  </macro>
+  
+<!-- OMICRON -->
+  <macro name="MAP_UT_SEC_OL_OSY_macro" class="sector">
+    <component ref="standardsector"/>
+    <connections>
+      <connection name="MAP_UT_ZON_OL_OSY_Zone01_connection" ref="zones">
+        <offset>
+          <position x="0" y="0" z="0"/>
+          <quaternion qx="-0.5" qy="0.5" qz="0.5" qw="0.5" />
+        </offset>
+        <macro ref="MAP_UT_ZON_OL_OSY_Zone01_macro" connection="sector"/>
+      </connection>
+      
+      <connection name="MAP_UT_ZHW_OL_OSY_Local_connection1" ref="zonehighways">
+        <offset>
+          <position x="-350" y="2000" z="0"/>
+          <quaternion qx="-0.5" qy="0.5" qz="0.5" qw="0.5" />
+        </offset>
+        <macro ref="MAP_UT_ZHW_OL_OSY_Local_N_macro" connection="sector">
+          <connections>
+            <connection ref="entrypoint">
+              <macro path="../../MAP_UT_ZON_OL_OSY_Zone01_connection" connection="Highway01Connection01_gate"/>
+            </connection>
+            <connection ref="exitpoint">
+              <macro path="../../MAP_UT_ZON_OL_OSY_Zone01_connection" connection="Highway01Connection02_gate"/>
+            </connection>
+          </connections>
+        </macro>
+      </connection>
+      <connection name="MAP_UT_ZHW_OL_OSY_Local_connection2" ref="zonehighways">
+        <offset>
+          <position x="-350" y="-2000" z="0"/>
+          <quaternion qx="-0.5" qy="0.5" qz="0.5" qw="0.5" />
+        </offset>
+        <macro ref="MAP_UT_ZHW_OL_OSY_Local_S_macro" connection="sector">
+          <connections>
+            <connection ref="entrypoint">
+              <macro path="../../MAP_UT_ZON_OL_OSY_Zone01_connection" connection="Highway02Connection01_gate"/>
+            </connection>
+            <connection ref="exitpoint">
+              <macro path="../../MAP_UT_ZON_OL_OSY_Zone01_connection" connection="Highway02Connection02_gate"/>
+            </connection>
+          </connections>
+        </macro>
+      </connection>
+
+      <connection name="MAP_UT_ZON_SHW_CC-OSY_GateZone_Entry_connection" ref="zones">
+        <offset>
+          <position x="0" y="2000" z="30000" />
+          <quaternion qx="-0.5" qy="0.5" qz="0.5" qw="0.5" />
+        </offset>
+        <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" connection="sector"/>
+      </connection>
+      <connection name="MAP_UT_ZON_SHW_OSY-CC_GateZone_Exit_connection" ref="zones">
+        <offset>
+          <position x="0" y="-2000" z="30000" />
+          <quaternion qx="-0.5" qy="0.5" qz="0.5" qw="0.5" />
+        </offset>
+        <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" connection="sector"/>
+      </connection>
+
+
+      <!--connection name="MAP_UT_ZON_SHW_CC-OSY_GateZone_Exit_connection" ref="zones">
+        <offset>
+          <position x="2500" y="0" z="-100000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" connection="sector"/>
+      </connection>
+
+      <connection name="MAP_UT_ZON_SHW_OSY-CC_GateZone_Entry_connection" ref="zones">
+        <offset>
+          <position x="-2500" y="0" z="-100000"/>
+        </offset>
+        <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" connection="sector"/>
+      </connection-->
+    </connections>
+    
+    <properties>
+      <identification name="'Old Omicron Shipyards'" description="{5554203,1012}" />
+      <!--sounds>
+        <music ref="music_sector_17" />
+      </sounds-->
+      <area sunlight="0.5"/>
+      <map background="part_bg_sec_12" index="1" shortvariation="OSY"/>
+    </properties>
+  </macro>
+  
+  
+</macros>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <!--add sel="//cue[@name='Open_Jumpgates_Lib']/actions/find_object[@space='$Maelstrom']" pos="after">
+        <find_object groupname="$Gates" class="class.gate" space="$Maelstrom" destination="$Albion"/>
+  </add-->
+</diff>

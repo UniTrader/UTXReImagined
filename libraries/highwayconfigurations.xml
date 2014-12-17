@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="//configurations" >
+    <configuration id="cluster_c_osy_highwayconfiguration">
+      <tubeconfiguration ref="local_hw_tube_config_osy" />
+      <motionblurconfiguration ref="local_hw_motionblur_config" />
+      <entryandexitgateconfiguration ref="local_hw_entry_exit_gate_config" />
+      <blockerconfiguration ref="empty_blocker_config" />
+      <boosterconfiguration ref="local_hw_booster_config" />
+      <trafficconfiguration ref="osy_hw_traffic_config" />
+      <effectconfiguration ref="local_hw_effect_config" />
+      <musicconfiguration ref="generic_hw_music_config" />
+    </configuration>
+  </add>
+  
+  <add sel="//tubeconfigurations">
+    <tubeconfiguration id="local_hw_tube_config_osy" material="effects.highway_tube_ol" macroname="props_he_local_highway_stream_ol_macro" adsignmacroname="props_he_local_highway_sign_holder_macro" lanewidth="50">
+      <scaling maxplayerspeedscale="2" maxhighwayspeedscale="4" />
+      <fading fadeinfraction="0.08" fadeoutfraction="0.05" />
+      <edge edgestartfraction="0.75" edgecollisioneffect="super_hw_edge_collision_effect" edgecollisioneffectdelay="0.5" maxedgedeceleration="50" breakoutspeed="0.9" />
+      <outsideforce linear="100" angular="0.25" range="4" />
+      <acceleration base="0.000125" />
+      <aifactor speed="0.9" acceleration="0.25" />
+      <boost duration="5" value="1" />
+      <part partname="anim_repeater" fadestart="0" fadeend="0" speed="5" speed_var="0.0" />
+    </tubeconfiguration>
+  </add>
+
+  <add sel="//trafficconfigurations" >
+    <trafficconfiguration id="osy_hw_traffic_config" zscale="100000" densityfactor="0.1" />
+  </add>
+</diff>

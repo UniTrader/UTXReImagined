@@ -1,0 +1,13 @@
+=> Changes in Personell Managment
+  -> you can send your Employees to any own Platform without them performing any Work (they will be inactively staying around, like on the Skunk)
+	-> Active Employees cannt be fired, only removed from their Job (in case of Captains, managers and other unremoveable Crew there will be an Option to assign a diffrent Employee instead)
+	-> Inactive Employees can be fired, for very good ones (at least 4 Stars in one Category) there will be a security question)
+	-> Personal Transfers are only possible within the same Zone, but the Transfer can be done remotely (so basically you can store all good Creq on your HQ Station to give them Jobs later)
+	-> you can also send Captains, Engineers and Defense Officers to big Ship Trade Platforms - they will be transfered to the next built Ship automatically. same applies for Pilots and small Shiptrade Platforms.
+
+=> to counter-balance the now practically unlimited Employee Capacity now your Employees want Money.
+  -> exact Values need to be determined, but it will probably be based on their main Skills (and some minor influence from the unimportant ones)
+	-> no more Hiring Fees; it is now their first payment instead
+	-> Active Employees (the ones performing a Task) will be paid in normally
+  -> Incative ones get 10 to 50% of the normal amount (exact percentage to be determined in balancing)
+  -> If the Objects the Employees were on were attacked since the last payment they will demand up to 400% more (depending on the Damage taken)

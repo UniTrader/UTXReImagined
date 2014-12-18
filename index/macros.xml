@@ -10,5 +10,6 @@
 	<entry name="buildmodule_omicron_superyard_macro" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\buildmodule_omicron_superyard_macro"/>
 	<entry name="buildmodule_omicron_superyard_b_macro" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\buildmodule_omicron_superyard_b_macro"/>
 	<entry name="props_surf_ar_docks_size_l_xl_inv_macro" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\props_surf_ar_docks_size_l_xl_inv_macro"/>
-	<entry name="units_size_xl_ut_homebase_1_macro" value="extensions\UTGalaxyExtension\assets\units\size_xl\units_size_xl_ut_homebase_1_macro"/>
+    <entry name="turret_medium_d_lb_macro" value="\Extensions\UTModularShips\assets\props\WeaponSystems\turret_medium_d_lb_macro" />
+    <entry name="units_size_xl_d_capital_destroyer_2_macro" value="\Extensions\UTModularShips\assets\units\size_xl\units_size_xl_d_capital_destroyer_2_macro" />
 </index>

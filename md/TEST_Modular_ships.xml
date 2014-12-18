@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mdscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="TEST_Modular_ships" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/md.xsd">
+  <cues>
+    <cue name="Create_testship_with_Crew">
+      <delay exact="3s" />
+      <actions>
+        <create_ship name="$ship" macro="macro.{'units_size_xl_d_capital_destroyer_2_macro'}" zone="player.primaryship.zone" >
+          <owner exact="faction.player" />
+          <safepos object="player.primaryship" />
+          <pilot macro="character_split_m_a_macro">
+            <owner exact="faction.player" />
+            <skills>
+              <skill type="boarding" exact="5"/>
+              <skill type="combat" exact="5"/>
+              <skill type="engineering" exact="5"/>
+              <skill type="leadership" exact="5"/>
+              <skill type="management" exact="5"/>
+              <skill type="morale" exact="5"/>
+              <skill type="navigation" exact="5"/>
+              <skill type="science" exact="5"/>
+            </skills>
+          </pilot>
+          <engineer macro="character_split_m_a_macro">
+            <owner exact="faction.player" />
+            <skills>
+              <skill type="boarding" exact="5"/>
+              <skill type="combat" exact="5"/>
+              <skill type="engineering" exact="5"/>
+              <skill type="leadership" exact="5"/>
+              <skill type="management" exact="5"/>
+              <skill type="morale" exact="5"/>
+              <skill type="navigation" exact="5"/>
+              <skill type="science" exact="5"/>
+            </skills>
+          </engineer>
+          <defence macro="character_split_m_a_macro">
+            <owner exact="faction.player" />
+            <skills>
+              <skill type="boarding" exact="5"/>
+              <skill type="combat" exact="5"/>
+              <skill type="engineering" exact="5"/>
+              <skill type="leadership" exact="5"/>
+              <skill type="management" exact="5"/>
+              <skill type="morale" exact="5"/>
+              <skill type="navigation" exact="5"/>
+              <skill type="science" exact="5"/>
+            </skills>
+          </defence>
+        </create_ship>
+        <add_cargo object="$ship" ware="ware.fuelcells" exact="2500" />
+				<!-- enable custom hanlder for Engi Conversation (fails on actor creation with ship) -->
+				<signal_cue_instantly cue="md.NPC_Engineer.OnPlatformPopulation_Engineer" param="$ship.engineer" />
+				<signal_cue_instantly cue="md.NPC_Staff.OnPlatformPopulation_Staff" param="$ship.pilot" />
+				<signal_cue_instantly cue="md.NPC_Staff.OnPlatformPopulation_Staff" param="$ship.defencenpc" />
+        
+        
+        <create_ship name="$ship" macro="macro.{'units_size_xl_d_capital_destroyer_2_macro'}" zone="player.primaryship.zone" >
+          <owner exact="faction.player" />
+          <safepos object="player.primaryship" />
+          <pilot macro="character_split_m_a_macro">
+            <owner exact="faction.player" />
+            <skills>
+              <skill type="boarding" exact="5"/>
+              <skill type="combat" exact="5"/>
+              <skill type="engineering" exact="5"/>
+              <skill type="leadership" exact="5"/>
+              <skill type="management" exact="5"/>
+              <skill type="morale" exact="5"/>
+              <skill type="navigation" exact="5"/>
+              <skill type="science" exact="5"/>
+            </skills>
+          </pilot>
+          <engineer macro="character_split_m_a_macro">
+            <owner exact="faction.player" />
+            <skills>
+              <skill type="boarding" exact="5"/>
+              <skill type="combat" exact="5"/>
+              <skill type="engineering" exact="5"/>
+              <skill type="leadership" exact="5"/>
+              <skill type="management" exact="5"/>
+              <skill type="morale" exact="5"/>
+              <skill type="navigation" exact="5"/>
+              <skill type="science" exact="5"/>
+            </skills>
+          </engineer>
+          <defence macro="character_split_m_a_macro">
+            <owner exact="faction.player" />
+            <skills>
+              <skill type="boarding" exact="5"/>
+              <skill type="combat" exact="5"/>
+              <skill type="engineering" exact="5"/>
+              <skill type="leadership" exact="5"/>
+              <skill type="management" exact="5"/>
+              <skill type="morale" exact="5"/>
+              <skill type="navigation" exact="5"/>
+              <skill type="science" exact="5"/>
+            </skills>
+          </defence>
+        </create_ship>
+        <add_cargo object="$ship" ware="ware.fuelcells" exact="2500" />
+				<!-- enable custom hanlder for Engi Conversation (fails on actor creation with ship) -->
+				<signal_cue_instantly cue="md.NPC_Engineer.OnPlatformPopulation_Engineer" param="$ship.engineer" />
+				<signal_cue_instantly cue="md.NPC_Staff.OnPlatformPopulation_Staff" param="$ship.pilot" />
+				<signal_cue_instantly cue="md.NPC_Staff.OnPlatformPopulation_Staff" param="$ship.defencenpc" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

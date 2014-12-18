@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Exported by: Michael (192.168.3.145) at 18.07.2014_10-54-03-->
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/component.xsd" >
+  <macro name="units_size_xl_d_capital_destroyer_2_macro" class="ship_xl">
+    <component ref="units_size_xl_d_capital_destroyer_2" />
+    <properties>
+      <identification name="{20101,4201}" description="{20101,4202}" mapicon="shipicon_destroyer_l" />
+      <explosiondamage value="200000" />
+      <hull max="2100000" />
+      <effects>
+        <explosion ref="capital_explosion" />
+        <jumpin ref="jump_jumpin_xl" />
+        <jumpout ref="jump_jumpout_xl" />
+      </effects>
+      <secrecy level="1" />
+      <purpose primary="fight" />
+      <upgrades multimacro="1" >
+        <upgrade upgrade="shieldgenerator_size_m_mk1_macro" tags="shield_m" />
+        <upgrade upgrade="shieldgenerator_size_m_mk2_macro" tags="shield_m" />
+        <upgrade upgrade="shieldgenerator_size_m_mk3_macro" tags="shield_m" />
+        <upgrade upgrade="shieldgenerator_size_l_mk1_macro" tags="shield_l" />
+        <upgrade upgrade="shieldgenerator_size_l_mk2_macro" tags="shield_l" />
+        <upgrade upgrade="shieldgenerator_size_l_mk3_macro" tags="shield_l" />
+        <upgrade upgrade="engine_size_xl_02_macro" tags="engine" />
+        <upgrade upgrade="engine_size_xl_xenon_01_macro" tags="engine" />
+        <upgrade upgrade="turret_small_mg_macro" tags="turret_small" />
+        <upgrade upgrade="turret_small_sg_macro" tags="turret_small" />
+        <upgrade upgrade="turret_medium_lb_macro" tags="turret_medium" />
+        <upgrade upgrade="turret_medium_ml_macro" tags="turret_medium" />
+        <upgrade upgrade="turret_medium_pe_macro" tags="turret_medium" />
+        <upgrade upgrade="turret_medium_sp_macro" tags="turret_medium" />
+        <upgrade upgrade="turret_missile_df_macro" tags="turret_medium" />
+        <upgrade upgrade="turret_missile_sm_macro" tags="turret_medium" />
+        <upgrade upgrade="turret_medium_d_lb_macro" tags="turret_medium" />
+        <upgrade upgrade="storage_ship_xl_universal_04_macro" tags="storage" />
+        <upgrade upgrade="storage_ship_xl_liquid_01_macro" tags="storage" />
+        <upgrade upgrade="storage_ship_xl_bulk_01_macro" tags="storage" />
+        <upgrade upgrade="storage_ship_xl_container_01_macro" tags="storage" />
+        <upgrade upgrade="storage_ship_xl_energy_01_macro" tags="storage" />
+      </upgrades>
+    </properties>
+    <connections>
+      <connection ref="connection_cockpit01">
+        <macro ref="cockpit_bridge_size_xl_macro" connection="Connection01" />
+      </connection>
+      <connection ref="connection_dock_p01">
+        <macro ref="playerdock_capship01_macro" connection="connection_component01" />
+      </connection>
+      <connection ref="connection_dock_s01">
+        <macro ref="props_surf_ar_docks_size_s_floor_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="connection_jumpdrive01">
+        <macro ref="props_surf_ar_jumpdrive_macro" connection="Connection01" />
+      </connection>
+      <connection ref="connection_radar_external01">
+        <macro ref="radar_ship_xl_military_01_macro" connection="connection_component01" />
+      </connection>
+      <connection ref="connection_radar_fallback01">
+        <macro ref="radar_ship_xl_fallback_01_macro" connection="ship" />
+      </connection>
+      <connection ref="connection_storage01">
+        <macro ref="storage_ship_xl_fuel_01_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

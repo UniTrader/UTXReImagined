@@ -4,5 +4,6 @@
 	<entry name="props_surf_ol_superyard_buildmodule_xl" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\props_surf_ol_superyard_buildmodule_xl"/>
 	<entry name="props_surf_ol_superyard_buildmodule_xl_b" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\props_surf_ol_superyard_buildmodule_xl_b"/>
 	<entry name="props_surf_ar_docks_size_l_xl_inv" value="extensions\UTGalaxyExtension\assets\props\SurfaceElements\props_surf_ar_docks_size_l_xl_inv"/>
-	<entry name="units_size_xl_ut_homebase_1" value="extensions\UTGalaxyExtension\assets\units\size_xl\units_size_xl_ut_homebase_1"/>
+  <entry name="turret_wrapper" value="\Extensions\UTModularShips\assets\props\WeaponSystems\turret_wrapper" />
+  <entry name="units_size_xl_d_capital_destroyer_2" value="\Extensions\UTModularShips\assets\units\size_xl\units_size_xl_d_capital_destroyer_2" />
 </index>

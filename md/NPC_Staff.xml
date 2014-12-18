@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+
+	<!-- to enable manual assigning of custom Conversation Handler (seems to fail with ship creation as seen in TEST_Modular_ships ) -->
+  <replace sel='//cue[@name="OnPlatformPopulation_Staff"]/actions/do_if[1]/@value' >event.name == 'event_platform_actor_created' or event.param.type ==  entitytype.pilot or event.param.type ==  entitytype.commander or event.param.type ==  entitytype.manager or event.param.type ==  entitytype.defencecontrol</replace>
+</diff>

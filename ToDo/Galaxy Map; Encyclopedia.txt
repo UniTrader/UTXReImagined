@@ -1,0 +1,7 @@
+=> in Galaxy Map add shortvariations of Zone Names to the Map to replace the Numbers currently used
+=> In Encyclopedia add Descriptions for Zones 
+  -> if there is a Landmark there simply copy it with slight changes
+  -> In case of no Landmark think of some short Story how the Zone Name could have been established
+    > it is also fine to slightly change it, but the general meaning should remain
+      example: Rat Fish Waters -> Rat Fish Lakes
+  -> If something else fits its also fine, just fill that empty Encyclopedia Page with something ;)

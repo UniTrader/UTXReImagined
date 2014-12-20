@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<weaponsystems>
+  <tech level="001">
+    <turret	size="medium"	type="lb"	variation="1">
+      <surface_element component="props_wps_ar_def_turret_m_lb" name="{20104,401}"	description="{20104,402}"	rotationspeed="20"	hull="35000"/>
+      <bullet speed="8400"	lifetime="1"	range="7200"	amount="1"	barrelamount="1"	maxhits="1"	ricochet="0"	scale="1"	attach="1"	reload="0.125"	damage="96400"/>
+      <bulleteffects component="beam_fight_bullet" impact="beam_fight_impact"	launch="beam_fight_muzzle"	ambient="wpn_beam_muzzle"	system="turret_midrange"/>
+    </turret>
+    <shield	size="medium"	type="regular"	variation="1">
+      <surface_element	component="props_surf_ar_shieldgen_medium_mk1"	name="{20104,801}"	description="{20104,802}"	shield="50000"	rate="1250"	delay="5"	hull="5000" />
+    </shield>
+    <shield	size="large"	type="capital"	variation="1">
+      <surface_element	component="props_surf_ar_shieldgen_large_mk1"	name="{20104,2001}"	description="{20104,2002}"	boostduration="600"	shield="300000"	rate="2000"	delay="8"	hull="30000" />
+    </shield>
+  </tech>
+  <tech level="002">
+  
+  </tech>
+</weaponsystems>

@@ -4,7 +4,7 @@
     <cue name="Create_testship_with_Crew">
       <delay exact="3s" />
       <actions>
-        <create_ship name="$ship" macro="macro.{'units_size_xl_d_capital_destroyer_2_macro'}" zone="player.primaryship.zone" >
+        <create_ship name="$ship" macro="macro.units_size_xl_d_capital_destroyer_2_macro" zone="player.primaryship.zone" >
           <owner exact="faction.player" />
           <safepos object="player.primaryship" />
           <pilot macro="character_split_m_a_macro">
@@ -54,7 +54,7 @@
 				<signal_cue_instantly cue="md.NPC_Staff.OnPlatformPopulation_Staff" param="$ship.defencenpc" />
         
         
-        <create_ship name="$ship" macro="macro.{'units_size_xl_d_capital_destroyer_2_macro'}" zone="player.primaryship.zone" >
+        <create_ship name="$ship" macro="macro.units_size_xl_d_capital_destroyer_2_macro" zone="player.primaryship.zone" >
           <owner exact="faction.player" />
           <safepos object="player.primaryship" />
           <pilot macro="character_split_m_a_macro">

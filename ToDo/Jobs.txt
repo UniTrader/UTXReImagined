@@ -1,0 +1,10 @@
+=> Masstraffic Jobs
+  -> re-arrange them in such a way that they mostly depend on the Stations for the civilian ones
+  -> Police Jobs should depend on the Sector entirely
+  -> no progress on Tech Level since the effect of that is non-noticeable (or in very huge steps, eg every 2 IG-Weeks)
+  
+
+=> Other Jobs
+  -> Points for Tech Levels to take care of:
+    > Every Job has as many Variants to it as there are Tech Levels for the used Ships
+    > per default only the first one is @startactive="true"

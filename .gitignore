@@ -1,0 +1,8 @@
+# these Folders are created by an included Script - since they are big they should be created by the users themselves
+voice/
+voice-L044/
+voice-L049/
+
+# .cat/.dat files should be ignored because they usually only contain the packed Mod Data which lies in raw form in the repository, so it would be redundant
+*.cat
+*.dat

@@ -17,7 +17,7 @@ How Research is planned to work:
   -> Albion HoA:
     HoA (0)
     ...
-  -> Albion General:
+  -> Albion General (average or max between PMC and HoA; no actual research Station):
     ...
 
   -> DeVries:

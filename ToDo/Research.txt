@@ -1,0 +1,57 @@
+How Research is planned to work:
+
+=> IMPORTANT: There will be no Tech Tree, because thats imo too difficult to manage and to code a good order/research selection for the AI.
+    the Technology will progress linear in Tech Levels (meaning everything is getting better).
+    To add variation not everything is getting better at the same speed, though - everything will have a "golden time" where it is imba overpowered
+    and have a Black Day where it is simply not worth the Money. Example:
+      Plasma JET/LR Turrets getting HUGE Boost in Shield Damage one Day, so much that nothing stands in their way
+      1 or 2 Days later the Shields and other Weapons will get an even bigger Boost in their Stats which makes the Plasma JET/LR less useful than it was before in comparision
+      about 3 more days later the relative Stats of the most recent Tech are at original levels again (but compared to 5 Days before everything is about 3 times as powerful)
+
+=> there will be multiple Research Stations in the Universe for the following Faction Groups:
+  -> Albion PMC:
+    PMC (0)
+    Beryll (0)
+    Ledda (-1)
+    ...
+  -> Albion HoA:
+    HoA (0)
+    ...
+  -> Albion General:
+    ...
+
+  -> DeVries:
+    Cantera (0)
+    Reiver (-2; Pirates)
+  
+  -> Omicron Lyrae:
+    argon Government (0)
+    JSS (0)
+    ... 
+  -> Maelstrom Split
+    familyryak (0)
+
+  -> Teladi
+    Teladi Union (0)
+  
+  -> Xenon (diffrent research Method)
+    Branch 9 (0)
+
+=> the Factions used Tech is based on the Progress of their respective Research Station (number in Paranthesis above is difference to main Tech Level)
+  -> the nearer they are to their Technological Leader/Researcher Faction the better Tech they get
+  -> Pirates steal local Tech or use used, so they mostly have outdated Tech, but some may be lucky to get cutting edge Tech (number in Paranthesis is their minimum)
+  -> Difference in DV for Pirates is low because Cantera has near to zero means to protect their Technology
+
+=> Xenon have completely diffrent method of "research"
+  -> they earn Research Points by Destroying Ships in their respective Zones and by getting their Ships Destroyed
+    (see it as learning for them)
+  -> for peaceful Traders this means they will at some point cease to be a threat
+  -> for aggressive Fighters they will at some Point be the worst Enemy you could imagine
+    > adds a new Gameplay Goal: how far can you push the Xenon Tech Level above the general Tech Level before they simply overrun the Universe with no resistance?
+  -> balance Goal is to keep them at current Tech Level for an average Gameplay Style (some Trading, some Fighting, some Building)
+
+=> Research should be balanced in such a way that the Progress is 1 Tech Level per InGame-Day
+  -> each Research Station should need about 20h to produce the necesary Tech Points to advance a Level if Tech Level is roughly in Sync with IG-Days
+  -> the remaining 4h is for the Player to accelerate a Groups Progress and to balance out Production Stops because of Ressources
+  -> if Tech Level is not in Sync with IG-Days the necesary Research Points to advance may be modified
+      (closer to 24h Production time if advanced, closer to 12h production time if behind schedule)

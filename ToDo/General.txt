@@ -1,9 +1,7 @@
-Goals of this XRebirth Mod:
-
 => Complete Re-Balancing of all Game Aspects
  -> especially Combat will see a thourough Re-Balancing through the introduction of Research/Technology
  
-=> Introduction of actual Research/Technological Progress by (ab)using Dynamic Ship Loadouts
+=> Introduction of actual Research/Technological Progress by (ab)using Dynamic Ship Loadouts - see also seperate file
  -> will be implemented over multiple Stages to reduce the amount of Work per Step:
    > first Step is a Technological advance for all Factions every InGame-Day, although depending on Faction sometimes older Tech will be used (Cantera; Pirates)
    > second Step is to add actual Research: there will be Research Stations (Factories, which consume wares and produce the non-tradeable Ware Tech Points) to regulate Technological Progress
@@ -17,6 +15,11 @@ Goals of this XRebirth Mod:
 => Faction Logo Mod will be Integrated here because otherwise it would conflict with the Dynamic Ship Loadout/Research Part
   -> will be modified/changed from the original, though: Logo Change will only be possible in Shipyards, although you may still talk with the Engineer to change the Logo (change will be applied on next SY visit)
   -> also it will be an aspect of re-balancing the boarding: all Factions allied to the previous Owner will attack a boarded Ship until you can get rid of the Original Logo on the Hull in a Friendly Shipyard not allied with the previous Owner
+
+=> Boarding re-balancing - also see results from this Topic: http://forum.egosoft.com/viewtopic.php?t=375052
+  -> also Logo will influence behavior of nearby Ships allied with the original Owner - better get it to a friendly Shipyard quickly to change it
+  -> when Ship enters Shipyard Logos are changed automatically to the default ones, but you may talk to the Engineer/Shipdealer to use another one
+
 
 => Boardcomputer will speak all new Stuff by using TTS
   -> maybe a re-voicing of all BC stuff for consistency?

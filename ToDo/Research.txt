@@ -55,3 +55,8 @@ How Research is planned to work:
   -> the remaining 4h is for the Player to accelerate a Groups Progress and to balance out Production Stops because of Ressources
   -> if Tech Level is not in Sync with IG-Days the necesary Research Points to advance may be modified
       (closer to 24h Production time if advanced, closer to 12h production time if behind schedule)
+  -> maybe add a small Plot where you can get Stephen Hawking accelerating Research massively?
+    > ofc he is there to be put on a Research Station the Player chooses
+    > does not demand payment opposed to other Player Employees for multiple reasons:
+      - doesnt work directly for the Player
+      - should never be lost since he is unique

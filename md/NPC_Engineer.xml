@@ -93,7 +93,6 @@
             </do_elseif>
 			
             <do_elseif value="event.param == 'cEngineer_changeloadout_turret_m_lb'">
-						<get_attackstrength result="$attbef" object="$actor.ship" target="player.primaryship" />
 			  <upgrade_object_by_macro macro="macro.{'turret_medium_lb_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
 			  <upgrade_object_by_macro macro="macro.{'turret_medium_ml_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
 			  <upgrade_object_by_macro macro="macro.{'turret_medium_pe_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
@@ -102,8 +101,6 @@
 			  <upgrade_object_by_macro macro="macro.{'turret_missile_sm_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
 			  <upgrade_object_by_macro macro="macro.{'turret_medium_lb_macro'}" object="$actor.ship" exact="100" comment="exact in % of available Slots!" />
 			  <patch_macro object="$actor.ship" />
-						<get_attackstrength result="$attaft" object="$actor.ship" target="player.primaryship" />
-            <show_help custom="'%1 -> %2'.[$attbef,$attaft]" position="0" duration="30s"/>
             </do_elseif>
             <do_elseif value="event.param == 'cEngineer_changeloadout_turret_m_ml'">
 			  <upgrade_object_by_macro macro="macro.{'turret_medium_lb_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />

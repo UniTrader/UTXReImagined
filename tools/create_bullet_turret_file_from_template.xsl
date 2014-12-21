@@ -5,7 +5,7 @@
 			<xsl:for-each select="weaponsystems/tech/turret">
 				<macro class="bullet">
 					<xsl:attribute name="name">
-						<xsl:text>bullet_turret_</xsl:text>
+						<xsl:text>xri_bullet_turret_</xsl:text>
 						<xsl:value-of select="./@size" />
 						<xsl:text>_</xsl:text>
 						<xsl:value-of select="./@type" />
@@ -61,13 +61,43 @@
 								<xsl:value-of select="./bullet/@attach" />
 							</xsl:attribute>
 						</bullet>
-						<reload rate="10" />
-						<damage value="450" repair="0" />
+						<reload>
+							<xsl:attribute name="rate" >
+								<xsl:value-of select="./bullet/@reload"/>
+							</xsl:attribute>
+						</reload>
+						<damage>
+							<xsl:attribute name="value" >
+								<xsl:value-of select="./bullet/@damage"/>
+							</xsl:attribute>
+							<xsl:if test="./bullet/@repair" >
+								<xsl:attribute name="repair">
+									<xsl:value-of select="./bullet/@repair" />
+								</xsl:attribute>
+							</xsl:if>
+						</damage>
 						<effects>
-							<impact ref="plasmaemitter_xenon_impact" inside="plasmaemitter_impact_inside" />
-							<launch ref="plasmaemitter_xenon_muzzle" />
+							<impact>
+								<xsl:attribute name="ref" >
+									<xsl:value-of select="./bulleteffects/@impact"/>
+								</xsl:attribute>
+								<xsl:if test="./bulleteffects/@impact_inside" >
+									<xsl:attribute name="inside">
+										<xsl:value-of select="./bulleteffects/@impact_inside" />
+									</xsl:attribute>
+								</xsl:if>
+							</impact>
+							<launch ref="plasmaemitter_xenon_muzzle">
+								<xsl:attribute name="ref" >
+									<xsl:value-of select="./bulleteffects/@launch"/>
+								</xsl:attribute>
+							</launch>
 						</effects>
-						<weapon system="turret_midrange" />
+						<weapon>
+							<xsl:attribute name="system" >
+								<xsl:value-of select="./bulleteffects/@system"/>
+							</xsl:attribute>
+						</weapon>
 					</properties>
 				</macro>
 			</xsl:for-each>

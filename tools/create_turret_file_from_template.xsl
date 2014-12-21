@@ -5,7 +5,7 @@
 			<xsl:for-each select="weaponsystems/tech/turret">
 				<macro class="turret">
 					<xsl:attribute name="name">
-						<xsl:text>turret_</xsl:text>
+						<xsl:text>xri_turret_</xsl:text>
 						<xsl:value-of select="./@size" />
 						<xsl:text>_</xsl:text>
 						<xsl:value-of select="./@type" />
@@ -33,7 +33,7 @@
 						</identification>
 						<bullet>
 							<xsl:attribute name="class">
-								<xsl:text>bullet_turret_</xsl:text>
+								<xsl:text>xri_bullet_turret_</xsl:text>
 								<xsl:value-of select="./@size" />
 								<xsl:text>_</xsl:text>
 								<xsl:value-of select="./@type" />

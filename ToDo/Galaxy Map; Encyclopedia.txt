@@ -5,3 +5,15 @@
     > it is also fine to slightly change it, but the general meaning should remain
       example: Rat Fish Waters -> Rat Fish Lakes
   -> If something else fits its also fine, just fill that empty Encyclopedia Page with something ;)
+
+=> Changes in the Vanilla Map to make it more attractive
+  -> the Tubes will be changed slightly to fulfill the following criteria:
+    > to get from any Zone to any Zone in the same Sector you dont have to enter more than 2 or 3 Tubes for the shortest route
+    > no circling the whole Sector if you want to go some Zones back on the Tube Route
+    > i will not introduce bi-directional routes per se 
+      (i like the mono-directional character of the existing tubes, but the path of many of them can be improved)
+    > remove sharp turns in the Tubes/make them smoother
+  -> Add some new Sectors in the existing Galaxy where there is an Awesome Background
+    > currently implemented are Behind Rupture and Old Omicron Yards (latter one is not in a releasable state yet)
+    > Tube Layout will follow the criteria above from the very beginning
+    

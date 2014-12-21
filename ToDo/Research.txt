@@ -60,3 +60,8 @@ How Research is planned to work:
     > does not demand payment opposed to other Player Employees for multiple reasons:
       - doesnt work directly for the Player
       - should never be lost since he is unique
+
+=> there will be huge differences in the performance of Shield and Weapon Systems with Research Progress
+=> the differences between Engines will be less noticeable since they are difficult to counter-balance
+	-> also they have less Tech Levels (only advancing every 10 Tech Levels)
+=> no Tech Levels for Jumpdrives, Boosters, Radar Systems and Cargo Bay

@@ -1,0 +1,55 @@
+*** closely related to Research, but not the same ***
+
+=> There are 3 sizes of Slots on a Ship which can be equipped with diffrent Weapon Systems
+	-> talk with the respective Engineer to set up the intended loadout (and Logos)
+		> when satisfied the Ship will fly to a Shipyard to apply the changes
+		> can also use another Ship as Template as long as it is not outdated
+	-> small Slots are for Shieldgens and small Turrets
+		> some Slots are for Shieldgens only (at least one per Group) so you can always equip some
+	-> medium Slots are, of course, for medium turrets
+	-> big Slots are for Drone Bays or Big Turrets
+		> number of them will be increased, but drone capacity of Drone Bays will be reduced to encourage building more of them
+		> the alternative Big Turrets require HUGE amounts of Energy (see point Energy Points here) and therefore may not be a viable alternative to the energy-friendly Drone Bays
+	-> Engines can of course be swapped (with varing color, used Tech and Tech Data)
+		> combinations of these are pre-definied so you have to make a choice between favorite color or preffered tech Data)
+		> will have slow Tech Progress
+		> also their Boosters, where each has a diffrent priority
+	-> there is also a choice between diffrent Jumpdrive Variants:
+		Military
+		Fast Travel
+		Energy Save
+		default
+	-> Radar System is also swappable
+		> all Cap Ships will have 3: Main, Backup (both swapable) and fallback (value-wise the worst, but can neither be swapped nor destroyed)
+		> Backup Radar is not necesary to save some Energy
+		> Energy demand grow expotentially with Range
+	-> Ships with Universal get swapable Cargo
+		> per default its a small Universal
+		> can be swapped into a specialized Cargo with about 200% Capacity of Universal (Cargo Class restricted)
+		> or into a highly-specialized Cargo with about 300% Capacity of Universal (Ware Type restricted)
+	-> Ships with specialized Cargo can be changed into highly-specialized (Ware Type restricted) for 50% more Space
+
+=> each Faction Group will have their own, unique Weapon Systems, but some will be shared across all Groups (some Factions may have their own variant, though)
+	-> shared between all Factions:
+		> Mining Lasers (NOT the upgraded non-mining Variant)
+		> HIT/MAs
+		
+	-> Albion/PMC:
+		> Plasma JET/LR
+		
+	-> Albion/HoA:
+		
+	-> DeVries:
+		
+	-> Omicron:
+		> Upgraded Mining Laser suited for Battle (appears at T007)
+		
+	-> Family Ryak:
+		> Hailstorm Turrets
+		
+	-> Xenon use a completely seperate Set of Weapons
+	
+=> Balancing of Upgrades is done via Energy Points
+	-> each Ship Type has a certain amount of these - exact value depends on tech Level at buying/upgrading Time
+	-> each swappable System is assigned such a Value, too
+	-> both values will always increase with progressing Tech Level

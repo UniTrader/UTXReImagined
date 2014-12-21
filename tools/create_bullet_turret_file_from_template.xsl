@@ -17,55 +17,57 @@
 					</xsl:attribute>
 					<component>
 						<xsl:attribute name="ref">
-							<xsl:value-of select="./surface_element/@component" />
+							<xsl:value-of select="./bulleteffects/@component" />
 						</xsl:attribute>
 					</component>
 					<properties>
-						<identification unique="0" >
-							<xsl:attribute name="name">
-								<xsl:value-of select="./surface_element/@name" />
-								<xsl:text> T</xsl:text>
-								<xsl:value-of select="../@level" />
-							</xsl:attribute>
-							<xsl:attribute name="description">
-								<xsl:value-of select="./surface_element/@description" />
-							</xsl:attribute>
-						</identification>
+						<identification unique="0" />
+						<!-- not implemenmted yet since i am not yet sure what it does
+						<ammunition value="2" reload="1.9" /-->
 						<bullet>
-							<xsl:attribute name="class">
-								<xsl:text>bullet_turret_</xsl:text>
-								<xsl:value-of select="./@size" />
-								<xsl:text>_</xsl:text>
-								<xsl:value-of select="./@type" />
-								<xsl:text>_</xsl:text>
-								<xsl:value-of select="./@user" />
-								<xsl:text>_</xsl:text>
-								<xsl:value-of select="./@variation" />
-								<xsl:text>_macro</xsl:text>
+							<xsl:attribute name="speed">
+								<xsl:value-of select="./bullet/@speed" />
+							</xsl:attribute>
+							<xsl:attribute name="lifetime">
+								<xsl:value-of select="./bullet/@lifetime" />
+							</xsl:attribute>
+							<xsl:attribute name="range">
+								<xsl:value-of select="./bullet/@range" />
+							</xsl:attribute>
+							<xsl:attribute name="amount">
+								<xsl:value-of select="./bullet/@amount" />
+							</xsl:attribute>
+							<xsl:attribute name="barrelamount">
+								<xsl:value-of select="./bullet/@barrelamount" />
+							</xsl:attribute>
+							<xsl:if test="./bullet/@timediff" >
+								<xsl:attribute name="timediff">
+									<xsl:value-of select="./bullet/@timediff" />
+								</xsl:attribute>
+							</xsl:if>
+							<xsl:attribute name="angle">
+								<xsl:value-of select="./bullet/@angle" />
+							</xsl:attribute>
+							<xsl:attribute name="maxhits">
+								<xsl:value-of select="./bullet/@maxhits" />
+							</xsl:attribute>
+							<xsl:attribute name="riochet">
+								<xsl:value-of select="./bullet/@riochet" />
+							</xsl:attribute>
+							<xsl:attribute name="scale">
+								<xsl:value-of select="./bullet/@scale" />
+							</xsl:attribute>
+							<xsl:attribute name="attach">
+								<xsl:value-of select="./bullet/@attach" />
 							</xsl:attribute>
 						</bullet>
-						<rotationspeed>
-							<xsl:attribute name="max">
-								<xsl:value-of select="./surface_element/@rotationspeed" />
-							</xsl:attribute>
-						</rotationspeed>
-						<reload />
-						<hull threshold="0.25">
-							<xsl:attribute name="max">
-								<xsl:value-of select="./surface_element/@hull" />
-							</xsl:attribute>
-						</hull>
+						<reload rate="10" />
+						<damage value="450" repair="0" />
 						<effects>
-							<explosion ref="explosion_turret_m_wall_pulse" />
-							<sefx_damage_low ref="sefx_damage_m_low" />
-							<sefx_damage_medium ref="sefx_damage_m_medium" />
-							<sefx_damage_high ref="sefx_damage_m_high" />
-							<sefx_shield ref="sefx_shield_m_01" />
+							<impact ref="plasmaemitter_xenon_impact" inside="plasmaemitter_impact_inside" />
+							<launch ref="plasmaemitter_xenon_muzzle" />
 						</effects>
-						<efficiency>
-							<threshold threshold="0.75" value="1" />
-							<threshold threshold="0.25" value="0.25" />
-						</efficiency>
+						<weapon system="turret_midrange" />
 					</properties>
 				</macro>
 			</xsl:for-each>

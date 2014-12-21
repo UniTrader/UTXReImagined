@@ -1,9 +1,11 @@
 *** closely related to Research, but not the same ***
 
 => There are 3 sizes of Slots on a Ship which can be equipped with diffrent Weapon Systems
-	-> talk with the respective Engineer to set up the intended loadout (and Logos)
+	-> talk with the a Shipdealer or the respective Engineer to set up the intended loadout (and Logos)
 		> when satisfied the Ship will fly to a Shipyard to apply the changes
 		> can also use another Ship as Template as long as it is not outdated
+		> Shipdealer only offers things which are available locally, and the requests will be fulfilled as far as possible
+		  (when requesting to equip OL weapons in Albion the lelated Slots will remain empty)
 	-> small Slots are for Shieldgens and small Turrets
 		> some Slots are for Shieldgens only (at least one per Group) so you can always equip some
 	-> medium Slots are, of course, for medium turrets
@@ -13,7 +15,9 @@
 	-> Engines can of course be swapped (with varing color, used Tech and Tech Data)
 		> combinations of these are pre-definied so you have to make a choice between favorite color or preffered tech Data)
 		> will have slow Tech Progress
-		> also their Boosters, where each has a diffrent priority
+		> Engines are location-specific so you may have to travel far to get your preffered variant
+		> also their Boosters are swap-able, where each has a diffrent priority
+			(still have to look up whats possible there)
 	-> there is also a choice between diffrent Jumpdrive Variants:
 		Military
 		Fast Travel
@@ -53,3 +57,8 @@
 	-> each Ship Type has a certain amount of these - exact value depends on tech Level at buying/upgrading Time
 	-> each swappable System is assigned such a Value, too
 	-> both values will always increase with progressing Tech Level
+
+=> there will be some special kind of Tuner Shop which moves across the Universe
+	-> offers latest Tech of all Factions except Xenon
+	-> also has special Engines available (multiple diffrent colors, Stats are the same for all, but top notch - although EXPENSIVE)
+	-> when finished tuning one Ship will move somewhere else, so you have to look for him again when tuning the next Ship

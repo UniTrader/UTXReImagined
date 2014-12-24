@@ -17,13 +17,21 @@
 					</xsl:attribute>
 					<component>
 						<xsl:attribute name="ref">
-							<xsl:value-of select="./bulleteffects/@component" />
+							<xsl:value-of select="./bullet/effects/@component" />
 						</xsl:attribute>
 					</component>
 					<properties>
 						<identification unique="0" />
-						<!-- not implemenmted yet since i am not yet sure what it does
-						<ammunition value="2" reload="1.9" /-->
+						<xsl:if test="./bullet/optional/@ammunition_value and ./bullet/optional/@ammunition_reload">
+							<ammunition>
+								<xsl:attribute name="value">
+									<xsl:value-of select="./bullet/optional/@ammunition_value" />
+								</xsl:attribute>
+								<xsl:attribute name="reload">
+									<xsl:value-of select="./bullet/optional/@ammunition_reload" />
+								</xsl:attribute>
+							</ammunition>
+						</xsl:if>
 						<bullet>
 							<xsl:attribute name="speed">
 								<xsl:value-of select="./bullet/@speed" />
@@ -40,14 +48,16 @@
 							<xsl:attribute name="barrelamount">
 								<xsl:value-of select="./bullet/@barrelamount" />
 							</xsl:attribute>
-							<xsl:if test="./bullet/@timediff" >
+							<xsl:if test="./bullet/optional/@timediff" >
 								<xsl:attribute name="timediff">
-									<xsl:value-of select="./bullet/@timediff" />
+									<xsl:value-of select="./bullet/optional/@timediff" />
 								</xsl:attribute>
 							</xsl:if>
-							<xsl:attribute name="angle">
-								<xsl:value-of select="./bullet/@angle" />
-							</xsl:attribute>
+							<xsl:if test="./bullet/optional/@angle" >
+								<xsl:attribute name="angle">
+									<xsl:value-of select="./bullet/optional/@angle" />
+								</xsl:attribute>
+							</xsl:if>
 							<xsl:attribute name="maxhits">
 								<xsl:value-of select="./bullet/@maxhits" />
 							</xsl:attribute>
@@ -60,42 +70,61 @@
 							<xsl:attribute name="attach">
 								<xsl:value-of select="./bullet/@attach" />
 							</xsl:attribute>
+							<xsl:if test="./bullet/optional/@selfdestruct" >
+								<xsl:attribute name="selfdestruct">
+									<xsl:value-of select="./bullet/optional/@selfdestruct" />
+								</xsl:attribute>
+							</xsl:if>
 						</bullet>
 						<reload>
 							<xsl:attribute name="rate" >
 								<xsl:value-of select="./bullet/@reload"/>
 							</xsl:attribute>
 						</reload>
+						<xsl:if test="./bullet/optional/@areadamage" >
+							<areadamage>
+								<xsl:attribute name="value">
+									<xsl:value-of select="./bullet/optional/@areadamage" />
+								</xsl:attribute>
+							</areadamage>
+						</xsl:if>
 						<damage>
 							<xsl:attribute name="value" >
 								<xsl:value-of select="./bullet/@damage"/>
 							</xsl:attribute>
-							<xsl:if test="./bullet/@repair" >
+							<xsl:if test="./bullet/optional/@repair" >
 								<xsl:attribute name="repair">
-									<xsl:value-of select="./bullet/@repair" />
+									<xsl:value-of select="./bullet/optional/@repair" />
 								</xsl:attribute>
+							</xsl:if>
+							<xsl:if test="./bullet/optional/@multiplier_mining" >
+								<multiplier>
+									<xsl:attribute name="mining">
+										<xsl:value-of select="./bullet/optional/@multiplier_mining"/>
+									</xsl:attribute>
+								</multiplier>
 							</xsl:if>
 						</damage>
 						<effects>
 							<impact>
 								<xsl:attribute name="ref" >
-									<xsl:value-of select="./bulleteffects/@impact"/>
+									<xsl:value-of select="./bullet/effects/@impact"/>
 								</xsl:attribute>
-								<xsl:if test="./bulleteffects/@impact_inside" >
+								<xsl:if test="./bullet/effects/@impact_inside" >
 									<xsl:attribute name="inside">
-										<xsl:value-of select="./bulleteffects/@impact_inside" />
+										<xsl:value-of select="./bullet/effects/@impact_inside" />
 									</xsl:attribute>
 								</xsl:if>
 							</impact>
-							<launch ref="plasmaemitter_xenon_muzzle">
+							<launch>
 								<xsl:attribute name="ref" >
-									<xsl:value-of select="./bulleteffects/@launch"/>
+									<xsl:value-of select="./bullet/effects/@launch"/>
 								</xsl:attribute>
 							</launch>
 						</effects>
 						<weapon>
 							<xsl:attribute name="system" >
-								<xsl:value-of select="./bulleteffects/@system"/>
+								<xsl:value-of select="./bullet/effects/@system"/>
 							</xsl:attribute>
 						</weapon>
 					</properties>

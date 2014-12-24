@@ -1,73 +1,83 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <weaponsystems>
-  <tech level="001">
-    <turret size="medium" type="lb" user="all">
-      <surface_element component="props_wps_ar_def_turret_m_lb" name="{20104,401}" description="{20104,402}" rotationspeed="20" hull="35000"/>
-      <bullet speed="8400" lifetime="1" range="7200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="96400"/>
-      <bulleteffects component="beam_fight_bullet" impact="beam_fight_impact" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>
-    </turret>
-    <turret size="medium" type="ml" user="all">
-      <surface_element component="props_wps_ar_def_turret_m_floor_mininglaser" name="{20104,1701}" description="{20104,1702}" rotationspeed="20" hull="37000"/>
-      <bullet speed="4800" lifetime="9" range="3200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="200" multiplier_mining="100"/>
-      <bulleteffects component="beam_bullet" impact="beam_impact" launch="beam_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>
-    </turret>
-    <turret size="medium" type="sp" user="ryk">
-      <surface_element component="props_wps_sp_def_turret_m_mg" name="{20104,1901}" description="{20104,1902}" rotationspeed="30" hull="26000"/>
-      <bullet speed="1400" lifetime="3.4" range="4760" amount="1" barrelamount="2" timediff="0.2" angle="0.75" maxhits="1" ricochet="0" scale="0" attach="0" reload="6" damage="550"/>
-      <bulleteffects component="plasmaemitter_bullet" impact="plasmaemitter_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_muzzle" system="turret_midrange"/>
-    </turret>
-    <turret size="medium" type="xe" user="xen">
-      <surface_element component="props_wps_xen_def_turret_m_mg" name="{20104,301}" description="{20104,302}" rotationspeed="45" hull="21000"/>
-      <bullet speed="2300" lifetime="2.7" range="6210" amount="4" barrelamount="4" timediff="0.01" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" reload="10" damage="450"/>
-      <bulleteffects component="plasmaemitter_bullet_xenon" impact="plasmaemitter_xenon_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_xenon_muzzle" system="turret_midrange"/>
-    </turret>
-    <turret size="medium" type="bb" user="xen">
-      <surface_element component="props_wps_xen_def_turret_m_bb" name="{20104,501}" description="{20104,502}" rotationspeed="20" hull="21000"/>
-      <bullet speed="1100" lifetime="8" range="8000" amount="1" barrelamount="2" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="1" reload="0.125" areadamage="18000" damage="48000"/>
-      <bulleteffects component="turret_medium_xe_bb_bullet" impact="turret_medium_bb_xe_impact" launch="muzzleflash_turret_medium_bb_xe" system="turret_longrange"/>
-    </turret>
-  
-  
-    <shield size="medium" type="regular" variation="1">
-      <surface_element component="props_surf_ar_shieldgen_medium_mk1" name="{20104,801}" description="{20104,802}" shield="50000" rate="1250" delay="5" hull="5000" />
-    </shield>
-    <shield size="large" type="capital" variation="1">
-      <surface_element component="props_surf_ar_shieldgen_large_mk1" name="{20104,2001}" description="{20104,2002}" boostduration="600" shield="300000" rate="2000" delay="8" hull="30000" />
-    </shield>
-  </tech>
-  <tech level="002">
-    <turret size="medium" type="lb" user="all">
-      <surface_element component="props_wps_ar_def_turret_m_lb" name="{20104,401}" description="{20104,402}" rotationspeed="20" hull="35000"/>
-      <bullet speed="8400" lifetime="1" range="7200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="96400"/>
-      <bulleteffects component="beam_fight_bullet" impact="beam_fight_impact" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>
-    </turret>
-    <turret size="medium" type="ml" user="all">
-      <surface_element component="props_wps_ar_def_turret_m_floor_mininglaser" name="{20104,1701}" description="{20104,1702}" rotationspeed="20" hull="37000"/>
-      <bullet speed="4800" lifetime="9" range="3200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="200" multiplier_mining="100"/>
-      <bulleteffects component="beam_bullet" impact="beam_impact" launch="beam_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>
-    </turret>
-    <turret size="medium" type="sp" user="ryk">
-      <surface_element component="props_wps_sp_def_turret_m_mg" name="{20104,1901}" description="{20104,1902}" rotationspeed="30" hull="26000"/>
-      <bullet speed="1400" lifetime="3.4" range="4760" amount="1" barrelamount="2" timediff="0.2" angle="0.75" maxhits="1" ricochet="0" scale="0" attach="0" reload="6" damage="550"/>
-      <bulleteffects component="plasmaemitter_bullet" impact="plasmaemitter_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_muzzle" system="turret_midrange"/>
-    </turret>
-    <turret size="medium" type="xe" user="xen">
-      <surface_element component="props_wps_xen_def_turret_m_mg" name="{20104,301}" description="{20104,302}" rotationspeed="45" hull="21000"/>
-      <bullet speed="2300" lifetime="2.7" range="6210" amount="4" barrelamount="4" timediff="0.01" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" reload="10" damage="450"/>
-      <bulleteffects component="plasmaemitter_bullet_xenon" impact="plasmaemitter_xenon_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_xenon_muzzle" system="turret_midrange"/>
-    </turret>
-    <turret size="medium" type="bb" user="xen">
-      <surface_element component="props_wps_xen_def_turret_m_bb" name="{20104,501}" description="{20104,502}" rotationspeed="20" hull="21000"/>
-      <bullet speed="1100" lifetime="8" range="8000" amount="1" barrelamount="2" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="1" reload="0.125" areadamage="18000" damage="48000"/>
-      <bulleteffects component="turret_medium_xe_bb_bullet" impact="turret_medium_bb_xe_impact" launch="muzzleflash_turret_medium_bb_xe" system="turret_longrange"/>
-    </turret>
-  
-  
-    <shield size="medium" type="regular" variation="1">
-      <surface_element component="props_surf_ar_shieldgen_medium_mk1" name="{20104,801}" description="{20104,802}" shield="50000" rate="1250" delay="5" hull="5000" />
-    </shield>
-    <shield size="large" type="capital" variation="1">
-      <surface_element component="props_surf_ar_shieldgen_large_mk1" name="{20104,2001}" description="{20104,2002}" boostduration="600" shield="300000" rate="2000" delay="8" hull="30000" />
-    </shield>
-  </tech>
+	<tech level="001">
+		<turret size="medium" type="lb" user="all">
+			<surface_element component="props_wps_ar_def_turret_m_lb" name="{20104,401}" description="{20104,402}" rotationspeed="20" hull="35000"/>
+			<bullet speed="8400" lifetime="1" range="7200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="96400">
+				<optional/>
+				<effects component="beam_fight_bullet" impact="beam_fight_impact" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>
+			</bullet>
+		</turret>
+		<turret size="medium" type="ml" user="all">
+			<surface_element component="props_wps_ar_def_turret_m_floor_mininglaser" name="{20104,1701}" description="{20104,1702}" rotationspeed="20" hull="37000"/>
+			<bullet speed="4800" lifetime="9" range="3200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="200">
+				<optional multiplier_mining="100"/>
+				<effects component="beam_bullet" impact="beam_impact" launch="beam_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>
+			</bullet>
+		</turret>
+		<turret size="medium" type="sp" user="ryk">
+			<surface_element component="props_wps_sp_def_turret_m_mg" name="{20104,1901}" description="{20104,1902}" rotationspeed="30" hull="26000"/>
+			<bullet speed="1400" lifetime="3.4" range="4760" amount="1" barrelamount="2" maxhits="1" ricochet="0" scale="0" attach="0" reload="6" damage="550">
+				<optional timediff="0.2" angle="0.75"/>
+				<effects component="plasmaemitter_bullet" impact="plasmaemitter_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_muzzle" system="turret_midrange"/>
+			</bullet>
+		</turret>
+		<turret size="medium" type="xe" user="xen">
+			<surface_element component="props_wps_xen_def_turret_m_mg" name="{20104,301}" description="{20104,302}" rotationspeed="45" hull="21000"/>
+			<bullet speed="2300" lifetime="2.7" range="6210" amount="4" barrelamount="4" maxhits="1" ricochet="0" scale="0" attach="0" reload="10" damage="450">
+				<optional ammunition_value="2" ammunition_reload="1.9" timediff="0.01" angle="0.05"/>
+				<effects component="plasmaemitter_bullet_xenon" impact="plasmaemitter_xenon_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_xenon_muzzle" system="turret_midrange"/>
+			</bullet>
+		</turret>
+		<turret size="medium" type="bb" user="xen">
+			<surface_element component="props_wps_xen_def_turret_m_bb" name="{20104,501}" description="{20104,502}" rotationspeed="20" hull="21000"/>
+			<bullet speed="1100" lifetime="8" range="8000" amount="1" barrelamount="2" maxhits="1" ricochet="0" scale="0" attach="0" reload="0.125" damage="48000">
+				<optional angle="0.05" selfdestruct="1" areadamage="18000"/>
+				<effects component="turret_medium_xe_bb_bullet" impact="turret_medium_bb_xe_impact" launch="muzzleflash_turret_medium_bb_xe" system="turret_longrange"/>
+			</bullet>
+		</turret>
+
+
+		<shield size="medium" type="regular" variation="1">
+			<surface_element component="props_surf_ar_shieldgen_medium_mk1" name="{20104,801}" description="{20104,802}" shield="50000" rate="1250" delay="5" hull="5000" />
+		</shield>
+		<shield size="large" type="capital" variation="1">
+			<surface_element component="props_surf_ar_shieldgen_large_mk1" name="{20104,2001}" description="{20104,2002}" boostduration="600" shield="300000" rate="2000" delay="8" hull="30000" />
+		</shield>
+	</tech>
+	<tech level="002">
+		<turret size="medium" type="lb" user="all">
+			<surface_element component="props_wps_ar_def_turret_m_lb" name="{20104,401}" description="{20104,402}" rotationspeed="20" hull="35000"/>
+			<bullet speed="8400" lifetime="1" range="7200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="96400"/>
+			<effects component="beam_fight_bullet" impact="beam_fight_impact" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>
+		</turret>
+		<turret size="medium" type="ml" user="all">
+			<surface_element component="props_wps_ar_def_turret_m_floor_mininglaser" name="{20104,1701}" description="{20104,1702}" rotationspeed="20" hull="37000"/>
+			<bullet speed="4800" lifetime="9" range="3200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="200" multiplier_mining="100"/>
+			<effects component="beam_bullet" impact="beam_impact" launch="beam_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>
+		</turret>
+		<turret size="medium" type="sp" user="ryk">
+			<surface_element component="props_wps_sp_def_turret_m_mg" name="{20104,1901}" description="{20104,1902}" rotationspeed="30" hull="26000"/>
+			<bullet speed="1400" lifetime="3.4" range="4760" amount="1" barrelamount="2" timediff="0.2" angle="0.75" maxhits="1" ricochet="0" scale="0" attach="0" reload="6" damage="550"/>
+			<effects component="plasmaemitter_bullet" impact="plasmaemitter_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_muzzle" system="turret_midrange"/>
+		</turret>
+		<turret size="medium" type="xe" user="xen">
+			<surface_element component="props_wps_xen_def_turret_m_mg" name="{20104,301}" description="{20104,302}" rotationspeed="45" hull="21000"/>
+			<bullet speed="2300" lifetime="2.7" range="6210" amount="4" barrelamount="4" timediff="0.01" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" reload="10" damage="450"/>
+			<effects component="plasmaemitter_bullet_xenon" impact="plasmaemitter_xenon_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_xenon_muzzle" system="turret_midrange"/>
+		</turret>
+		<turret size="medium" type="bb" user="xen">
+			<surface_element component="props_wps_xen_def_turret_m_bb" name="{20104,501}" description="{20104,502}" rotationspeed="20" hull="21000"/>
+			<bullet speed="1100" lifetime="8" range="8000" amount="1" barrelamount="2" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="1" reload="0.125" areadamage="18000" damage="48000"/>
+			<effects component="turret_medium_xe_bb_bullet" impact="turret_medium_bb_xe_impact" launch="muzzleflash_turret_medium_bb_xe" system="turret_longrange"/>
+		</turret>
+
+
+		<shield size="medium" type="regular" variation="1">
+			<surface_element component="props_surf_ar_shieldgen_medium_mk1" name="{20104,801}" description="{20104,802}" shield="50000" rate="1250" delay="5" hull="5000" />
+		</shield>
+		<shield size="large" type="capital" variation="1">
+			<surface_element component="props_surf_ar_shieldgen_large_mk1" name="{20104,2001}" description="{20104,2002}" boostduration="600" shield="300000" rate="2000" delay="8" hull="30000" />
+		</shield>
+	</tech>
 </weaponsystems>

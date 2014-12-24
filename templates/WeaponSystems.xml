@@ -3,12 +3,12 @@
   <tech level="001">
     <turret size="medium" type="lb" user="all">
       <info>
-        <surface_element component="props_wps_ar_def_turret_m_lb" name="{20104,401}" description="{20104,402}"/>
+        <surface_element name="{20104,401}" description="{20104,402}"/>
       </info>
       <stats>
-        <surface_element rotationspeed="20" hull="35000"/>
-        <bullet_flight speed="8400" lifetime="1" range="7200" />
+        <surface_element component="props_wps_ar_def_turret_m_lb" rotationspeed="20" hull="35000"/>
         <bullet_firing amount="1" barrelamount="1" reload="0.125" />
+        <bullet_flight speed="8400" lifetime="1" range="7200" />
         <bullet_hiting maxhits="1" ricochet="0" damage="96400" />
         <bullet_noidea scale="1" attach="1" system="turret_midrange" />
         <bullet_optional />

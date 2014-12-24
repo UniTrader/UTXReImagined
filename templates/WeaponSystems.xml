@@ -10,11 +10,11 @@
         <bullet_firing amount="1" barrelamount="1" reload="0.125" ammunition_value="" ammunition_reload="" />
         <bullet_flight speed="8400" lifetime="1" range="7200" selfdestruct="" component="beam_fight_bullet" />
         <bullet_hiting maxhits="1" ricochet="0" damage="96400" areadamage="" repair="" multiplier_mining="" />
-        <bullet_noidea scale="1" attach="1" system="turret_midrange" timediff="" angle="" />
+        <bullet_others scale="1" attach="1" system="turret_midrange" timediff="" angle="" />
       </stats>
       <effects impact="beam_fight_impact" impact_inside="plasmaemitter_impact_inside" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle"/>
                                    <!--   ^^ TEMP Placeholder for maximum example  ^^   -->
-      </turret>
+    </turret>
     <turret size="medium" type="ml" user="all">
       <surface_element component="props_wps_ar_def_turret_m_floor_mininglaser" name="{20104,1701}" description="{20104,1702}" rotationspeed="20" hull="37000"/>
       <bullet speed="4800" lifetime="9" range="3200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="200">

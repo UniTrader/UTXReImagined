@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<mdscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Update_UTXReImagined" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/md.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<mdscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="XRI_Update_Manager" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/md.xsd">
   <cues>
     <cue name="Init">
       <actions>
-        <set_value name="global.$UTXReImagined_version" exact="1"/>
+        <set_value name="global.$XRI_version" exact="1"/>
       </actions>
     </cue>
-    <cue name="Update_Procedure">
+    <cue name="XRI_Updates">
       <conditions>
         <event_game_loaded/>
       </conditions>
@@ -14,16 +14,17 @@
         
         <!-- just an Example for the Syntax to Copy in the future -->
         <!-- update if Save Version is less than current Version 1 -->
-        <do_if value="global.$UTXReImagined_version lt 1">
+        <do_if value="global.$XRI_version lt 1">
           <patch_macros macro="macro.your_changed_macro"/>
           
           <!-- set Version stored in Save to current Version (when adding Update Actions move to last Version to which Updates are necesary) -->
-          <set_value name="global.$UTXReImagined_version" exact="1"/>
+          <set_value name="global.$XRI_version" exact="1"/>
         </do_if>
         
         <!-- reset cue for further Patching Actions in the future -->
         <reset_cue cue="this"/>
       </actions>
     </cue>
+    <!-- if future patches from EGO need compatibility change them here -->
   </cues>
 </mdscript>

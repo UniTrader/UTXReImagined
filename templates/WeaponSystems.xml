@@ -7,11 +7,10 @@
       </info>
       <stats>
         <surface_element component="props_wps_ar_def_turret_m_lb" rotationspeed="20" hull="35000"/>
-        <bullet_firing amount="1" barrelamount="1" reload="0.125" />
-        <bullet_flight speed="8400" lifetime="1" range="7200" />
-        <bullet_hiting maxhits="1" ricochet="0" damage="96400" />
-        <bullet_noidea scale="1" attach="1" system="turret_midrange" />
-        <bullet_optional />
+        <bullet_firing amount="1" barrelamount="1" reload="0.125" ammunition_value="" ammunition_reload="" />
+        <bullet_flight speed="8400" lifetime="1" range="7200" selfdestruct="" />
+        <bullet_hiting maxhits="1" ricochet="0" damage="96400" areadamage="" repair="" multiplier_mining="" />
+        <bullet_noidea scale="1" attach="1" system="turret_midrange" timediff="" angle="" />
       </stats>
       <effects component="beam_fight_bullet" impact="beam_fight_impact" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle"/>
     </turret>

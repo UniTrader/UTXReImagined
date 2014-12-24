@@ -36,6 +36,7 @@
     </shield>
   </tech>
   <tech level="002">
+    <turret size="medium" type="lb" user="all">
       <surface_element component="props_wps_ar_def_turret_m_lb" name="{20104,401}" description="{20104,402}" rotationspeed="20" hull="35000"/>
       <bullet speed="8400" lifetime="1" range="7200" amount="1" barrelamount="1" maxhits="1" ricochet="0" scale="1" attach="1" reload="0.125" damage="96400"/>
       <bulleteffects component="beam_fight_bullet" impact="beam_fight_impact" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle" system="turret_midrange"/>

@@ -38,7 +38,7 @@
 		</turret>
 
 
-		<shield size="medium" type="regular" variation="1">
+		<shield size="medium" type="local" variation="1">
 			<surface_element component="props_surf_ar_shieldgen_medium_mk1" name="{20104,801}" description="{20104,802}" shield="50000" rate="1250" delay="5" hull="5000" />
 		</shield>
 		<shield size="large" type="capital" variation="1">
@@ -84,7 +84,7 @@
 
 
 
-		<shield size="medium" type="regular" variation="1">
+		<shield size="medium" type="local" variation="1">
 			<surface_element component="props_surf_ar_shieldgen_medium_mk1" name="{20104,801}" description="{20104,802}" shield="50000" rate="1250" delay="5" hull="5000" />
 		</shield>
 		<shield size="large" type="capital" variation="1">

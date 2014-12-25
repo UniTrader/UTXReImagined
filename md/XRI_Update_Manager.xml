@@ -11,6 +11,12 @@
         <event_game_loaded/>
       </conditions>
       <actions>
+        <!-- Savegames started without XRI are not supported
+         - write note in logfile and go to Main Menu -->
+        <do_if value="not global.$XRI_version.isnumeric" >
+          <debug_text text="XRI Mod is not compatible with Savegames started without this Extension" filter="general" />
+          <quit_to_startmenu />
+        </do_if>
         
         <!-- just an Example for the Syntax to Copy in the future -->
         <!-- update if Save Version is less than current Version 1 -->

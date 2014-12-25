@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<shields>
+  <tech level="001">
+    <shield size="small" variation="1" >
+      <info name="{20104,1801}" description="{20104,1802}" />
+      <stats>
+        <surface_element component="props_surf_ar_shieldgen_small_mk1" hull="2000"  />
+        <shield max="20000" rate="500" delay="5" />
+      </stats>
+      <effects>
+        <others explosion="generic_explosion_03" shield="sefx_shield_s_02" />
+      </effects>
+    </shield>
+    <shield size="medium" variation="1">
+      <info name="{20104,801}" description="{20104,802}" />
+      <stats>
+        <surface_element component="props_surf_ar_shieldgen_medium_mk1" hull="5000"/>
+        <shield max="50000" rate="1250" delay="5" />
+      </stats>
+      <effects>
+        <damage low="sefx_damage_s_low" medium="sefx_damage_s_medium" high="sefx_damage_s_high" />
+        <others shield="sefx_shield_s_02" />
+        <!-- what? no explosion effect in Vanilla files? -->
+      </effects>
+    </shield>
+    <shield size="medium" variation="2">
+      <info name="{20104,901}" description="{20104,902}" />
+      <stats>
+        <surface_element component="props_surf_ar_shieldgen_medium_mk2" hull="10000"/>
+        <shield max="100000" rate="2500" delay="5" />
+      </stats>
+      <effects>
+        <damage low="sefx_damage_s_low" medium="sefx_damage_s_medium" high="sefx_damage_s_high" />
+        <others shield="sefx_shield_s_02" />
+        <!-- what? no explosion effect in Vanilla files? -->
+      </effects>
+    </shield>
+    <shield size="medium" variation="3">
+      <info name="{20104,1001}" description="{20104,1002}" />
+      <stats>
+        <surface_element component="props_surf_ar_shieldgen_medium_mk3" hull="15000"/>
+        <shield max="150000" rate="3750" delay="5" />
+      </stats>
+      <effects>
+        <damage low="sefx_damage_s_low" medium="sefx_damage_s_medium" high="sefx_damage_s_high" />
+        <others shield="sefx_shield_s_02" />
+        <!-- what? no explosion effect in Vanilla files? -->
+      </effects>
+    </shield>
+    <shield size="large" variation="1">
+      <info name="{20104,2001}" description="{20104,2002}" />
+      <stats>
+        <surface_element component="props_surf_ar_shieldgen_large_mk1" hull="30000"/>
+        <shield max="300000" rate="2000" delay="8" engineboost="600" />
+      </stats>
+      <effects>
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others shield="sefx_shield_m_02" />
+        <!-- what? no explosion effect in Vanilla files? -->
+      </effects>
+    </shield>
+    <shield size="large" variation="2">
+      <info name="{20104,2101}" description="{20104,2102}" />
+      <stats>
+        <surface_element component="props_surf_ar_shieldgen_large_mk1" hull="30000"/>
+        <shield max="600000" rate="2500" delay="8" engineboost="600" />
+      </stats>
+      <effects>
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others shield="sefx_shield_m_02" />
+        <!-- what? no explosion effect in Vanilla files? -->
+      </effects>
+    </shield>
+    <shield size="large" variation="3">
+      <info name="{20104,2201}" description="{20104,2202}" />
+      <stats>
+        <surface_element component="props_surf_ar_shieldgen_large_mk1" hull="30000"/>
+        <shield max="900000" rate="3000" delay="8" engineboost="600" />
+      </stats>
+      <effects>
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others shield="sefx_shield_m_02" />
+        <!-- what? no explosion effect in Vanilla files? -->
+      </effects>
+    </shield>
+  </tech>
+</shields>

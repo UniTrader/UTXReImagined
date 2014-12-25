@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list>
+  <entry name="../templates/Turrets.xml" />
+  <entry name="../templates/Shields.xml" />
+  <entry name="../templates/Engines.xml" />
+  <entry name="../templates/Radars.xml" />
+  <entry name="../templates/Cargobays.xml" />
+  <entry name="../templates/Jumpdrives.xml" />
+  <entry name="../templates/Logos.xml" />
+</list>

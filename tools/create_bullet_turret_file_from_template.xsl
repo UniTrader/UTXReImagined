@@ -2,17 +2,17 @@
   <xsl:output method='xml'/>
   <xsl:template match="/">
     <macros>
-      <xsl:for-each select="turrets/turret/tech">
+      <xsl:for-each select="/*/tech/*">
         <macro class="bullet">
           <xsl:attribute name="name">
             <xsl:text>xri_bullet_turret_</xsl:text>
-            <xsl:value-of select="../@size" />
+            <xsl:value-of select="./@size" />
             <xsl:text>_</xsl:text>
-            <xsl:value-of select="../@type" />
+            <xsl:value-of select="./@type" />
             <xsl:text>_</xsl:text>
-            <xsl:value-of select="../@user" />
+            <xsl:value-of select="./@user" />
             <xsl:text>_T</xsl:text>
-            <xsl:value-of select="./@level" />
+            <xsl:value-of select="../@level" />
             <xsl:text>_macro</xsl:text>
           </xsl:attribute>
           <component>

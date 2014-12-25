@@ -2,17 +2,19 @@
   <xsl:output method='xml'/>
   <xsl:template match="/">
     <macros>
-      <xsl:for-each select="turrets/turret/tech">
+      <xsl:for-each select="/*/tech/*">
         <macro class="turret">
           <xsl:attribute name="name">
-            <xsl:text>xri_turret_</xsl:text>
-            <xsl:value-of select="../@size" />
+            <xsl:text>xri_</xsl:text>
+            <xsl:value-of select="name(.)" />
             <xsl:text>_</xsl:text>
-            <xsl:value-of select="../@type" />
+            <xsl:value-of select="./@size" />
             <xsl:text>_</xsl:text>
-            <xsl:value-of select="../@user" />
+            <xsl:value-of select="./@type" />
+            <xsl:text>_</xsl:text>
+            <xsl:value-of select="./@user" />
             <xsl:text>_T</xsl:text>
-            <xsl:value-of select="./@level" />
+            <xsl:value-of select="../@level" />
             <xsl:text>_macro</xsl:text>
           </xsl:attribute>
           <component>
@@ -33,14 +35,16 @@
             </identification>
             <bullet>
               <xsl:attribute name="class">
-                <xsl:text>xri_bullet_turret_</xsl:text>
-                <xsl:value-of select="../@size" />
+                <xsl:text>xri_bullet_</xsl:text>
+                <xsl:value-of select="name(.)" />
                 <xsl:text>_</xsl:text>
-                <xsl:value-of select="../@type" />
+                <xsl:value-of select="./@size" />
                 <xsl:text>_</xsl:text>
-                <xsl:value-of select="../@user" />
+                <xsl:value-of select="./@type" />
+                <xsl:text>_</xsl:text>
+                <xsl:value-of select="./@user" />
                 <xsl:text>_T</xsl:text>
-                <xsl:value-of select="./@level" />
+                <xsl:value-of select="../@level" />
                 <xsl:text>_macro</xsl:text>
               </xsl:attribute>
             </bullet>
@@ -62,7 +66,7 @@
               <sefx_damage_high ref="sefx_damage_m_high" />
               <sefx_shield ref="sefx_shield_m_01" />
             </effects>
-            <xsl:if test="not(../@user = 'xenon' )" >
+            <xsl:if test="not(./@user = 'xenon' )" >
               <efficiency>
                 <threshold threshold="0.75" value="1" />
                 <threshold threshold="0.25" value="0.25" />

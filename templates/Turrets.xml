@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <turrets>
-  <turret size="medium" type="lb" user="all">
-    <tech level="001">
+  <tech level="001">
+    <turret size="medium" type="lb" user="all">
       <info>
         <surface_element name="{20104,401}" description="{20104,402}"/>
       </info>
@@ -14,11 +14,9 @@
         <bullet_others scale="1" attach="1" system="turret_midrange" timediff="" angle="" />
       </stats>
       <effects impact="beam_fight_impact" impact_inside="plasmaemitter_impact_inside" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle"/>
-                                   <!--   ^^ TEMP Placeholder for maximum example  ^^   -->
-    </tech>
-  </turret>
-  <turret size="medium" type="ml" user="all">
-    <tech level="001">
+      <!--   ^^ TEMP Placeholder for maximum example  ^^   -->
+    </turret>
+    <turret size="medium" type="ml" user="all">
       <info>
         <surface_element name="{20104,1701}" description="{20104,1702}"/>
       </info>
@@ -30,10 +28,8 @@
         <bullet_others scale="1" attach="1" system="turret_midrange" />
       </stats>
       <effects impact="beam_impact" launch="beam_muzzle" ambient="wpn_beam_muzzle"/>
-    </tech>
-  </turret>
-  <turret size="medium" type="sp" user="ryk">
-    <tech level="001">
+    </turret>
+    <turret size="medium" type="sp" user="ryk">
       <info>
         <surface_element name="{20104,1901}" description="{20104,1902}" />
       </info>
@@ -45,10 +41,8 @@
         <bullet_others scale="0" attach="0" timediff="0.2" angle="0.75" system="turret_midrange" />
       </stats>
       <effects impact="plasmaemitter_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_muzzle" />
-    </tech>
-  </turret>
-  <turret size="medium" type="xe" user="xen">
-    <tech level="001">
+    </turret>
+    <turret size="medium" type="xe" user="xen">
       <info>
         <surface_element name="{20104,301}" description="{20104,302}" />
       </info>
@@ -60,10 +54,8 @@
         <bullet_others scale="0" attach="0" timediff="0.01" angle="0.05" system="turret_midrange" />
       </stats>
       <effects impact="plasmaemitter_xenon_impact" launch="plasmaemitter_xenon_muzzle" />
-    </tech>
-  </turret>
-  <turret size="medium" type="bb" user="xen">
-    <tech level="001">
+    </turret>
+    <turret size="medium" type="bb" user="xen">
       <info>
         <surface_element name="{20104,501}" description="{20104,502}" />
       </info>
@@ -75,6 +67,6 @@
         <bullet_others scale="0" attach="0" angle="0.05" system="turret_longrange" />
       </stats>
       <effects impact="turret_medium_bb_xe_impact" launch="muzzleflash_turret_medium_bb_xe" />
-    </tech>
-  </turret>
+    </turret>
+  </tech>
 </turrets>

@@ -3,39 +3,62 @@
   <xsl:output method='xml'/>
   <xsl:template match="/">
     <upgrades multimacro="1" >
-      <xsl:for-each select="//tech">
+      <xsl:for-each select="/*/tech/*">
         <upgrade>
           <!-- construct macro name for all Upgrades based on the given Name Components -->
           <xsl:attribute name="upgrade">
             <xsl:text>xri_</xsl:text>
-            <xsl:value-of select="name(..)" />
+            <xsl:value-of select="name(.)" />
             <xsl:text>_</xsl:text>
-            <xsl:value-of select="../@size" />
-            <xsl:text>_</xsl:text>
-            <xsl:value-of select="../@type" />
-            <xsl:if test="../@user" >
+            <xsl:value-of select="./@size" />
+            <xsl:if test="./@type" >
               <xsl:text>_</xsl:text>
-              <xsl:value-of select="../@user" />
+              <xsl:value-of select="./@type" />
             </xsl:if>
-            <xsl:if test="../@variation" >
+            <xsl:if test="./@user" >
               <xsl:text>_</xsl:text>
-              <xsl:value-of select="../@variation" />
+              <xsl:value-of select="./@user" />
             </xsl:if>
-            <xsl:text>_T</xsl:text>
-            <xsl:value-of select="./@level" />
+            <xsl:if test="./@variation" >
+              <xsl:text>_</xsl:text>
+              <xsl:value-of select="./@variation" />
+            </xsl:if>
+            <xsl:if test="../@level" >
+              <xsl:text>_T</xsl:text>
+              <xsl:value-of select="../@level" />
+            </xsl:if>
             <xsl:text>_macro</xsl:text>
           </xsl:attribute>
           <!-- add Tags where this Surface Element can be installad -->
           <xsl:attribute name="tags">
-            <xsl:text>xri_se_</xsl:text>
-            <xsl:value-of select="../@size" />
-            <!-- shields have additional slots exclusive for them -->
-            <xsl:if test="name(..) = 'shield'">
-              <xsl:text> </xsl:text>
-              <xsl:text>xri_se_</xsl:text>
-              <xsl:value-of select="../@size" />
-              <xsl:text>_shield</xsl:text>
-            </xsl:if>
+            <xsl:choose>
+              <!-- Tags for Logos -->
+              <xsl:when test="name(.) = 'logo'" >
+                <xsl:text>xri_</xsl:text>
+                <xsl:value-of select="name(.)" />
+                <xsl:text>_</xsl:text>
+                <xsl:value-of select="./@size" />
+              </xsl:when>
+              <!-- Tags for Jumpdrive -->
+              <xsl:when test="name(.) = 'jumpdrive'" >
+                <xsl:text>xri_</xsl:text>
+                <xsl:value-of select="name(.)" />
+                <xsl:text>_</xsl:text>
+                <xsl:value-of select="./@size" />
+              </xsl:when>
+              <!-- Tags for other Elements which use exchangeable connections -->
+              <xsl:otherwise>
+                <!-- size only -->
+                <xsl:text>xri_se_</xsl:text>
+                <xsl:value-of select="./@size" />
+                <!-- slots exclusive for certain types of SE -->
+                <xsl:text> </xsl:text>
+                <xsl:text>xri_se_</xsl:text>
+                <xsl:value-of select="./@size" />
+                <xsl:text>_</xsl:text>
+                <xsl:value-of select="name(.)" />
+              </xsl:otherwise>
+            </xsl:choose>
           </xsl:attribute>
         </upgrade>
       </xsl:for-each>

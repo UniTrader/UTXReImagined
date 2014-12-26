@@ -60,11 +60,31 @@
               </xsl:attribute>
             </hull>
             <effects>
-              <explosion ref="explosion_turret_m_wall_pulse" />
-              <sefx_damage_low ref="sefx_damage_m_low" />
-              <sefx_damage_medium ref="sefx_damage_m_medium" />
-              <sefx_damage_high ref="sefx_damage_m_high" />
-              <sefx_shield ref="sefx_shield_m_01" />
+              <explosion>
+                <xsl:attribute name="ref">
+                  <xsl:value-of select="./effects/others/@explosion" />
+                </xsl:attribute>
+              </explosion>
+              <sefx_damage_low>
+                <xsl:attribute name="ref">
+                  <xsl:value-of select="./effects/damage/@low" />
+                </xsl:attribute>
+              </sefx_damage_low>
+              <sefx_damage_medium>
+                <xsl:attribute name="ref">
+                  <xsl:value-of select="./effects/damage/@medium" />
+                </xsl:attribute>
+              </sefx_damage_medium>
+              <sefx_damage_high>
+                <xsl:attribute name="ref">
+                  <xsl:value-of select="./effects/damage/@high" />
+                </xsl:attribute>
+              </sefx_damage_high>
+              <sefx_shield>
+                <xsl:attribute name="ref">
+                  <xsl:value-of select="./effects/others/@shield" />
+                </xsl:attribute>
+              </sefx_shield>
             </effects>
             <xsl:if test="not(./@user = 'xenon' )" >
               <efficiency>

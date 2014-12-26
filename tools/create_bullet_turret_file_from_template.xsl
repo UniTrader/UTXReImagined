@@ -108,17 +108,17 @@
             <effects>
               <impact>
                 <xsl:attribute name="ref" >
-                  <xsl:value-of select="./effects/@impact"/>
+                  <xsl:value-of select="./effects/bullet/@impact"/>
                 </xsl:attribute>
-                <xsl:if test="./effects/@impact_inside" >
+                <xsl:if test="./effects/bullet/@impact_inside" >
                   <xsl:attribute name="inside">
-                    <xsl:value-of select="./effects/@impact_inside" />
+                    <xsl:value-of select="./effects/bullet/@impact_inside" />
                   </xsl:attribute>
                 </xsl:if>
               </impact>
               <launch>
                 <xsl:attribute name="ref" >
-                  <xsl:value-of select="./effects/@launch"/>
+                  <xsl:value-of select="./effects/bullet/@launch"/>
                 </xsl:attribute>
               </launch>
             </effects>

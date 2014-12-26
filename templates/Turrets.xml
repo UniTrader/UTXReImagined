@@ -8,13 +8,16 @@
       <stats>
         <!-- Attributes without Value are optional and serve here as maximum example -->
         <surface_element component="props_wps_ar_def_turret_m_lb" rotationspeed="20" hull="35000"/>
-        <bullet_firing amount="1" barrelamount="1" reload="0.125" ammunition_value="" ammunition_reload="" />
-        <bullet_flight speed="8400" lifetime="1" range="7200" selfdestruct="" component="beam_fight_bullet" />
-        <bullet_hiting maxhits="1" ricochet="0" damage="96400" areadamage="" repair="" multiplier_mining="" />
-        <bullet_others scale="1" attach="1" system="turret_midrange" timediff="" angle="" />
+        <bullet_firing amount="1" barrelamount="1" reload="0.125" />
+        <bullet_flight speed="8400" lifetime="1" range="7200" component="beam_fight_bullet" />
+        <bullet_hiting maxhits="1" ricochet="0" damage="96400" />
+        <bullet_others scale="1" attach="1" system="turret_midrange" />
       </stats>
-      <effects impact="beam_fight_impact" impact_inside="plasmaemitter_impact_inside" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle"/>
-      <!--   ^^ TEMP Placeholder for maximum example  ^^   -->
+      <effects>
+        <bullet impact="beam_fight_impact" launch="beam_fight_muzzle" ambient="wpn_beam_muzzle"/>
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others shield="sefx_shield_m_01" explosion="explosion_turret_m_wall_pulse" />
+      </effects>
     </turret>
     <turret size="medium" type="ml" user="all">
       <info>
@@ -27,7 +30,11 @@
         <bullet_hiting maxhits="1" ricochet="0" damage="200" multiplier_mining="100" />
         <bullet_others scale="1" attach="1" system="turret_midrange" />
       </stats>
-      <effects impact="beam_impact" launch="beam_muzzle" ambient="wpn_beam_muzzle"/>
+      <effects>
+        <bullet impact="beam_impact" launch="beam_muzzle" ambient="wpn_beam_muzzle"/>
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others shield="sefx_shield_m_01" explosion="explosion_turret_m_wall_pulse" />
+      </effects>
     </turret>
     <turret size="medium" type="sp" user="ryk">
       <info>
@@ -40,7 +47,11 @@
         <bullet_hiting maxhits="1" ricochet="0" damage="550" />
         <bullet_others scale="0" attach="0" timediff="0.2" angle="0.75" system="turret_midrange" />
       </stats>
-      <effects impact="plasmaemitter_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_muzzle" />
+      <effects>
+        <bullet impact="plasmaemitter_impact" impact_inside="plasmaemitter_impact_inside" launch="plasmaemitter_muzzle" />
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others shield="sefx_shield_m_01" explosion="explosion_turret_m_wall_pulse" />
+      </effects>
     </turret>
     <turret size="medium" type="xe" user="xen">
       <info>
@@ -53,7 +64,11 @@
         <bullet_hiting maxhits="1" ricochet="0" damage="450" />
         <bullet_others scale="0" attach="0" timediff="0.01" angle="0.05" system="turret_midrange" />
       </stats>
-      <effects impact="plasmaemitter_xenon_impact" launch="plasmaemitter_xenon_muzzle" />
+      <effects>
+        <bullet impact="plasmaemitter_xenon_impact" launch="plasmaemitter_xenon_muzzle" />
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others shield="sefx_shield_m_01" explosion="explosion_turret_m_wall_pulse" />
+      </effects>
     </turret>
     <turret size="medium" type="bb" user="xen">
       <info>
@@ -66,7 +81,11 @@
         <bullet_hiting maxhits="1" ricochet="0" damage="48000" areadamage="18000" />
         <bullet_others scale="0" attach="0" angle="0.05" system="turret_longrange" />
       </stats>
-      <effects impact="turret_medium_bb_xe_impact" launch="muzzleflash_turret_medium_bb_xe" />
+      <effects>
+        <bullet impact="turret_medium_bb_xe_impact" launch="muzzleflash_turret_medium_bb_xe" />
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others shield="sefx_shield_m_01" explosion="explosion_turret_m_wall_pulse" />
+      </effects>
     </turret>
   </tech>
 </turrets>

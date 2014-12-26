@@ -54,7 +54,6 @@
         <others explosion="explosion_jumpdrive" shield="sefx_shield_l_01" />
       </effects>
     </jumpdrive>
-  </tech>
     <jumpdrive size="l" variation="fast" >
       <info name="{20104,1401} fast" description="{20104,1402}" />
       <stats>
@@ -106,5 +105,6 @@
         <jump in="jump_jumpin_xl" out="jump_jumpout_xl" />
         <others explosion="explosion_jumpdrive" shield="sefx_shield_l_01" />
       </effects>
-    </jumpdrive>  
+    </jumpdrive>
+  </tech>
 </jumpdrives>

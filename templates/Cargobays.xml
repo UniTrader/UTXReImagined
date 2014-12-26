@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Cargo Volume is multiples of: Bulk:1008 Energy:4 Liquid:10 Fuel:4 equipment: 1/20 ships&container: set it arbitary -->
+<cargobays>
+  <!-- no Tech Levels for Cargobays - just necesary to keep file structure consistence with other files -->
+  <tech>
+    <cargobay size="40K" type="bulk" >
+      <!-- 40 * 1008 = 40320 - see top of file --> 
+      <cargo max="40320" tags="bulk" />
+    </cargobay>
+    <cargobay size="90K" type="container" >
+      <cargo max="90000" tags="container" />
+    </cargobay>
+    <cargobay size="30K" type="energy" >
+      <!-- 7500 * 4 = 30000 - see top of file -->
+      <cargo max="30000" tags="energy" />
+    </cargobay>
+    <cargobay size="10K" type="fuel" >
+      <!-- 2500 * 4 = 10000 - see top of file -->
+      <cargo max="10000" tags="fuel" />
+    </cargobay>
+    <cargobay size="70K" type="liquid" >
+      <!-- 7000 * 10 = 70000 - see top of file -->
+      <cargo max="70000" tags="liquid" />
+    </cargobay>
+  </tech>
+</cargobays>

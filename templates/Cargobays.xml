@@ -2,25 +2,250 @@
 <!-- Cargo Volume is multiples of: Bulk:1008 Energy:4 Liquid:10 Fuel:4 equipment: 1/20 ships&container: set it arbitary -->
 <cargobays>
   <!-- no Tech Levels for Cargobays - just necesary to keep file structure consistence with other files -->
-  <tech>
-    <cargobay size="40K" type="bulk" >
-      <!-- 40 * 1008 = 40320 - see top of file --> 
-      <cargo max="40320" tags="bulk" />
+  <!-- added another Attribute for differing between diffrent Cargo Size classes - just for convinience, not used IG -->
+  <tech cargo_size_class="50KU">
+    <!-- General Cargobays (Universal & Freight Class Restricted) -->
+    <cargobay size="50KU" type="universal" >
+      <cargo max="50000" tags="bulk container energy liquid" />
     </cargobay>
-    <cargobay size="90K" type="container" >
-      <cargo max="90000" tags="container" />
+    
+    <cargobay size="50KU" type="bulk" >
+      <!-- ~75K Target: 74 * 1008 = 74592 - see top of file --> 
+      <cargo max="74592" tags="bulk" />
     </cargobay>
-    <cargobay size="30K" type="energy" >
-      <!-- 7500 * 4 = 30000 - see top of file -->
-      <cargo max="30000" tags="energy" />
+    <cargobay size="50KU" type="container" >
+      <!-- ~65K Target: 65536 because i like binary -->
+      <cargo max="65536" tags="container" />
     </cargobay>
-    <cargobay size="10K" type="fuel" >
-      <!-- 2500 * 4 = 10000 - see top of file -->
-      <cargo max="10000" tags="fuel" />
+    <cargobay size="50KU" type="energy" >
+      <!-- ~70K Target: 17500 * 4 = 70000 - see top of file -->
+      <cargo max="70000" tags="energy" />
     </cargobay>
-    <cargobay size="70K" type="liquid" >
-      <!-- 7000 * 10 = 70000 - see top of file -->
-      <cargo max="70000" tags="liquid" />
+    <cargobay size="50KU" type="liquid" >
+      <!-- ~100K Target: 10000 * 10 = 100000 - see top of file -->
+      <cargo max="100000" tags="liquid" />
+    </cargobay>
+    
+    <!-- Specialized Cargobays for a single Ware -->
+    <!-- Special: Fuel Cargobay -->
+    <cargobay size="50KU" type="fuel" >
+      <!-- ~30K Target: 7500 * 4 = 10000 - see top of file -->
+      <cargo max="30000" tags="fuel" />
+    </cargobay>
+    
+    <!-- Bulk Ware Specialized Cargobay -->
+    <!-- ~115K Target: 114 * 1008 = 114912 - see top of file -->
+    <cargobay size="50KU" type="ware_crystals" >
+      <cargo max="114912" tags="ware_crystals" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_cutcrystals" >
+      <cargo max="114912" tags="ware_cutcrystals" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_ice" >
+      <cargo max="114912" tags="ware_ice" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_meat" >
+      <cargo max="114912" tags="ware_meat" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_nividium" >
+      <cargo max="114912" tags="ware_nividium" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_nividiumgems" >
+      <cargo max="114912" tags="ware_nividiumgems" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_ore" >
+      <cargo max="114912" tags="ware_ore" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_plankton" >
+      <cargo max="114912" tags="ware_plankton" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_refinedmetals" >
+      <cargo max="114912" tags="ware_refinedmetals" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_silicon" >
+      <cargo max="114912" tags="ware_silicon" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_siliconwafers" >
+      <cargo max="114912" tags="ware_siliconwafers" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_soybeans" >
+      <cargo max="114912" tags="ware_soybeans" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_spaceweed" >
+      <cargo max="114912" tags="ware_spaceweed" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_spices" >
+      <cargo max="114912" tags="ware_spices" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_wheat" >
+      <cargo max="114912" tags="ware_wheat" />
+    </cargobay>
+    
+    <!-- Container specialized Cargobays -->
+    <!-- ~85K Target: 85k: since there is no least common multiplier for Containers low enough for this -->
+    <cargobay size="50KU" type="ware_bioelectricneurongel" >
+      <cargo max="85000" tags="ware_bioelectricneurongel" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_bioopticwiring" >
+      <cargo max="85000" tags="ware_bioopticwiring" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_bofu" >
+      <cargo max="85000" tags="ware_bofu" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_chemicalcompounds" >
+      <cargo max="85000" tags="ware_chemicalcompounds" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_assault" >
+      <cargo max="85000" tags="ware_drp_assault" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_cargolifter" >
+      <cargo max="85000" tags="ware_drp_cargolifter" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_construction" >
+      <cargo max="85000" tags="ware_drp_construction" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_interceptor_mk1" >
+      <cargo max="85000" tags="ware_drp_interceptor_mk1" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_interceptor_mk2" >
+      <cargo max="85000" tags="ware_drp_interceptor_mk2" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_intrepid_mk1" >
+      <cargo max="85000" tags="ware_drp_intrepid_mk1" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_intrepid_mk2" >
+      <cargo max="85000" tags="ware_drp_intrepid_mk2" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_overrun_mk1" >
+      <cargo max="85000" tags="ware_drp_overrun_mk1" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_overrun_mk2" >
+      <cargo max="85000" tags="ware_drp_overrun_mk2" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_scoopcollector_mk1" >
+      <cargo max="85000" tags="ware_drp_scoopcollector_mk1" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_scoopcollector_mk2" >
+      <cargo max="85000" tags="ware_drp_scoopcollector_mk2" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_surfaceminer_mk1" >
+      <cargo max="85000" tags="ware_drp_surfaceminer_mk1" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_drp_surfaceminer_mk2" >
+      <cargo max="85000" tags="ware_drp_surfaceminer_mk2" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_dumbfiremissile" >
+      <cargo max="85000" tags="ware_dumbfiremissile" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_dumbfireturret" >
+      <cargo max="85000" tags="ware_dumbfireturret" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_emspectrometer" >
+      <cargo max="85000" tags="ware_emspectrometer" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_foodrations" >
+      <cargo max="85000" tags="ware_foodrations" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_fusionreactor" >
+      <cargo max="85000" tags="ware_fusionreactor" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_guidedmissile" >
+      <cargo max="85000" tags="ware_guidedmissile" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_holtzmanfieldgenerator" >
+      <cargo max="85000" tags="ware_holtzmanfieldgenerator" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_laserturret" >
+      <cargo max="85000" tags="ware_laserturret" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_machinegunturret" >
+      <cargo max="85000" tags="ware_machinegunturret" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_medicalsupplies" >
+      <cargo max="85000" tags="ware_medicalsupplies" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_microchips" >
+      <cargo max="85000" tags="ware_microchips" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_narcotics" >
+      <cargo max="85000" tags="ware_narcotics" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_plasmaflowregulator" >
+      <cargo max="85000" tags="ware_plasmaflowregulator" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_plasmapumps" >
+      <cargo max="85000" tags="ware_plasmapumps" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_plasmaturret" >
+      <cargo max="85000" tags="ware_plasmaturret" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_quantumtubes" >
+      <cargo max="85000" tags="ware_quantumtubes" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_reinforcedmetalplating" >
+      <cargo max="85000" tags="ware_reinforcedmetalplating" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_scanningarray" >
+      <cargo max="85000" tags="ware_scanningarray" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_shieldgenerator" >
+      <cargo max="85000" tags="ware_shieldgenerator" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_shotgunturret" >
+      <cargo max="85000" tags="ware_shotgunturret" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_spacefuel" >
+      <cargo max="85000" tags="ware_spacefuel" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_swarmmissile" >
+      <cargo max="85000" tags="ware_swarmmissile" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_swarmturret" >
+      <cargo max="85000" tags="ware_swarmturret" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_teladianium" >
+      <cargo max="85000" tags="ware_teladianium" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_torpedo" >
+      <cargo max="85000" tags="ware_torpedo" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_unknown" >
+      <cargo max="85000" tags="ware_unknown" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_warheads" >
+      <cargo max="85000" tags="ware_warheads" />
+    </cargobay>
+
+    
+    <!-- Energy Specialized Cargobays (see also Fuel above -->
+    <!-- ~100K Target: 25000 * 4 = 100000 - see top of file -->
+    <cargobay size="50KU" type="ware_antimattercells" >
+      <cargo max="100000" tags="ware_antimattercells" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_energycells" >
+      <cargo max="100000" tags="ware_energycells" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_ioncells" >
+      <cargo max="100000" tags="ware_ioncells" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_plasmacells" >
+      <cargo max="100000" tags="ware_plasmacells" />
+    </cargobay>
+    
+    
+    <!-- Liquid Specialized Cargobays -->
+    <!-- ~150K Target: 15000 * 10 = 150000 - see top of file -->
+    <cargobay size="50KU" type="ware_hydrogen" >
+      <cargo max="150000" tags="ware_hydrogen" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_ions" >
+      <cargo max="150000" tags="ware_ions" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_plasma" >
+      <cargo max="150000" tags="ware_plasma" />
+    </cargobay>
+    <cargobay size="50KU" type="ware_water" >
+      <cargo max="150000" tags="ware_water" />
     </cargobay>
   </tech>
 </cargobays>

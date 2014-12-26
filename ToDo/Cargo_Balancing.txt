@@ -6,7 +6,9 @@
  -> L and XL are more interesting:
   >Depending on Vanilla Cargobay the Ships will have more or less specialized Cargobays:
    -Universal (1.00)
-   -Cargo Class Specialized (~1.4)
+   -Cargo Class Specialized (~1.4) / Ware Class Specialized (~2.0)
+    ->Liquid (2.0/3.0) ->Bulk(1.5/2.3) ->Energy(1.4/2.0) ->Container(1.3/1.7)
+
    -Ware Type Specialized (~2.0)
    Number in () is a multiplier compared to the Universal Cargo - more specialized Cargo Bays can take more Stuff
   >Cargobays can only specialized to things they already include
@@ -14,6 +16,12 @@
      Energy can only converted to Stuff which has the Energy Cargo Class, not eg Bulk)
   >one Exception: Energy may also be converted to a specialized Fuel Cargo Bay
     (but neither Universal nor Energy may Transport Fuelcells)
-    - capacity multiplier does not apply in this case though - Fuel Cargobay is limited to 10K Volume for safety reasons
+    - capacity multiplier does not apply in this case though - Fuel Cargobay is limited to 0,6*Universal Volume for safety reasons
     
  -> exact volumes still need to be determined
+
+Universal: 50K
+Liquid:   100K / 150K
+Bulk:      75K / 115K
+Energy:    70K / 100K
+Container: 65K /  85K

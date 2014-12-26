@@ -3,6 +3,9 @@ voice/
 voice-L044/
 voice-L049/
 
+# macro files generated via included Script - no need to sync
+assets/generated/
+
 # .cat/.dat files should be ignored because they usually only contain the packed Mod Data which lies in raw form in the repository, so it would be redundant
 *.cat
 *.dat

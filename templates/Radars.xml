@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<radars>
+  <!-- no tech levels for radars currently -->
+  <tech>
+    <radar size="xl" type="fallback">
+      <info name="{20104,1601}" description="{20104,1602}" />
+      <stats>
+        <surface_element component="props_surf_ar_radar_01" />
+        <radar range="12000" />
+      </stats>
+    </radar>
+    <radar size="xl" type="freighter">
+      <info name="{20104,1601}" description="{20104,1602}" />
+      <stats>
+        <surface_element component="props_surf_ar_radar_01" hull="20000"  />
+        <radar range="24000" />
+      </stats>
+      <effects>
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others explosion="explosion_turret_m_wall_pulse" shield="sefx_shield_m_01" />
+      </effects>
+    </radar>
+    <radar size="xl" type="military">
+      <info name="{20104,1601}" description="{20104,1602}" />
+      <stats>
+        <surface_element component="props_surf_ar_radar_01" hull="20000"  />
+        <radar range="36000" />
+      </stats>
+      <effects>
+        <damage low="sefx_damage_m_low" medium="sefx_damage_m_medium" high="sefx_damage_m_high" />
+        <others explosion="explosion_turret_m_wall_pulse" shield="sefx_shield_m_01" />
+      </effects>
+    </radar>
+    <radar size="xl" type="xenon">
+      <info name="{20104,1601}" description="{20104,1602}" />
+      <stats>
+        <surface_element component="props_surf_ar_radar_01" />
+        <radar range="40000" />
+      </stats>
+    </radar>
+  </tech>
+</radars>
+

@@ -3,7 +3,10 @@
   <xsl:template match="/">
     <macros>
       <xsl:for-each select="/*/tech/*">
-        <macro class="engine">
+        <macro>
+          <xsl:attribute name="class">
+            <xsl:value-of select="name(.)" />
+          </xsl:attribute>
           <xsl:attribute name="name">
             <xsl:text>xri_</xsl:text>
             <xsl:value-of select="name(.)" />

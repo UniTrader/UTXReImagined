@@ -5,7 +5,9 @@
       <xsl:for-each select="/*/tech/*">
         <macro class="bullet">
           <xsl:attribute name="name">
-            <xsl:text>xri_bullet_turret_</xsl:text>
+            <xsl:text>xri_bullet_</xsl:text>
+            <xsl:value-of select="name(.)" />
+            <xsl:text>_</xsl:text>
             <xsl:value-of select="./@size" />
             <xsl:text>_</xsl:text>
             <xsl:value-of select="./@type" />

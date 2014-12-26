@@ -15,7 +15,7 @@
           </xsl:attribute>
           <component ref="generic_cargobay" />
           <properties>
-            <cargo max="10000" tags="fuel">
+            <cargo>
               <xsl:attribute name="max">
                 <xsl:value-of select="./cargo/@max" />
               </xsl:attribute>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<engines>
+  <!-- no tech levels for Engines since they are too difficult to counter-balance for now
+    - just multiple performance- and color-variants -->
+  <tech>
+    <engine size="xl" type="blue" variation="1" >
+      <info name="{20104,1201}" description="{20104,1202}" />
+      <stats>
+        <surface_element component="props_enginesystems_engine_xl" hull="80000"  />
+        <acceleration forward="12" reverse="12" strafe="5" pitch="0.7" yaw="0.7" roll="0.2" />
+        <angular roll="20" pitch="60" />
+        <speed forward="80" reverse="-24" strafe="20" pitch="7" yaw="7" roll="2" />
+        <booster ref="enginebooster_size_xl_01_macro" />
+        <!-- Alternative definition if individual for Engine (not shared between multiple) -->
+        <!--booster charge="0" duration="600" minshieldpercent="0" recharge="1" effect="boostfx_engine_xl_01">
+          <speed forward="25" rotation="0.5" />
+          <acceleration forward="10" reverse="10" strafe="10" rotation="0.5" />
+        </booster-->
+      </stats>
+      <effects>
+        <others explosion="explosion_engine_xl" shield="sefx_shield_l_01" />
+      </effects>
+    </engine>
+    <engine size="xl" type="red" variation="1" >
+      <info name="{20104,1201}" description="{20104,1202}" />
+      <stats>
+        <surface_element component="props_enginesystems_engine_xl" hull="80000"  />
+        <acceleration forward="12" reverse="12" strafe="5" pitch="0.7" yaw="0.7" roll="0.2" />
+        <angular roll="20" pitch="60" />
+      <speed forward="80" reverse="-24" strafe="20" pitch="7" yaw="7" roll="2" />
+        <booster ref="enginebooster_size_xl_01_macro" />
+        <!-- Alternative definition if individual for Engine (not shared between multiple) -->
+        <!--booster charge="0" duration="600" minshieldpercent="0" recharge="1" effect="boostfx_engine_xl_01">
+          <speed forward="25" rotation="0.5" />
+          <acceleration forward="10" reverse="10" strafe="10" rotation="0.5" />
+        </booster-->
+      </stats>
+      <effects>
+        <others explosion="explosion_engine_xl" shield="sefx_shield_l_01" />
+      </effects>
+    </engine>
+  </tech>
+</engines>
+

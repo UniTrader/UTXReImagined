@@ -1,8 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- Cargo Volume is multiples of: Bulk:1008 Energy:4 Liquid:10 Fuel:4 equipment: 1/20 ships&container: set it arbitary -->
+<!-- Cargo Volume is multiples of: (least common multiple of Wares in that category)
+Bulk:1008 Energy:4 Liquid:10 Fuel:4 equipment: 1/20 ships&container: set it arbitary -->
 <cargobays>
   <!-- no Tech Levels for Cargobays - just necesary to keep file structure consistence with other files -->
-  <!-- added another Attribute for differing between diffrent Cargo Size classes - just for convinience, not used IG -->
+  <!-- added another Attribute for differing between diffrent Cargo Size classes 
+           - just for convinience, not used in practice to stay consistent with other files -->
+  <!-- 10KF meant 10.000m³ of FUEL Storage (usually included in most Ships with Jumpdrive) -->
+  <tech cargo_size_class="10KF">
+    <cargobay size="10KF" type="fuel" >
+      <cargo max="10000" tags="fuel" />
+    </cargobay>
+  </tech>
+  <!-- 50KU means 50.000m³ of UNIVERSAL Storage - if specialized it will be more efficient -->
   <tech cargo_size_class="50KU">
     <!-- General Cargobays (Universal & Freight Class Restricted) -->
     <cargobay size="50KU" type="universal" >

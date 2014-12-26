@@ -29,7 +29,7 @@ xsltproc --stringparam Extensionpath ${PWD##*/} langfile_to_sound_library.xsl t/
 #
 # include templates/upgradelist_ships.xml in all L/XL Ship Macros instead of the current Upgrade List
 #
-# create_multimacro_upgrade_list_from_template.xsl -> apply to files listed in ./upgrade_list_storages.xml and output to templates/upgradelist_storages.xml (overwrite if necesary)
+# create_multimacro_upgrade_list_from_template.xsl -> apply to ./Cargobays.xml and output to templates/upgradelist_storages.xml (overwrite if necesary)
 #
 # include templates/upgradelist_storages.xml in all Storage Macros instead of the current Upgrade List
 #

@@ -4,7 +4,6 @@
   <entry name="../templates/Shields.xml" done="true"/>
   <entry name="../templates/Engines.xml" done="FALSE"/>
   <entry name="../templates/Radars.xml" done="FALSE"/>
-  <entry name="../templates/Cargobays.xml" done="true"/>
   <entry name="../templates/Jumpdrives.xml" done="true"/>
   <entry name="../templates/Logos.xml" done="FALSE"/>
 </list>

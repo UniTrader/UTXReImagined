@@ -43,8 +43,7 @@
               <add_player_choice text="'turret_medium_pe_macro'" section="cEngineer_changeloadout_turret_m_pe" position="bottom_left" />
               <add_player_choice text="'turret_medium_sp_macro'" section="cEngineer_changeloadout_turret_m_sp" position="top_right" />
               <add_player_choice text="'turret_missile_df_macro'" section="cEngineer_changeloadout_turret_m_df" position="right" />
-              <!--add_player_choice text="'turret_missile_sm_macro'" section="cEngineer_changeloadout_turret_m_sm" position="bottom_right" /-->
-              <add_player_choice text="'turret_medium_d_lb_macro'" section="cEngineer_changeloadout_turret_m_lb_d" position="bottom_right" />
+              <add_player_choice text="'turret_missile_sm_macro'" section="cEngineer_changeloadout_turret_m_sm" position="bottom_right" />
             </do_elseif>
             <do_elseif value="event.param == 'cEngineer_changeloadout_engines'">
               <add_npc_line line="1008" comment="what can i do for you?" />
@@ -146,15 +145,6 @@
 			  <upgrade_object_by_macro macro="macro.{'turret_missile_df_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
 			  <upgrade_object_by_macro macro="macro.{'turret_missile_sm_macro'}" object="$actor.ship" exact="100" comment="exact in % of available Slots!" />
 			  <patch_macro object="$actor.ship" />
-            </do_elseif>
-            <do_elseif value="event.param == 'cEngineer_changeloadout_turret_m_lb_d'">
-			  <upgrade_object_by_macro macro="macro.{'turret_medium_lb_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
-			  <upgrade_object_by_macro macro="macro.{'turret_medium_ml_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
-			  <upgrade_object_by_macro macro="macro.{'turret_medium_pe_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
-			  <upgrade_object_by_macro macro="macro.{'turret_medium_sp_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
-			  <upgrade_object_by_macro macro="macro.{'turret_missile_df_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
-			  <upgrade_object_by_macro macro="macro.{'turret_missile_sm_macro'}" object="$actor.ship" exact="0" comment="exact in % of available Slots!" />
-			  <upgrade_object_by_macro macro="macro.{'turret_medium_d_lb_macro'}" object="$actor.ship" exact="100" comment="exact in % of available Slots!" />
             </do_elseif>
 			
             <do_elseif value="event.param == 'cEngineer_changeloadout_engines_1'">

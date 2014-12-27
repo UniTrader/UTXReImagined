@@ -34,13 +34,20 @@
               <xsl:choose>
                 <!-- Tags for Logos -->
                 <xsl:when test="name(.) = 'logo'" >
-                  <xsl:text>xri_</xsl:text>
+                  <xsl:text>xri_se_</xsl:text>
                   <xsl:value-of select="name(.)" />
                   <xsl:text>_</xsl:text>
                   <xsl:value-of select="./@size" />
                 </xsl:when>
-                <!-- Tags for Jumpdrive -->
-                <xsl:when test="name(.) = 'jumpdrive'" >
+                <!-- Tags for Jumpdrive, Engines, Radar -->
+                <xsl:when test="name(.) = 'jumpdrive' or name(.) = 'engine' or name(.) = 'radar' " >
+                  <xsl:text>xri_se_</xsl:text>
+                  <xsl:value-of select="name(.)" />
+                  <xsl:text>_</xsl:text>
+                  <xsl:value-of select="./@size" />
+                </xsl:when>
+                <!-- Tags for Cargobays - !!!ADD HIERARCHY HERE!!! -->
+                <xsl:when test="name(.) = 'cargobay'" >
                   <xsl:text>xri_</xsl:text>
                   <xsl:value-of select="name(.)" />
                   <xsl:text>_</xsl:text>
@@ -52,7 +59,7 @@
                   <xsl:text>xri_se_</xsl:text>
                   <xsl:value-of select="./@size" />
                   <!-- slots exclusive for certain types of SE -->
-                  <xsl:text/>
+                  <xsl:text> </xsl:text>
                   <xsl:text>xri_se_</xsl:text>
                   <xsl:value-of select="./@size" />
                   <xsl:text>_</xsl:text>

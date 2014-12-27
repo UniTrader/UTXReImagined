@@ -1,0 +1,4 @@
+=> Add a small Cargobay to each Production Module containing 2 to 5 Cycles of Products so Production cannt be stopped by full Storages
+ -> for Factory Modules producing multiple Products add a Cargobay containing 1 of each Product
+
+=> Add Capshields to Stations (if they finally work if installed laster, see Issue Tracker #2 )

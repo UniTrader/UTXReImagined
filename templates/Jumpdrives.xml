@@ -3,7 +3,9 @@
   <!-- no Tech Levels for Jumpdrives - just necesary to keep file structure consistence with other files -->
   <tech>
     <jumpdrive size="l" variation="default" >
-      <info name="{20104,1401}" description="{20104,1402}" />
+      <info>
+        <surface_element name="{20104,1401}" description="{20104,1402}" />
+      </info>
       <stats>
         <surface_element component="props_surf_ar_jumpdrive_l" hull="15000"  />
         <jumpdrive basecost="100" charge="20" cooldown="60" />
@@ -16,7 +18,9 @@
       </effects>
     </jumpdrive>
     <jumpdrive size="xl" variation="default" >
-      <info name="{20104,1401}" description="{20104,1402}" />
+      <info>
+        <surface_element name="{20104,1401}" description="{20104,1402}" />
+      </info>
       <stats>
         <surface_element component="props_surf_ar_jumpdrive" hull="15000"  />
         <jumpdrive basecost="100" charge="20" cooldown="60" />
@@ -29,7 +33,9 @@
       </effects>
     </jumpdrive>
     <jumpdrive size="l" variation="military" >
-      <info name="{20104,1401} military" description="{20104,1402}" />
+      <info>
+        <surface_element name="{20104,1401} military" description="{20104,1402}" />
+      </info>
       <stats>
         <surface_element component="props_surf_ar_jumpdrive_l" hull="50000"  />
         <jumpdrive basecost="250" charge="10" cooldown="120" />
@@ -42,7 +48,9 @@
       </effects>
     </jumpdrive>
     <jumpdrive size="xl" variation="military" >
-      <info name="{20104,1401} military" description="{20104,1402}" />
+      <info>
+        <surface_element name="{20104,1401} military" description="{20104,1402}" />
+      </info>
       <stats>
         <surface_element component="props_surf_ar_jumpdrive" hull="50000"  />
         <jumpdrive basecost="250" charge="10" cooldown="120" />
@@ -55,7 +63,9 @@
       </effects>
     </jumpdrive>
     <jumpdrive size="l" variation="fast" >
-      <info name="{20104,1401} fast" description="{20104,1402}" />
+      <info>
+        <surface_element name="{20104,1401} fast" description="{20104,1402}" />
+      </info>
       <stats>
         <surface_element component="props_surf_ar_jumpdrive_l" hull="10000"  />
         <jumpdrive basecost="150" charge="30" cooldown="30" />
@@ -68,7 +78,9 @@
       </effects>
     </jumpdrive>
     <jumpdrive size="xl" variation="fast" >
-      <info name="{20104,1401} fast" description="{20104,1402}" />
+      <info>
+        <surface_element name="{20104,1401} fast" description="{20104,1402}" />
+      </info>
       <stats>
         <surface_element component="props_surf_ar_jumpdrive" hull="10000"  />
         <jumpdrive basecost="150" charge="30" cooldown="30" />
@@ -81,7 +93,9 @@
       </effects>
     </jumpdrive>
     <jumpdrive size="l" variation="economy" >
-      <info name="{20104,1401} economy" description="{20104,1402}" />
+      <info>
+        <surface_element name="{20104,1401} economy" description="{20104,1402}" />
+      </info>
       <stats>
         <surface_element component="props_surf_ar_jumpdrive_l" hull="10000"  />
         <jumpdrive basecost="50" charge="60" cooldown="100" />
@@ -94,7 +108,9 @@
       </effects>
     </jumpdrive>
     <jumpdrive size="xl" variation="economy" >
-      <info name="{20104,1401} economy" description="{20104,1402}" />
+      <info>
+        <surface_element name="{20104,1401} economy" description="{20104,1402}" />
+      </info>
       <stats>
         <surface_element component="props_surf_ar_jumpdrive" hull="10000"  />
         <jumpdrive basecost="50" charge="60" cooldown="100" />

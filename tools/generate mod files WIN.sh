@@ -42,3 +42,6 @@ for f in ../assets/units/size*/macros/*_macro.xml
 do
     xsltproc.exe --stringparam upgradelist ../assets/generated/xri_upgrade_list_ships.xml update_macro_upgrade_list.xsl $F > $f.new
 done
+
+# Generate Skunk Pivot Fix from Game Data anew (in case EGO changes something there)
+xsltproc.exe change_skunk_pivot_as_diff.xsl ../../../XR_extracted/assets/units/player/unit_player_ship.xml > ../assets/units/player/unit_player_ship.xml

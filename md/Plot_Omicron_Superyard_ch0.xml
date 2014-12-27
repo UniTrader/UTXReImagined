@@ -4,7 +4,7 @@
     <!--cue name="OL_Superyard_Warpcheat">
       <delay exact="3s" />
       <actions>
-        <find_zone name="$Zone" macro="macro.MAP_UT_ZON_OL_OSY_Zone01_macro"/>
+        <find_zone name="$Zone" macro="macro.XRI_MAP_ZON_OL_OSY_Zone01_macro"/>
         <warp object="player.primaryship" zone="$Zone" >
           <position x="0m" y="0m" z="-5km"/>
         </warp>

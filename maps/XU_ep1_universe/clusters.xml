@@ -1,68 +1,68 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <diff>
   <add sel="//macro[@name='cluster_B_macro']/connections">
-    <connection name="MAP_UT_SEC_AL_BR_connection" ref="sectors">
+    <connection name="XRI_MAP_SEC_AL_BR_connection" ref="sectors">
       <offset>
         <position x="-27663000" y="-9653000" z="-336000"/>
       </offset>
-      <macro ref="MAP_UT_SEC_AL_BR_macro" connection="cluster"/>
+      <macro ref="XRI_MAP_SEC_AL_BR_macro" connection="cluster"/>
     </connection>
 
     <!-- SH Definition example - note that i make a more layman-like explaination and may not use the correct terms for understandability-->
-    <connection name="MAP_UT_SHW_AL_IW-BR_connection" ref="sechighways">
+    <connection name="XRI_MAP_SHW_AL_IW-BR_connection" ref="sechighways">
       <offset><!-- as said in sechighways.xml it is easier to work with the offset in the Cluster there, so this Value is always 0/0/0 -->
         <position x="0" y="0" z="0" />
       </offset>
-      <macro ref="MAP_UT_SHW_AL_IW-BR_macro" connection="cluster">
+      <macro ref="XRI_MAP_SHW_AL_IW-BR_macro" connection="cluster">
         <connections>
           <connection ref="exitpoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../MAP_UT_SEC_AL_BR_connection/MAP_UT_ZON_SHW_IW-BR_GateZone_Exit_connection" connection="entrypoint1" />
+            <macro ref="XRI_MAP_ZON_SHW_GateZone_Exit_macro" path="../../XRI_MAP_SEC_AL_BR_connection/XRI_MAP_ZON_SHW_IW-BR_GateZone_Exit_connection" connection="entrypoint1" />
           </connection>
           <connection ref="entrypoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../Cluster_B_Sector06_connection/MAP_UT_ZON_SHW_IW-BR_GateZone_Entry_connection" connection="exitpoint1" />
+            <macro ref="XRI_MAP_ZON_SHW_GateZone_Entry_macro" path="../../Cluster_B_Sector06_connection/XRI_MAP_ZON_SHW_IW-BR_GateZone_Entry_connection" connection="exitpoint1" />
           </connection>
         </connections>
       </macro>
     </connection>
 
-    <connection name="MAP_UT_SHW_AL_BR-AS_connection" ref="sechighways">
+    <connection name="XRI_MAP_SHW_AL_BR-AS_connection" ref="sechighways">
       <offset>
         <position x="0" y="0" z="0" />
       </offset>
-      <macro ref="MAP_UT_SHW_AL_BR-AS_macro" connection="cluster">
+      <macro ref="XRI_MAP_SHW_AL_BR-AS_macro" connection="cluster">
         <connections>
           <connection ref="exitpoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../Cluster_B_Sector05_connection/MAP_UT_ZON_SHW_BR-AS_GateZone_Exit_connection" connection="entrypoint1" />
+            <macro ref="XRI_MAP_ZON_SHW_GateZone_Exit_macro" path="../../Cluster_B_Sector05_connection/XRI_MAP_ZON_SHW_BR-AS_GateZone_Exit_connection" connection="entrypoint1" />
           </connection>
           <connection ref="entrypoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../MAP_UT_SEC_AL_BR_connection/MAP_UT_ZON_SHW_BR-AS_GateZone_Entry_connection" connection="exitpoint1" />
+            <macro ref="XRI_MAP_ZON_SHW_GateZone_Entry_macro" path="../../XRI_MAP_SEC_AL_BR_connection/XRI_MAP_ZON_SHW_BR-AS_GateZone_Entry_connection" connection="exitpoint1" />
           </connection>
         </connections>
       </macro>
     </connection>
     
-    <connection name="MAP_UT_SHW_AL_BR-LA_connection" ref="sechighways">
+    <connection name="XRI_MAP_SHW_AL_BR-LA_connection" ref="sechighways">
       <offset>
         <position x="0" y="0" z="0" />
       </offset>
-      <macro ref="MAP_UT_SHW_AL_BR-LA_macro" connection="cluster">
+      <macro ref="XRI_MAP_SHW_AL_BR-LA_macro" connection="cluster">
         <connections>
           <connection ref="exitpoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../Cluster_B_Sector07_connection/MAP_UT_ZON_SHW_BR-LA_GateZone_Exit_connection" connection="entrypoint1" />
+            <macro ref="XRI_MAP_ZON_SHW_GateZone_Exit_macro" path="../../Cluster_B_Sector07_connection/XRI_MAP_ZON_SHW_BR-LA_GateZone_Exit_connection" connection="entrypoint1" />
           </connection>
           <connection ref="entrypoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../MAP_UT_SEC_AL_BR_connection/MAP_UT_ZON_SHW_BR-LA_GateZone_Entry_connection" connection="exitpoint1" />
+            <macro ref="XRI_MAP_ZON_SHW_GateZone_Entry_macro" path="../../XRI_MAP_SEC_AL_BR_connection/XRI_MAP_ZON_SHW_BR-LA_GateZone_Entry_connection" connection="exitpoint1" />
           </connection>
         </connections>
       </macro>
     </connection>
 
     <!-- Zone-Wide Regions -->
-    <connection name="MAP_UT_REG_AL_BR_PA-BAS-SH-PIT_Asteroid_tunnel_connection" ref="regions">
+    <connection name="XRI_MAP_REG_AL_BR_PA-BAS-SH-PIT_Asteroid_tunnel_connection" ref="regions">
       <offset>
         <position x="-27663000" y="-9653000" z="-336000"/>
       </offset>
-      <macro name="MAP_UT_REG_AL_BR_PA-BAS-SH-PIT_Asteroid_tunnel_macro">
+      <macro name="XRI_MAP_REG_AL_BR_PA-BAS-SH-PIT_Asteroid_tunnel_macro">
         <component connection="cluster" ref="standardregion" />
         <properties>
           <region ref="region_ut_al_br_pa-bas-sh-pit_asteroid_tunnel" />
@@ -70,11 +70,11 @@
       </macro>
     </connection>
     
-    <connection name="MAP_UT_REG_AL_BR_FS_Ice_River_connection" ref="regions">
+    <connection name="XRI_MAP_REG_AL_BR_FS_Ice_River_connection" ref="regions">
       <offset>
         <position x="-27513000" y="-9663000" z="-356000" />
       </offset>
-      <macro name="MAP_UT_REG_AL_BR_FS_Ice_River_macro">
+      <macro name="XRI_MAP_REG_AL_BR_FS_Ice_River_macro">
         <component connection="cluster" ref="standardregion" />
         <properties>
           <region ref="region_ut_al_br_fs_ice_river" />
@@ -82,11 +82,11 @@
       </macro>
     </connection>
     
-    <connection name="MAP_UT_REG_AL_BR_ST-SM_droplets_connection" ref="regions">
+    <connection name="XRI_MAP_REG_AL_BR_ST-SM_droplets_connection" ref="regions">
       <offset>
         <position x="-27663000" y="-9653000" z="-336000"/>
       </offset>
-      <macro name="MAP_UT_REG_AL_BR_ST-SM_droplets_macro">
+      <macro name="XRI_MAP_REG_AL_BR_ST-SM_droplets_macro">
         <component connection="cluster" ref="standardregion" />
         <properties>
           <region ref="region_ut_al_br_st-sm_droplets" />
@@ -94,11 +94,11 @@
       </macro>
     </connection>
     
-    <connection name="MAP_UT_REG_AL_BR_BAS_Space_connection" ref="regions">
+    <connection name="XRI_MAP_REG_AL_BR_BAS_Space_connection" ref="regions">
       <offset>
         <position x="-27743000" y="-9618000" z="-256000" />
       </offset>
-      <macro name="MAP_UT_REG_AL_BR_BAS_Space_macro">
+      <macro name="XRI_MAP_REG_AL_BR_BAS_Space_macro">
         <component connection="cluster" ref="standardregion" />
         <properties>
           <region ref="region_ut_al_br_bas_space" />
@@ -106,26 +106,26 @@
       </macro>
     </connection>
     
-    <connection name="MAP_UT_REG_AL_BR_Sector_field_connection" ref="regions">
+    <connection name="XRI_MAP_REG_AL_BR_Sector_field_connection" ref="regions">
       <offset>
         <!--ition x="-27663000" y="-9653000" z="-336000"/-->
         <!--        +   100000   +-       0    +-     0  original: x+50000+ y== z+45000- diff: 20000-->
         <position x="-27563000" y="-9628000" z="-336000"/>
       </offset>
-      <macro name="MAP_UT_REG_AL_BR_Sector_field_macro">
+      <macro name="XRI_MAP_REG_AL_BR_Sector_field_macro">
         <component connection="cluster" ref="standardregion" />
         <properties>
           <region ref="region_ut_al_br_sector_field" />
         </properties>
       </macro>
     </connection>
-    <connection name="MAP_UT_REG_AL_BR_Sector_field_connection2" ref="regions">
+    <connection name="XRI_MAP_REG_AL_BR_Sector_field_connection2" ref="regions">
       <offset>
         <!--ition x="-27663000" y="-9653000" z="-336000"/-->
         <!--        +   100000   +-       0    +-     0  original: x+50000+ y== z+45000- diff: 20000-->
         <position x="-27583000" y="-9728000" z="-336000"/>
       </offset>
-      <macro name="MAP_UT_REG_AL_BR_Sector_field_macro">
+      <macro name="XRI_MAP_REG_AL_BR_Sector_field_macro">
         <component connection="cluster" ref="standardregion" />
         <properties>
           <region ref="region_ut_al_br_sector_field" />
@@ -134,52 +134,9 @@
     </connection>
 
   </add>
-  
-  <add sel="//macro[@name='Cluster_C_macro']/connections">
-    <connection name="MAP_UT_SEC_OL_OSY_connection" ref="sectors">
-      <offset>
-        <position x="-63920000" y="-21020000" z="2410000"/>
-        <!--position x="-62000000" y="-26000000" z="11000000"/-->
-        <!--quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" /-->
-      </offset>
-      <macro ref="MAP_UT_SEC_OL_OSY_macro" connection="cluster"/>
-    </connection>
-    
-    <connection name="MAP_UT_SHW_OL_CC-OSY_connection" ref="sechighways">
-      <offset>
-        <position x="0" y="0" z="0" />
-      </offset>
-      <macro ref="MAP_UT_SHW_OL_CC-OSY_macro" connection="cluster">
-        <connections>
-          <connection ref="entrypoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../Cluster_C_Sector09_connection/MAP_UT_ZON_SHW_CC-OSY_GateZone_Exit_connection" connection="exitpoint1" />
-          </connection>
-          <connection ref="exitpoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../MAP_UT_SEC_OL_OSY_connection/MAP_UT_ZON_SHW_CC-OSY_GateZone_Entry_connection" connection="entrypoint1" />
-          </connection>
-        </connections>
-      </macro>
-    </connection>
-    
-    <connection name="MAP_UT_SHW_OL_OSY-CC_connection" ref="sechighways">
-      <offset>
-        <position x="0" y="0" z="0" />
-      </offset>
-      <macro ref="MAP_UT_SHW_OL_OSY-CC_macro" connection="cluster">
-        <connections>
-          <connection ref="entrypoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Exit_macro" path="../../MAP_UT_SEC_OL_OSY_connection/MAP_UT_ZON_SHW_OSY-CC_GateZone_Exit_connection" connection="exitpoint1" />
-          </connection>
-          <connection ref="exitpoint">
-            <macro ref="MAP_UT_ZON_SHW_GateZone_Entry_macro" path="../../Cluster_C_Sector09_connection/MAP_UT_ZON_SHW_OSY-CC_GateZone_Entry_connection" connection="entrypoint1" />
-          </connection>
-        </connections>
-      </macro>
-    </connection>
-  </add>
-  
+
   <!-- Rotate OL by 90 degrees for better Utilisation of Cluster Map - preperation for OL Super-Shipyard Sector -->
-  <replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_Sector09_connection']/offset">
+  <!--replace sel="//macro[@name='Cluster_C_macro']/connections/connection[@name='Cluster_C_Sector09_connection']/offset">
     <offset>
       <position x="-18231884" y="-4730172" z="5476128" />
       <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
@@ -435,5 +392,5 @@
     <offset>
       <quaternion qx="0" qy="0" qz="0.70710678118" qw="0.70710678118" />
     </offset>
-  </add>
+  </add-->
 </diff>

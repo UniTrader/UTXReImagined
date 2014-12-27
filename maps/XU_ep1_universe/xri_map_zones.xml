@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="map.xsd">
+  
+  <macro name="XRI_MAP_ZON_EMPTY_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="EMPTY ZONE " description="JUST A PLACEHOLDER UNTIL A PROPER ZONE IS MADE" />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone03_macro_icon" />
+      <map index="0" shortvariation="---" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone01_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>
+      <connection name="struct_bt_alb_laboratory_connection" ref="stations">
+        <offset>
+          <position x="-1000" y="0" z="0" />
+        </offset>
+        <macro ref="struct_bt_alb_laboratory_macro" connection="space">
+          <properties>
+            <identification owner="beryll" />
+            <build>
+              <plan sequence="A" stage="2" />
+              <plan sequence="B" stage="3" />
+              <plan sequence="C" stage="3" />
+              <plan sequence="D" stage="3" />
+              <plan sequence="E" stage="1" />
+              <plan sequence="F" stage="1" />
+              <plan sequence="G" stage="1" />
+            </build>
+          </properties>
+        </macro>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1011}" description="{5554204,1012}" owner="plutarch" />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone01_macro_icon" />
+      <map index="1" shortvariation="{5554204,1014}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone02_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>
+      <connection name="struct_bt_alb_medical_supplies_connection" ref="stations">
+        <offset>
+          <position x="0" y="0" z="-5000" />
+        </offset>
+        <macro ref="struct_bt_alb_medical_supplies_macro" connection="space">
+          <properties>
+            <identification owner="nolimits" />
+            <build>
+              <plan sequence="A" stage="1" />
+              <plan sequence="B" stage="1" />
+              <plan sequence="C" stage="3" />
+              <plan sequence="D" stage="1" />
+              <plan sequence="E" stage="1" />
+            </build>
+          </properties>
+        </macro>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1021}" description="{5554204,1022}" owner="plutarch"  />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone02_macro_icon" />
+      <map index="2" shortvariation="{5554204,1024}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone03_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>
+      <connection name="struct_econ_ref_ar_pmc_north_connection" ref="stations">
+        <offset>
+          <position x="0" y="2000" z="0" />
+        </offset>
+        <macro ref="struct_econ_ref_ar_pmc_north_macro" connection="space">
+          <properties>
+            <identification owner="plutarch" />
+            <build>
+              <plan sequence="A" stage="1" />
+            </build>
+          </properties>
+        </macro>
+      </connection>
+      <connection ref="Highway01Connection01_gate">
+        <offset>
+          <position x="0" y="0" z="10000" />
+        </offset>
+      </connection>
+      <connection ref="Highway01Connection02_gate">
+        <offset>
+          <position x="-10000" y="0" z="1000" />
+        </offset>
+      </connection>
+      <connection ref="Highway02Connection01_gate">
+        <offset>
+          <position x="-10000" y="0" z="-1000" />
+        </offset>
+      </connection>
+      <connection ref="Highway02Connection02_gate">
+        <offset>
+          <position x="0" y="0" z="-10000" />
+        </offset>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1031}" description="{5554204,1032}" owner="plutarch"  />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone03_macro_icon" />
+      <map index="3" shortvariation="{5554204,1034}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone04_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>
+      <connection name="struct_econ_weapon_ar_defence_connection" ref="stations">
+        <offset>
+          <position x="-2000" y="500" z="-5000" />
+        </offset>
+        <macro ref="struct_econ_weapon_ar_defence_macro" connection="space">
+          <properties>
+            <identification owner="plutarch" />
+            <build>
+              <plan sequence="A" stage="1" />
+            </build>
+          </properties>
+        </macro>
+      </connection>
+      <connection name="clustergate_Al-Ma_connection" ref="gates">
+        <offset>
+          <position x="-25000" y="10000" z="-35000" />
+          <quaternion qx="0" qy="0.7071068287" qz="0" qw="0.7071067095" />
+        </offset>
+        <macro ref="props_gates_anc_gate_macro" connection="space" />
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1041}" description="{5554204,1042}" />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone04_macro_icon" />
+      <map index="4" shortvariation="{5554204,1044}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone05_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>
+      <connection name="struct_bt_alb_constructionmaterial_production_connection" ref="stations">
+        <offset>
+          <position x="0" y="3000" z="0" />
+          <quaternion qx="0" qy="-0.7071068287" qz="0" qw="0.7071067095" />
+        </offset>
+        <macro ref="struct_bt_alb_constructionmaterial_production_macro" connection="space">
+          <properties>
+            <identification owner="leddaindustrial" />
+            <build>
+              <plan sequence="A" stage="3" />
+              <plan sequence="B" stage="1" />
+              <plan sequence="C" stage="1" />
+              <plan sequence="D" stage="1" />
+              <plan sequence="E" stage="1" />
+              <plan sequence="F" stage="1" />
+              <plan sequence="G" stage="1" />
+            </build>
+          </properties>
+        </macro>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1051}" description="{5554204,1052}" owner="plutarch"  />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone03_macro_icon" />
+      <map index="5" shortvariation="{5554204,1054}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone06_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>
+      <connection name="struct_bt_alb_high_energy_construction_connection" ref="stations">
+        <offset>
+          <position x="-5000" y="0" z="0" />
+        </offset>
+        <macro ref="struct_bt_alb_high_energy_construction_macro" connection="space">
+          <properties>
+            <identification owner="leddaindustrial" />
+            <build>
+              <plan sequence="A" stage="1" />
+              <plan sequence="B" stage="1" />
+              <plan sequence="C" stage="1" />
+              <plan sequence="F" stage="1" />
+              <plan sequence="G" stage="1" />
+            </build>
+          </properties>
+        </macro>
+      </connection>
+      <connection name="props_gates_jumpbeacon_macro" ref="anything">
+        <offset>
+          <position x="-25000" y="0" z="0" />
+          <quaternion qx="0" qy="0" qz="0" qw="1" />
+        </offset>
+        <macro ref="props_gates_jumpbeacon_macro" connection="space" />
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1061}" description="{5554204,1062}" owner="plutarch"  />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone03_macro_icon" />
+      <map index="6" shortvariation="{5554204,1064}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone07_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>
+      <connection name="struct_bt_alb_metal_works_connection" ref="stations">
+        <offset>
+          <position x="2000" y="0" z="-750" />
+        </offset>
+        <macro ref="struct_bt_alb_metal_works_macro" connection="space">
+          <properties>
+            <identification owner="plutarch" />
+            <build>
+              <plan sequence="A" stage="4" />
+              <plan sequence="B" stage="4" />
+              <plan sequence="E" stage="1" />
+              <plan sequence="F" stage="1" />
+            </build>
+          </properties>
+        </macro>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1071}" description="{5554204,1072}" owner="plutarch"  />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone03_macro_icon" />
+      <map index="7" shortvariation="{5554204,1074}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone08_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="buildconN0E"/>
+      <connection ref="buildconS0E"/>
+      <connection ref="buildconN0W"/>
+      <connection ref="buildconS0W"/>
+      <connection ref="buildconNT0"/>
+      <connection ref="buildconST0"/>
+      <connection ref="buildcon0TE"/>
+      <connection ref="buildcon0TW"/>
+      <connection ref="buildconNB0"/>
+      <connection ref="buildconSB0"/>
+      <connection ref="buildcon0BE"/>
+      <connection ref="buildcon0BW"/>      
+      <connection name="struct_bt_alb_cell_refinery_connection" ref="stations">
+        <offset>
+          <position x="0" y="0" z="0" />
+        </offset>
+        <macro ref="struct_bt_alb_cell_refinery_macro" connection="space">
+          <properties>
+            <identification owner="albionenergy" />
+            <build>
+              <plan sequence="A" stage="1" />
+              <plan sequence="B" stage="1" />
+              <plan sequence="C" stage="1" />
+              <plan sequence="D" stage="1" />
+              <plan sequence="E" stage="1" />
+              <plan sequence="F" stage="1" />
+            </build>
+          </properties>
+        </macro>
+      </connection>
+      <connection ref="Highway02Connection01_gate">
+        <offset>
+          <position x="1000" y="10000" z="0" />
+        </offset>
+      </connection>
+      <connection ref="Highway02Connection02_gate">
+        <offset>
+          <position x="-1000" y="10000" z="0" />
+        </offset>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1081}" description="{5554204,1082}" owner="plutarch"  />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone03_macro_icon" />
+      <map index="8" shortvariation="{5554204,1084}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_AL_BR_Zone09_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection name="struct_bt_alb_small_ships_yard_macro" ref="stations">
+        <offset>
+          <position x="0" y="0" z="0" />
+          <!--quaternion qx="1" qy="0" qz="0" qw="0" /-->
+        </offset>
+        <macro ref="struct_bt_alb_small_ships_yard_macro" connection="space">
+          <properties>
+            <identification name="{5554208,1011}" description="{5554208,1012}"  unique="1" owner="sovereignsyndicate" />
+            <build>
+              <plan sequence="B" stage="2"/>
+              <plan sequence="C" stage="2"/>
+              <plan sequence="D" stage="1"/>
+            </build>
+          </properties>
+        </macro>
+      </connection>
+      <connection name="env_asteroids_asteroid_A_XXL_01_down_connection" ref="asteroids">
+        <offset>
+          <position x="500" y="-2500" z="0" />
+          <quaternion qx="1" qy="0" qz="0" qw="0" />
+        </offset>
+        <macro ref="env_asteroids_asteroid_A_XXL_01_macro" connection="space" />
+      </connection>
+      <connection name="env_asteroids_asteroid_A_XXL_01_up_connection" ref="asteroids">
+        <offset>
+          <position x="0" y="1500" z="0" />
+        </offset>
+        <macro ref="env_asteroids_asteroid_A_XXL_01_macro" connection="space" />
+      </connection>
+      <connection name="env_asteroids_asteroid_A_XXL_01_west_connection" ref="asteroids">
+        <offset>
+          <position x="-1200" y="0" z="0" />
+          <quaternion qx="0" qy="0" qz="0.7071067811865475" qw="0.7071067811865475" />
+        </offset>
+        <macro ref="env_asteroids_asteroid_A_XXL_01_macro" connection="space" />
+      </connection>
+      <connection name="env_asteroids_asteroid_A_XXL_01_east_connection" ref="asteroids">
+        <offset>
+          <position x="1200" y="0" z="0" />
+          <quaternion qx="0" qy="0" qz="-0.7071067811865475" qw="0.7071067811865475" />
+        </offset>
+        <macro ref="env_asteroids_asteroid_A_XXL_01_macro" connection="space" />
+      </connection>
+      <connection name="env_asteroids_asteroid_A_XXL_01_south_connection" ref="asteroids">
+        <offset>
+          <position x="0" y="0" z="-6500" />
+          <quaternion qx="-0.7071067811865475" qy="0" qz="0" qw="0.7071067811865475" />
+        </offset>
+        <macro ref="env_asteroids_asteroid_A_XXL_01_macro" connection="space" />
+      </connection>
+      <connection name="env_asteroids_asteroid_A_XXL_01_north_connection" ref="asteroids">
+        <offset>
+          <position x="200" y="0" z="6500" />
+          <quaternion qx="0.7071067811865475" qy="0" qz="0" qw="0.7071067811865475" />
+        </offset>
+        <macro ref="env_asteroids_asteroid_A_XXL_01_macro" connection="space" />
+      </connection>
+      <connection name="hiddenship" ref="ships">
+        <offset>
+          <position x="350" y="-2050" z="-120" />
+        </offset>
+        <macro ref="units_size_s_ship_pirate_03_macro" connection="space">
+          <properties>
+            <identification owner="ownerless" />
+          </properties>
+        </macro>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries priority="1" />
+      <identification name="{5554204,1091}" description="{5554204,1092}" />
+      <area />
+      <icon map="tzoneCluster_B_Sector07_Zone05_macro_icon" />
+      <map index="9" shortvariation="{5554204,1094}" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_SHW_GateZone_Entry_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="SHCon1_gate" />
+    </connections>
+    <properties>
+      <identification name="XRI_MAP_ZON_SHW_GateZone_Entry" />
+      <map index="-1" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_ZON_SHW_GateZone_Exit_macro" class="zone">
+    <component ref="standardzone" />
+    <connections>
+      <connection ref="SHCon2_gate" />
+    </connections>
+    <properties>
+      <identification name="XRI_MAP_ZON_SHW_GateZone_Exit" />
+      <map index="-1" />
+    </properties>
+  </macro>
+  
+</macros>

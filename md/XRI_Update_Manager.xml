@@ -14,18 +14,18 @@
         <!-- Savegames started without XRI are not supported
          - write note in logfile and go to Main Menu -->
         <do_if value="not global.$XRI_version.isnumeric" >
-          <debug_text text="XRI Mod is not compatible with Savegames started without this Extension" filter="general" />
+          <debug_text text="'XRI Mod is not compatible with Savegames started without this Extension'" filter="general" />
           <quit_to_startmenu />
         </do_if>
         
         <!-- just an Example for the Syntax to Copy in the future -->
         <!-- update if Save Version is less than current Version 1 -->
-        <do_if value="global.$XRI_version lt 1">
+        <!--do_if value="global.$XRI_version lt 1">
           <patch_macros macro="macro.your_changed_macro"/>
           
-          <!-- set Version stored in Save to current Version (when adding Update Actions move to last Version to which Updates are necesary) -->
+          <!- - set Version stored in Save to current Version (when adding Update Actions move to last Version to which Updates are necesary) - ->
           <set_value name="global.$XRI_version" exact="1"/>
-        </do_if>
+        </do_if-->
         
         <!-- reset cue for further Patching Actions in the future -->
         <reset_cue cue="this"/>

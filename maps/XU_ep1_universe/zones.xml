@@ -9,16 +9,4 @@
         <macro ref="props_gates_anc_gate_b_macro" connection="space" />
       </connection>
   </add-->
-  <add sel="//macro[@name='tzoneCluster_C_Sector09_Zone60_macro']/connections">
-      <connection ref="Highway16Connection02_gate">
-        <offset>
-          <position x="-21300" y="10000" z="-15500" />
-        </offset>
-      </connection>
-      <connection ref="Highway15Connection01_gate">
-        <offset>
-          <position x="-16300" y="10000" z="-15500" />
-        </offset>
-      </connection>
-  </add>
 </diff>

@@ -2,7 +2,7 @@
 <diff>
   <!--add sel="//macro[@name='XU_EP1_universe_macro']/connections">
       <connection name="ClusterGate_Al-Ma" ref="destination" path="../Cluster_A_connection/Cluster_A_Sector03_connection/tzoneCluster_A_Sector03_Zone114_connection/clustergate_Ma-Al_connection">
-        <macro connection="destination" path="../../../../../Cluster_B_connection/MAP_UT_SEC_AL_BR_connection/MAP_UT_ZON_AL_BR_Zone04_connection/clustergate_Al-Ma_connection" />
+        <macro connection="destination" path="../../../../../Cluster_B_connection/XRI_MAP_SEC_AL_BR_connection/XRI_MAP_ZON_AL_BR_Zone04_connection/clustergate_Al-Ma_connection" />
       </connection>
   </add-->
 </diff>

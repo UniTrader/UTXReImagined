@@ -1,15 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- i want all my new Stuff to be in seperate Files from the EGO stuff, except the necesary glue stuff, which is done via diff files -->
 <index xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/index.xsd">
-	<entry name="MAP_UT_CLU_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\map_ut_clusters"/>
-	<entry name="MAP_UT_SEC_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\map_ut_sectors"/>
-	<entry name="MAP_UT_SHW_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\map_ut_sechighways"/>
-	<entry name="MAP_UT_ZON_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\map_ut_zones"/>
-	<entry name="MAP_UT_ZHW_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\map_ut_zonehighways"/>
-	<entry name="struct_bt_UT_Omicron_Superyard_macro" value="extensions\UTXReImagined\assets\structures\build_trees\struct_bt_UT_Omicron_Superyard_macro"/>
-	<entry name="buildmodule_omicron_superyard_macro" value="extensions\UTXReImagined\assets\props\SurfaceElements\buildmodule_omicron_superyard_macro"/>
-	<entry name="buildmodule_omicron_superyard_b_macro" value="extensions\UTXReImagined\assets\props\SurfaceElements\buildmodule_omicron_superyard_b_macro"/>
-	<entry name="props_surf_ar_docks_size_l_xl_inv_macro" value="extensions\UTXReImagined\assets\props\SurfaceElements\props_surf_ar_docks_size_l_xl_inv_macro"/>
-    <entry name="turret_medium_d_lb_macro" value="\Extensions\UTXReImagined\assets\props\WeaponSystems\turret_medium_d_lb_macro" />
-    <entry name="units_size_xl_d_capital_destroyer_2_macro" value="\Extensions\UTXReImagined\assets\units\size_xl\units_size_xl_d_capital_destroyer_2_macro" />
+	<entry name="XRI_MAP_CLU_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_clusters"/>
+	<entry name="XRI_MAP_SEC_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_sectors"/>
+	<entry name="XRI_MAP_SHW_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_sechighways"/>
+	<entry name="XRI_MAP_ZON_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_zones"/>
+	<entry name="XRI_MAP_ZHW_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_zonehighways"/>
+  <entry name="units_size_xl_d_capital_destroyer_2_macro" value="\Extensions\UTXReImagined\assets\units\size_xl\units_size_xl_d_capital_destroyer_2_macro" />
 </index>

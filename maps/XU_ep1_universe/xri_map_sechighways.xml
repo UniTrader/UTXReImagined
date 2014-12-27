@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<macros>
+  <!-- SH Definition example - note that i make a more layman-like explaination and may not use the correct terms for understandability-->
+  <macro name="XRI_MAP_SHW_AL_IW-BR_macro" class="highway">
+    <component ref="standardsechighway" />
+    <connections>
+      <connection ref="entrypoint">
+        <offset><!-- use Position relative to cluster here - far easier than to work with an additional central point -->
+          <position x="-11119391" y="41000" z="12002793" />
+        </offset>
+      </connection>
+      <connection ref="exitpoint">
+        <offset>
+          <position x="-27511000" y="-9662000" z="-346000" />
+        </offset>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries>
+        <boundary class="splinetube">
+          <!-- the Splines are like Rubber Tubes and you define anchor points where the spline must go along, positions in-between are calculated -->
+          <!-- use Entrypoint and Exitpoint Coordinates for the first and last here for the first and last Spline Anchor Point, too and add points in between as neccesary -->
+          <!-- values for tx. ty and tz are very forgiving here - imagine they are some point in the direction where the Spline should go to from the current point (NOT come from for the exit) and it works like you want it ;) -->
+          <!-- inlength and outhlength tell how sharp the curves at the anchor point should be (or how long before/after this point it should go almost straight) - 1/3 of the distance between the points is a good start -->
+          <!-- (note: for the first point inlength is always 0 and for the last outlength is always 0 since they start and therminate there -->
+          <splineposition x="-11119391" y="41000" z="12002793"  tx="-0.8" ty="-0" tz="-0.6" weight="1" inlength="0" outlength="3000000" />
+          <splineposition x="-27511000" y="-9662000" z="-346000" tx="0" ty="-0.2" tz="-0.9" weight="1" inlength="3000000" outlength="0" />
+          <size r="300" />
+        </boundary>
+      </boundaries>
+      <controls>
+        <linear>
+          <time />
+        </linear>
+        <angular>
+          <roll />
+        </angular>
+      </controls>
+      <identification name="XRI_MAP_SHW_AL_IW-BR" />
+    </properties>
+  </macro>
+  
+  <macro name="XRI_MAP_SHW_AL_BR-AS_macro" class="highway">
+    <component ref="standardsechighway" />
+    <connections>
+      <connection ref="entrypoint">
+        <offset>
+          <position x="-27511000" y="-9662000" z="-363000" />
+        </offset>
+      </connection>
+      <connection ref="exitpoint">
+        <offset>
+          <position x="-15841620" y="-735777" z="1355851" />
+        </offset>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries>
+        <boundary class="splinetube">
+          <splineposition x="-27511000" y="-9662000" z="-363000" tx="0.8" ty="0.2" tz="0" weight="1" inlength="0" outlength="3000000" />
+          <splineposition x="-15841620" y="-735777" z="1355851" tx="0.707" ty="0" tz="0.707" weight="1" inlength="3000000" outlength="0" />
+          <size r="300" />
+        </boundary>
+      </boundaries>
+      <controls>
+        <linear>
+          <time />
+        </linear>
+        <angular>
+          <roll />
+        </angular>
+      </controls>
+      <identification name="XRI_MAP_SHW_AL_BR-AS" />
+    </properties>
+  </macro>  
+  
+  <macro name="XRI_MAP_SHW_AL_BR-LA_macro" class="highway">
+    <component ref="standardsechighway" />
+    <connections>
+      <connection ref="entrypoint">
+        <offset>
+          <position x="-27673000" y="-9633000" z="-156000" />
+        </offset>
+      </connection>
+      <connection ref="exitpoint">
+        <offset>
+          <position x="-4854060" y="3379934" z="27635164" />
+        </offset>
+      </connection>
+    </connections>
+    <properties>
+      <boundaries>
+        <boundary class="splinetube">
+          <splineposition x="-27673000" y="-9633000" z="-156000" tx="-1" ty="0" tz="0" weight="1" inlength="0" outlength="3000000" />
+          <splineposition x="-4854060" y="3379934" z="27635164" tx="1" ty="0" tz="0" weight="1" inlength="30000000" outlength="0" />
+          <size r="300" />
+        </boundary>
+      </boundaries>
+      <controls>
+        <linear>
+          <time />
+        </linear>
+        <angular>
+          <roll />
+        </angular>
+      </controls>
+      <identification name="XRI_MAP_SHW_AL_BR-LA" />
+    </properties>
+  </macro>
+ </macros>

@@ -16,4 +16,9 @@
   -> Add some new Sectors in the existing Galaxy where there is an Awesome Background
     > currently implemented are Behind Rupture and Old Omicron Yards (latter one is not in a releasable state yet)
     > Tube Layout will follow the criteria above from the very beginning
-    
+
+=> Re-Balancing of Map Parameters and re-distribution of Regions
+  -> Regions shall be independent of Zones and usually cover more than one Zone
+  -> also add "hidden" Regions with plenty Ressources but not nearby any Zone
+  -> each Region shall only cover one Ressource
+  -> if more than one Ressource is desired to be available in a Zone/Area make overlapping Regions

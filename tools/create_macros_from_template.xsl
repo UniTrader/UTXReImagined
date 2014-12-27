@@ -193,6 +193,7 @@
                 </xsl:if>
               </effects>
             </xsl:if>
+            <!-- ToDo: this part needs to depend on the Definitions of each macro instead of being hard-coded here -->
             <xsl:if test="
             not(./@user = 'xenon' ) and ( name (.) = 'turret' )
             or name(.) = 'jumpdrive'

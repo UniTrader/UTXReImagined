@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list>
+  <!-- File is just here so i can use the same xsl file for Ships and Storages -->
+  <entry name="../templates/Cargobays.xml"/>
+</list>

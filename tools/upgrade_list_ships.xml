@@ -5,5 +5,5 @@
   <entry name="../templates/Engines.xml"/>
   <entry name="../templates/Radars.xml"/>
   <entry name="../templates/Jumpdrives.xml"/>
-  <entry name="../templates/Logos.xml"/> <!-- not done yet -->
+  <!-- not done yet <entry name="../templates/Logos.xml"/>-->
 </list>

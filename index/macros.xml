@@ -1,10 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- i want all my new Stuff to be in seperate Files from the EGO stuff, except the necesary glue stuff, which is done via diff files -->
 <index xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/index.xsd">
-	<entry name="XRI_MAP_CLU_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_clusters"/>
-	<entry name="XRI_MAP_SEC_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_sectors"/>
-	<entry name="XRI_MAP_SHW_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_sechighways"/>
-	<entry name="XRI_MAP_ZON_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_zones"/>
-	<entry name="XRI_MAP_ZHW_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_zonehighways"/>
+  <!-- XRI Map Stuff -->
+  <entry name="XRI_MAP_CLU_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_clusters"/>
+  <entry name="XRI_MAP_SEC_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_sectors"/>
+  <entry name="XRI_MAP_SHW_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_sechighways"/>
+  <entry name="XRI_MAP_ZON_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_zones"/>
+  <entry name="XRI_MAP_ZHW_*" value="extensions\UTXReImagined\maps\XU_ep1_universe\xri_map_zonehighways"/>
+  
+  <!-- XRI Autmatically generated Content -->
+  <entry name="XRI_bullet_turret_*"   value="extensions\Extensions\UTXReImagined\assets\generated\xri_bullet_turret_macros"/>
+  <entry name="XRI_cargobay_*"        value="extensions\Extensions\UTXReImagined\assets\generated\xri_cargobay_macros"/>
+  <entry name="XRI_engine_*"          value="extensions\Extensions\UTXReImagined\assets\generated\xri_engine_macros"/>
+  <entry name="XRI_jumpdrive_*"       value="extensions\Extensions\UTXReImagined\assets\generated\xri_jumpdrive_macros"/>
+  <entry name="XRI_radar_*"           value="extensions\Extensions\UTXReImagined\assets\generated\xri_radar_macros"/>
+  <entry name="XRI_shieldgenerator_*" value="extensions\Extensions\UTXReImagined\assets\generated\xri_shieldgenerator_macros"/>
+  <entry name="XRI_turret_*"          value="extensions\Extensions\UTXReImagined\assets\generated\xri_turret_macros"/>
+  
   <entry name="units_size_xl_d_capital_destroyer_2_macro" value="\Extensions\UTXReImagined\assets\units\size_xl\units_size_xl_d_capital_destroyer_2_macro" />
 </index>

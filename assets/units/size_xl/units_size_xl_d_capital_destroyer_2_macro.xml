@@ -14,29 +14,33 @@
       </effects>
       <secrecy level="1" />
       <purpose primary="fight" />
-      <upgrades multimacro="1" >
-        <upgrade upgrade="shieldgenerator_size_m_mk1_macro" tags="shield_m" />
-        <upgrade upgrade="shieldgenerator_size_m_mk2_macro" tags="shield_m" />
-        <upgrade upgrade="shieldgenerator_size_m_mk3_macro" tags="shield_m" />
-        <upgrade upgrade="shieldgenerator_size_l_mk1_macro" tags="shield_l" />
-        <upgrade upgrade="shieldgenerator_size_l_mk2_macro" tags="shield_l" />
-        <upgrade upgrade="shieldgenerator_size_l_mk3_macro" tags="shield_l" />
-        <upgrade upgrade="engine_size_xl_02_macro" tags="engine" />
-        <upgrade upgrade="engine_size_xl_xenon_01_macro" tags="engine" />
-        <upgrade upgrade="turret_small_mg_macro" tags="turret_small" />
-        <upgrade upgrade="turret_small_sg_macro" tags="turret_small" />
-        <upgrade upgrade="turret_medium_lb_macro" tags="turret_medium" />
-        <upgrade upgrade="turret_medium_ml_macro" tags="turret_medium" />
-        <upgrade upgrade="turret_medium_pe_macro" tags="turret_medium" />
-        <upgrade upgrade="turret_medium_sp_macro" tags="turret_medium" />
-        <upgrade upgrade="turret_missile_df_macro" tags="turret_medium" />
-        <upgrade upgrade="turret_missile_sm_macro" tags="turret_medium" />
-        <upgrade upgrade="turret_medium_d_lb_macro" tags="turret_medium" />
-        <upgrade upgrade="storage_ship_xl_universal_04_macro" tags="storage" />
-        <upgrade upgrade="storage_ship_xl_liquid_01_macro" tags="storage" />
-        <upgrade upgrade="storage_ship_xl_bulk_01_macro" tags="storage" />
-        <upgrade upgrade="storage_ship_xl_container_01_macro" tags="storage" />
-        <upgrade upgrade="storage_ship_xl_energy_01_macro" tags="storage" />
+      <upgrades multimacro="1">
+        <upgrade upgrade="xri_turret_medium_lb_all_T001_macro" tags="xri_se_medium_turret"/>
+        <upgrade upgrade="xri_turret_medium_ml_all_T001_macro" tags="xri_se_medium_turret"/>
+        <upgrade upgrade="xri_turret_medium_sp_ryk_T001_macro" tags="xri_se_medium_turret"/>
+        <upgrade upgrade="xri_turret_medium_xe_xen_T001_macro" tags="xri_se_medium_turret"/>
+        <upgrade upgrade="xri_turret_medium_bb_xen_T001_macro" tags="xri_se_medium_turret"/>
+        <upgrade upgrade="xri_shieldgenerator_small_1_T001_macro" tags="xri_se_small_shieldgenerator"/>
+        <upgrade upgrade="xri_shieldgenerator_medium_1_T001_macro" tags="xri_se_medium_shieldgenerator"/>
+        <upgrade upgrade="xri_shieldgenerator_medium_2_T001_macro" tags="xri_se_medium_shieldgenerator"/>
+        <upgrade upgrade="xri_shieldgenerator_medium_3_T001_macro" tags="xri_se_medium_shieldgenerator"/>
+        <upgrade upgrade="xri_shieldgenerator_large_1_T001_macro" tags="xri_se_large_shieldgenerator"/>
+        <upgrade upgrade="xri_shieldgenerator_large_2_T001_macro" tags="xri_se_large_shieldgenerator"/>
+        <upgrade upgrade="xri_shieldgenerator_large_3_T001_macro" tags="xri_se_large_shieldgenerator"/>
+        <upgrade upgrade="xri_engine_xl_blue_1_macro" tags="xri_se_engine_xl"/>
+        <upgrade upgrade="xri_engine_xl_red_1_macro" tags="xri_se_engine_xl"/>
+        <upgrade upgrade="xri_radar_xl_fallback_macro" tags="xri_se_radar_xl"/>
+        <upgrade upgrade="xri_radar_xl_freighter_macro" tags="xri_se_radar_xl"/>
+        <upgrade upgrade="xri_radar_xl_military_macro" tags="xri_se_radar_xl"/>
+        <upgrade upgrade="xri_radar_xl_xenon_macro" tags="xri_se_radar_xl"/>
+        <upgrade upgrade="xri_jumpdrive_l_default_macro" tags="xri_se_jumpdrive_l"/>
+        <upgrade upgrade="xri_jumpdrive_xl_default_macro" tags="xri_se_jumpdrive_xl"/>
+        <upgrade upgrade="xri_jumpdrive_l_military_macro" tags="xri_se_jumpdrive_l"/>
+        <upgrade upgrade="xri_jumpdrive_xl_military_macro" tags="xri_se_jumpdrive_xl"/>
+        <upgrade upgrade="xri_jumpdrive_l_fast_macro" tags="xri_se_jumpdrive_l"/>
+        <upgrade upgrade="xri_jumpdrive_xl_fast_macro" tags="xri_se_jumpdrive_xl"/>
+        <upgrade upgrade="xri_jumpdrive_l_economy_macro" tags="xri_se_jumpdrive_l"/>
+        <upgrade upgrade="xri_jumpdrive_xl_economy_macro" tags="xri_se_jumpdrive_xl"/>
       </upgrades>
     </properties>
     <connections>

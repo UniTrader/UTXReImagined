@@ -107,9 +107,22 @@
             <xsl:if test="./stats/shield/@engineboost" >
               <boost>
                 <xsl:attribute name="duration">
-                  <xsl:value-of select="./stats/shield/engineboost"/>
+                  <xsl:value-of select="./stats/shield/@engineboost"/>
                 </xsl:attribute>
               </boost>
+            </xsl:if>
+            <xsl:if test="./stats/shield">
+              <recharge max="600000" rate="2500" delay="8">
+                <xsl:attribute name="max">
+                  <xsl:value-of select="./stats/shield/@max"/>
+                </xsl:attribute>
+                <xsl:attribute name="rate">
+                  <xsl:value-of select="./stats/shield/@rate"/>
+                </xsl:attribute>
+                <xsl:attribute name="delay">
+                  <xsl:value-of select="./stats/shield/@delay"/>
+                </xsl:attribute>
+              </recharge>
             </xsl:if>
             <xsl:if test="./stats/surface_element/@hull" >
               <hull threshold="0.25">

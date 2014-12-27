@@ -102,6 +102,12 @@
 				<signal_cue_instantly cue="md.NPC_Engineer.OnPlatformPopulation_Engineer" param="$ship.engineer" />
 				<signal_cue_instantly cue="md.NPC_Staff.OnPlatformPopulation_Staff" param="$ship.pilot" />
 				<signal_cue_instantly cue="md.NPC_Staff.OnPlatformPopulation_Staff" param="$ship.defencenpc" />
+        
+        
+        <create_ship name="$ship" macro="macro.unit_player_ship_macro" zone="player.primaryship.zone" >
+          <owner exact="faction.player" />
+          <safepos object="player.primaryship" />
+        </create_ship>
       </actions>
     </cue>
   </cues>

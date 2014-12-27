@@ -18,7 +18,7 @@
 # each Cargo Bay and Engines use a seperate Template, for Ship Types there are two (Capital Ships and small Ships)
 #
 # Generate Diff File which adds Tags for Single-Ware-Cargobays in libraries/wares.xml
-xsltproc.exe add_tags_to_wares_as_diff.xsl  ../../../XR_extracted/libraries/wares.xml > ../libraries/wares_g.xml
+xsltproc.exe add_tags_to_wares_as_diff.xsl  ../../../XR_extracted/libraries/wares.xml > ../libraries/wares.xml.new
 
 # Generate Turret, Shield, Radar, Jumpdrive, Engine and Cargobay Macro Files from Balancing Templates
 xsltproc.exe create_macros_from_template.xsl             ../templates/Turrets.xml       > ../assets/generated/xri_turret_macros.xml
@@ -37,8 +37,8 @@ xsltproc.exe create_multimacro_upgrade_list_from_template.xsl upgrade_list_ships
 # Generate Storage Upgrade List from Cargobay Balancing Template   !!!!! NOT WORKING AS INTENDED YET - CARGO HIERARCHY MISSING !!!
 xsltproc.exe create_multimacro_upgrade_list_from_template.xsl upgrade_list_storages.xml > ../assets/generated/xri_upgrade_list_storages.xml
 
-
-
 # include templates/upgradelist_ships.xml in all L/XL Ship Macros instead of the current Upgrade List
-
-# create_multimacro_upgrade_list_from_template.xsl -> apply to ./Cargobays.xml and output to templates/upgradelist_storages.xml (overwrite if necesary)
+for f in ../assets/units/size*/macros/*_macro.xml
+do
+    xsltproc.exe --stringparam upgradelist ../assets/generated/xri_upgrade_list_ships.xml update_macro_upgrade_list.xsl $F > $f.new
+done

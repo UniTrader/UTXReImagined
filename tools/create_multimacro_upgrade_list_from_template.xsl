@@ -3,7 +3,7 @@
   <xsl:output method='xml'/>
   <xsl:template match="/">
     <upgrades multimacro="1" >
-        <xsl:for-each select="document( /list/entry[@type='upgrade']/@name)/*/tech/*">
+        <xsl:for-each select="document( /list/entry/@name)/*/tech/*">
           <upgrade>
             <!-- construct macro name for all Upgrades based on the given Name Components -->
             <xsl:attribute name="upgrade">

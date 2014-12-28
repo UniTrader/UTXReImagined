@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list>
-  <entry name="../templates/Turrets.xml" type="upgrade"/>
-  <entry name="../templates/Shields.xml" type="upgrade"/>
-  <entry name="../templates/Engines.xml" type="upgrade"/>
-  <entry name="../templates/Radars.xml" type="upgrade"/>
-  <entry name="../templates/Jumpdrives.xml" type="upgrade"/>
-  <!-- not done yet <entry name="../templates/Logos.xml" type="marking"/>-->
+  <entry name="../templates/Turrets.xml"/>
+  <entry name="../templates/Shields.xml"/>
+  <entry name="../templates/Engines.xml"/>
+  <entry name="../templates/Radars.xml"/>
+  <entry name="../templates/Jumpdrives.xml"/>
+  <!-- not done yet <entry name="../templates/Logos.xml"/>-->
 </list>

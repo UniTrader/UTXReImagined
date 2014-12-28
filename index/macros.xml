@@ -17,5 +17,6 @@
   <entry name="XRI_shieldgenerator_*" value="Extensions\UTXReImagined\assets\generated\xri_shieldgenerator_macros"/>
   <entry name="XRI_turret_*"          value="Extensions\UTXReImagined\assets\generated\xri_turret_macros"/>
   
-  <entry name="units_size_xl_d_capital_destroyer_2_macro" value="\Extensions\UTXReImagined\assets\units\size_xl\units_size_xl_d_capital_destroyer_2_macro" />
+  <!-- Ships fitted for XRI -->
+  <entry name="xri_units_size_xl_taranis_macro" value="\Extensions\UTXReImagined\assets\units\size_xl\macros\xri_units_size_xl_taranis_macro" />
 </index>

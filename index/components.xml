@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <index xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/index.xsd">
-  <entry name="units_size_xl_d_capital_destroyer_2" value="\Extensions\UTXReImagined\assets\units\size_xl\units_size_xl_d_capital_destroyer_2" />
+  <!-- XRI Ship Components -->
+  <entry name="xri_units_size_xl_taranis" value="\Extensions\UTXReImagined\assets\units\size_xl\components\xri_units_size_xl_taranis" />
 </index>

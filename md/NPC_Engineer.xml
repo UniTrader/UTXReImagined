@@ -13,7 +13,7 @@
 	
 	
   <add sel='//cue[@name="DefaultComm"]/actions/do_else' >
-                <do_if value="$actor.isplayerowned and @$actor.ship.macro == macro.{'units_size_xl_d_capital_destroyer_2_macro'} " >
+                <do_if value="$actor.isplayerowned and @$actor.ship.macro == macro.xri_units_size_xl_taranis_macro" >
                   <add_player_choice_sub text="'Modify loadout'" comment="Change Ship Logo'" section="cEngineer_changeloadout_select" position="top_right" baseparam="event.param2" />
                 </do_if>
   </add>

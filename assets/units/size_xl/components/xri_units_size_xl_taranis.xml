@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <components>
-	<component name="units_size_xl_d_capital_destroyer_2" class="ship_xl">
+	<component name="xri_units_size_xl_taranis" class="ship_xl">
 		<source geometry="assets\units\size_xl\units_size_xl_capital_destroyer_2_data"/>
 		<layers>
 			<layer>

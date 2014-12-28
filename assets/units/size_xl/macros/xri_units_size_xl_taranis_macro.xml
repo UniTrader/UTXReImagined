@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--Exported by: Michael (192.168.3.145) at 18.07.2014_10-54-03-->
 <macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://utnas/~unitrader/XRebirthxsds/component.xsd" >
-  <macro name="units_size_xl_d_capital_destroyer_2_macro" class="ship_xl">
-    <component ref="units_size_xl_d_capital_destroyer_2" />
+  <macro name="xri_units_size_xl_taranis_macro" class="ship_xl">
+    <component ref="xri_units_size_xl_taranis" />
     <properties>
       <identification name="{20101,4201}" description="{20101,4202}" mapicon="shipicon_destroyer_l" />
       <explosiondamage value="200000" />

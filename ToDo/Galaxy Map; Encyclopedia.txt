@@ -22,3 +22,9 @@
   -> also add "hidden" Regions with plenty Ressources but not nearby any Zone
   -> each Region shall only cover one Ressource
   -> if more than one Ressource is desired to be available in a Zone/Area make overlapping Regions
+
+=> Re-Distribution of Music to make it less random and more Region-Specific (not the Regions above, more like Cluster, Sector and in some cases even Zone-Specific)
+  -> also Region-Specific battle Music
+  -> also include Soundtracks from older Games if possible (confirm with EGO first ofc)
+    > if no direct inclusion is allowed write some scripts to get the files from a regular Installation (confirm with EGO ofc)
+    > Xenon Sector 101 Soundtrack from TC would be great as Battle Music for Xenon Sectors for example

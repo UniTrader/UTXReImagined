@@ -33,5 +33,7 @@ File Paths:
   -> in tools there are the xsl templates, script files and other stuff necesary for generating the Mod Content from balancing templates or spoken text from language files
 
 
-Variable Names (md&aiscripts):
--> Global, md and Blackpoard Variables shall be prefixed with "xri_" - the rest is up to the scripter
+Variable Names (md&aiscripts) and Tag Names:
+-> Global, md and Blackpoard Variables and XRI-specific Tags shall be prefixed with "xri_"
+-> no further rules except the prefix
+-> names used only inside a Script dont have any specific rules

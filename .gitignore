@@ -6,6 +6,9 @@ voice-L049/
 # macro files generated via included Script - no need to sync
 assets/generated/
 
+# ignore Logo Files for now - during integration in this mod i will add a method to create them automatically
+assets/markings/
+
 # .cat/.dat files should be ignored because they usually only contain the packed Mod Data which lies in raw form in the repository, so it would be redundant
 *.cat
 *.dat

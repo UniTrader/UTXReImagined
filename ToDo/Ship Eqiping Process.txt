@@ -1,0 +1,23 @@
+The Ship is Organised in several Equipment Groups, which may contain any of the following:
+Engines (1 to 4 groups, 1 mandatory)
+Jumpdrive (1 group, 1 mandatory)
+Radar (1 or 2 groups, 1 mandatory)
+Medium Shields (at least 1 per Group if any other Element is chosen)
+Small Surface Elements (turrets)
+Medium Surface Elements (turrets)
+Big Surface Elements (Dronebay or Big Bertha)
+
+also there ar special Groups for:
+Cap Shields
+
+When Built Ships are delivered with a Default Loadout which should be a good balance (player canoverride this with an own preffered Layout which will automatically be applied to built Ships and can be chosen instead of choosing layout manually (this process is detailed next) - if saved loadout overstrains the Generator because of changes in the Balance between Power consumption and Generator Strength (may vary because of Research) payer is redirected to the change layout dialogue next.
+
+Equipmment for Groups is asked in order of importance:
+Capshield Group first
+Engine, Jumpdrive, Radar Groups after that
+and as last the Remaining Turret Groups in order of Battle Significance
+For each Group there is a Menu which ask for the Type of SE (Engine, small turret..) and when selecting one of ths the Type and  Count is selected. after that it goes back to the Group Selection where the choices are shown.
+
+During this there is an Energy Bar at the Top of the Screen (<show help/>) which visualizes the used Generator Capacity by the current Loadout. If the Generator is overloaded at the End the Player is given the choice of downsizing Groups until the Generator can bear it.
+
+As last point the Player is asked if it shall be saved as Global Default for that Ship Type.

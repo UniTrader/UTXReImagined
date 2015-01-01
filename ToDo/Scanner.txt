@@ -1,0 +1,28 @@
+Plan for the Player Scanners:
+
+=> More Scanner Levels
+=> Drone Scanners interleaved a bit with the Playership Scanners
+=> each Level has its own purpose
+
+Scanner Levels Vanilla:
+1 PL Basic
+2 PL AdvancLed - max legal
+3 PL Police
+4 DR MK1
+5 DR MK2
+6 DR MK3
+
+Scanner Levels Overhauled
+LV DP  Name		Rank	Longrange Info		Station Info
+1   PL Basic		0	Ships&Stations
+2   PL Mineral		5	
+3   PL Advanced		10	
+4  DR  Basic		0	
+5   PL Police		15	
+6  DR  Advanced	!legal!	12	
+7   PL Military		22	Turrets/Shields
+8  DR  Police		20	
+9   PL Scientific	30	EVERYTHING
+10 DR  Military		25	
+11 DR  Scientific	30	
+

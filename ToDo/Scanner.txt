@@ -13,16 +13,21 @@ Scanner Levels Vanilla:
 6 DR MK3
 
 Scanner Levels Overhauled
-LV DP  Name		Rank	Longrange Info		Station Info
-1   PL Basic		0	Ships&Stations
-2   PL Mineral		5	
-3   PL Advanced		10	
+LV DP  Name		Rank	Longrange Info			Scan Info
+1   PL Basic		0	Ships&Stations			all the Rest not mentoined specifically
+2   PL Mineral		5	Basic Minerals
+3   PL Advanced		10	common Containers/Drops
 4  DR  Basic		0	
-5   PL Police		15	
+5   PL Police		15	unusual Containers
 6  DR  Advanced	!legal!	12	
-7   PL Military		22	Turrets/Shields
-8  DR  Police		20	
-9   PL Scientific	30	EVERYTHING
-10 DR  Military		25	
-11 DR  Scientific	30	
+7   PL Military		22	Active Surface Elements		Weapon Factories; Small SYs - Very high Sec parts
+8  DR  Police		20					Big Shipyards - Very high Security Parts
+9   PL Scientific	30	EVERYTHING			Research Station - High Security parts
+10 DR  Military		25					
+11 DR  Scientific	30					Research Station - Very high Security
 
+
+Very High Security Parts = Productions
+High Security Parts = Product Storages
+Medium Sec Parts = Ressource Storages
+Low Security Parts = Efficiency
